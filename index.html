@@ -37,34 +37,12 @@
 			font-weight: 100;
 		}
 /*		.bio-box {
-		    padding-top: 50%;
+			background-image: url("filler.jpg");
+			width: calc(33% - 16px);
 		    background-size: 100%;
 		    background-repeat: no-repeat;
-		    border: 1px #ccc outset;
-		    -webkit-filter: blur(2px);
-		    -moz-filter: blur(2px);
-		    -o-filter: blur(2px);
-		    -ms-filter: blur(2px);
-		    filter: blur(2px);
-		    opacity: .5;
-		}
-
-		.bio-box:hover {
-		    border: 1px white solid;
-		    -webkit-filter: blur(0px);
-		    -moz-filter: blur(0px);
-		    -o-filter: blur(0px);
-		    -ms-filter: blur(0px);
-		    filter: blur(0px);
-		    opacity: 1;		    
-		}*/
-
-		.bio-box {
-			width: calc(33% - 20px);
 		    padding-top: 50%;
 		    margin: 0 15px 15px 0;
-		    background-size: 100%;
-		    background-repeat: no-repeat;
 		    border: 1px #ccc outset;
 		    -webkit-filter: blur(2px);
 		    -moz-filter: blur(2px);
@@ -72,13 +50,32 @@
 		    -ms-filter: blur(2px);
 		    filter: blur(2px);
 	        /* Fallback to SVG filters */
-		    filter: url('#blur');
+/*		    filter: url('#blur');
 		    filter: blur(5px);
 		    opacity: .5;
 		}
+*/
+		.bio-box {
+			/* need: width, margin, border, position: absolute; blur effect?*/
+			width: calc(33% - 16px);
+			margin: 0 15px 15px 0;
+		    border: 1px #ccc outset;
+		    position:relative;
+		}
+		.blur {
+		    filter: blur(1px); 
+			-webkit-filter: blur(1px);
+		    -moz-filter: blur(1px);
+		    -o-filter: blur(1px);
+		    -ms-filter: blur(1px);
+		    filter: blur(1px);
+		    /* Fallback to SVG filters */
+			filter: url('#blur');
+		    opacity: .8;
 
-		.bio-box:hover {
-		    border: 1px white solid;
+		}
+		.blur:hover {
+		    /*border: 1px white solid;*/
 		    -webkit-filter: blur(0px);
 		    -moz-filter: blur(0px);
 		    -o-filter: blur(0px);
@@ -86,14 +83,22 @@
 		    filter: blur(0px);
 		    opacity: 1;		    
 		}
-
+		.box-image {
+			/*need: padding-top:100%; background image, */
+			padding-top: 100%;
+			width:100%;
+			background-image: url("filler.jpg");
+		    background-size: 100%;
+		    background-repeat: no-repeat;
+		}
 		.species-data {
 		    position: absolute;
 		    text-align: right;
 		    width:95%;
 		    bottom: 0;
 		    right: 0;
-		    padding: 50% 5% 5% 0;
+		    left:0;
+		    /*padding: 50% 5% 5% 0;*/
 		}
 		.species-data h3 {
 			color: black;
@@ -122,7 +127,7 @@
 		@media (min-width: 1200px){
 			.bio-box {
 				min-height: 383.3px;
-				padding-top: 33%;
+				/*padding-top: 33%;*/
 			}
 
 		}
@@ -140,8 +145,8 @@
 
 		@media (max-width: 629px){
 			.bio-box {
-				width: 100%;
-				padding-top: 100%;
+				width: calc(50% - 16px);
+				/*padding-top: 100%;*/
 			}
 			.species-data h3{
 				font-size: 28px;
@@ -154,7 +159,7 @@
 		@media (max-width: 400px){
 			.bio-box {
 				width: 100%;
-				min-height: 400px;
+				/*min-height: 400px;*/
 			}
 
 		}
@@ -202,7 +207,9 @@
 	<div class="row">
 
 		<div class="bio-boxes col-sm-10 col-sm-offset-1 col-xs-12">
-			<div class="bio-box col-lg-4 col-md-6 col-sm-6 col-xs-6" id="1">
+			
+			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="box-image blur"  id="1"></div>
 				<div class="species-data">
 					<h3 class="species-name">Galapagos damselfish</h3>
 					<div class="population">
@@ -213,7 +220,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="bio-box col-lg-4 col-md-6 col-sm-6 col-xs-6" id="2">
+
+			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="box-image blur"  id="2"></div>
 				<div class="species-data">
 					<h3 class="species-name">Marsh chicken</h3>
 					<div class="population">
@@ -224,7 +233,8 @@
 					</div>
 				</div>
 			</div>							
-			<div class="bio-box col-lg-4 col-md-6 col-sm-6 col-xs-6" id="3">
+			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="box-image blur"  id="3"></div>
 				<div class="species-data">
 					<h3 class="species-name">Greater sage grouse</h3>
 					<div class="population">
@@ -235,7 +245,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="bio-box col-lg-4 col-md-6 col-sm-6 col-xs-6" id="4">
+			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="box-image blur"  id="4"></div>
 				<div class="species-data">
 					<h3 class="species-name">Mission Blue butterfly</h3>
 					<div class="population">
@@ -246,7 +257,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="bio-box col-lg-4 col-md-6 col-sm-6 col-xs-6" id="5">
+			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="box-image blur"  id="5"></div>
 				<div class="species-data">
 					<h3 class="species-name">Livermore tarplant</h3>
 					<div class="population">
@@ -257,7 +269,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="bio-box col-lg-4 col-md-6 col-sm-6 col-xs-6" id="6">
+			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="box-image blur"  id="6"></div>
 				<div class="species-data">
 					<h3 class="species-name">Plant TBA</h3>
 					<div class="population">
@@ -268,7 +281,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="bio-box col-lg-4 col-md-6 col-sm-6 col-xs-6" id="7">
+			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="box-image blur"  id="7"></div>
 				<div class="species-data">
 					<h3 class="species-name">California sea blite</h3>
 					<div class="population">
@@ -279,7 +293,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="bio-box col-lg-4 col-md-6 col-sm-6 col-xs-6" id="8">
+			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="box-image blur"  id="8"></div>
 				<div class="species-data">
 					<h3 class="species-name">Ant TBA</h3>
 					<div class="population">
@@ -290,7 +305,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="bio-box col-lg-4 col-md-6 col-sm-6 col-xs-6" id="9">
+			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="box-image blur"  id="9"></div>
 				<div class="species-data">
 					<h3 class="species-name">Insect/invert/herp</h3>
 					<div class="population">
@@ -301,7 +317,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="bio-box col-lg-4 col-md-6 col-sm-6 col-xs-6" id="10">
+			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12" >
+				<div class="box-image blur" id="10"></div>
 				<div class="species-data">
 					<h3 class="species-name">San Francisco garter snake</h3>
 					<div class="population">
@@ -321,8 +338,9 @@
 	<ul><li><a href="http://baynature.org/about-us/">About</a></li><li><a href="http://baynature.org/contact/">Contact</a></li><li><a href="http://baynature.org/product/donation-2/">Donate</a></li><li><a href="/product-category/subscriptions-renewals/">Subscribe</a></li><li><a href="http://baynature.org/advertise/">Advertise</a></li><li><a href="http://baynature.org/volunteer-intern/">Volunteer</a></li></ul>
  
 </div>
+
 <!--svg fallback for glass pane effect-->
-<div class="svg-fallback">
+<!-- <div class="svg-fallback">
 	<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
 	  <defs>
 	    <filter id="blur">
@@ -330,7 +348,8 @@
 	    </filter>
 	  </defs>
 	</svg>
-</div>
+</div> -->
+
 <script>
 $(document).ready(function() {
 
