@@ -11,6 +11,15 @@
     <script src="js/bootstrap.min.js"></script>
 	<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
+<meta property="og:title" content="The Weird, the Rare and the Ugly"/>
+<meta property="og:description" content="Connect to the natural world of the SF Bay Area! We bring you trail and park reviews and photos, local nature journalism, and local nature event listings."/>
+<meta property="og:url" content="http://baynature.org/"/>
+<meta property="og:site_name" content="Bay Nature"/>
+<meta property="fb:admins" content="1403244759"/>
+<meta property="og:image" content="https://baynature.org/wp-content/uploads/2012/08/baynature-Orange-logo-150px.jpg"/>
+
+<link rel="shortcut icon" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/images/favicon.ico"/>
+
 	<style>
 		.row {
 			margin: 0;
@@ -61,9 +70,9 @@
 			margin: 0 15px 15px 0;
 		    border: 1px #ccc outset;
 		    position:relative;
+		    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 		}
 		.blur {
-		    filter: blur(1px); 
 			-webkit-filter: blur(1px);
 		    -moz-filter: blur(1px);
 		    -o-filter: blur(1px);
@@ -72,17 +81,26 @@
 		    /* Fallback to SVG filters */
 			filter: url('#blur');
 		    opacity: .8;
-
+		    -webkit-transition: none;
+		    -moz-transition: none;
+		    -ms-transition: none;
+		    -o-transition: none;
+		    transition: none;
 		}
 		.blur:hover {
 		    /*border: 1px white solid;*/
-		    -webkit-filter: blur(0px);
-		    -moz-filter: blur(0px);
-		    -o-filter: blur(0px);
-		    -ms-filter: blur(0px);
-		    filter: blur(0px);
+		    -webkit-filter: blur(0px); 
+		    -moz-filter: blur(0px); 
+		    -o-filter: blur(0px); 
+		    -ms-filter: blur(0px); 
+		    filter: blur(0px); 
 		    opacity: 1;		    
-		}
+		    -webkit-transition: all 0.3s ease-out;
+		    -moz-transition: all 0.3s ease-out;
+		    -ms-transition: all 0.3s ease-out;
+		    -o-transition: all 0.3s ease-out;
+		    transition: all 0.3s ease-out;
+    	}
 		.box-image {
 			/*need: padding-top:100%; background image, */
 			padding-top: 100%;
@@ -120,7 +138,6 @@
 		.clear {
 			clear:both;
 		}
-
 
 
 		/*MEDIA QUERIES*/
