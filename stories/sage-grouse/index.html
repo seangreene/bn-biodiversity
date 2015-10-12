@@ -6,9 +6,9 @@
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/style-print.css" type="text/css" media="print"/>
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/jquery.c2selectbox.css" type="text/css" media="screen"/>
 
-	<link href="/bn-biodiversity/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/bn-biodiversity/js/jquery.min.js"></script>
-    <script src="/bn-biodiversity/js/bootstrap.min.js"></script>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 	<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
 <meta charset="utf-8"> 
@@ -153,7 +153,7 @@
 		}
 		.story p {
 			width: 650px;
-			margin-left: 100px;
+			margin-left: 8.333333333333332%;
 			font-size: 16px;
 		}
 		.dropcap {
@@ -224,10 +224,16 @@
 				/*min-height: 383.3px;*/
 				/*padding-top: 33%;*/
 			}
-
+			.story p {
+				width: 650px;
+				margin-left: 8.333333333333332%;
+			}
 		}
 		@media (max-width: 1150px){
-
+			.story p {
+				width: 650px;
+				margin-left: 8.333333333333332%;
+			}
 		}
 
 
@@ -235,7 +241,29 @@
 			.bio-box {
 				/*max-height: 470px;*/
 			}
-
+			.story p {
+				width: 600px;
+				margin-left: 0;
+			}
+		}
+		@media (max-width: 768px){
+			.museum-card {
+				width: 50%;
+				padding-top: 0;
+			}
+			.spacer {
+    			padding-top: 0;
+			}
+			.story p {
+				width: 600px;
+				margin-left: 0;
+			}
+			.big {
+				padding: 0;
+			}
+			.big img {
+				max-width: 100%;
+			}
 		}
 
 		@media (max-width: 629px){
@@ -243,6 +271,10 @@
 				width: 100%;
 				/*padding-top: 100%;*/
 			}
+			.museum-card {
+				width: 100%;
+			}
+
 			.species-data h3{
 				font-size: 28px;
 			}
@@ -271,6 +303,9 @@
 			.bio-box {
 				width: 100%;
 				/*min-height: 400px;*/
+			}
+			.museum-card {
+				width: 100%;
 			}
 			.story p {
 				width: 100%;
@@ -320,12 +355,18 @@
 	<div class="row">
 
 		<div class="section-header col-sm-10 col-sm-offset-1 col-xs-12">
-					
+
+			<div class="headline-info col-sm-12 col-md-10">
+
+				<h1>What People Talk About When They Talk About Sage Grouse</h1>
+
+			</div>
+
 			<div class="bio-box col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<div class="box-image" ></div>
 			</div>
 
-			<div class="museum-card col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="museum-card col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
 				<h2 class="col-sm-8 col-sm-offset-2">Greater sage grouse</h2>
 
@@ -341,17 +382,11 @@
 
 		<div class="article col-sm-10 col-sm-offset-1 col-xs-12">
 
-			<div class="headline-info col-sm-12 col-md-10">
-
-				<h1>What People Talk About When They Talk About Sage Grouse</h1>
+			<div class="headline-info">
 
 				<h2>Deciphering the future for the most controversial bird since the spotted owl.</h2>
-
 				<p class="byline">by <a href="http://baynature.org/author/ericsimons/">Eric Simons</a></p>
-
 			</div>
-
-			<div class="clear"></div>
 
 			<div class="story">
 				<p><strong><span class="dropcap">S</span>omewhere in the Bodie Hills</strong>, in predawn darkness on a section of dirt road that looks pretty much the same as any other spot on every other dirt road east of the Sierra Nevada, biologist Katrina Krause swings her government pickup aside. “I think this is the spot,” she says. It’s 12 degrees out, so from the heated truck she rolls down the window to double-check. “Yup,” she says.</p>
@@ -362,7 +397,7 @@
 
 				<p><strong>The sage grouse is sometimes compared to the chicken</strong>, because they are about the same size and have about the same intellectual swiftness. But as light starts to creep over the Bodie Hills, it becomes apparent to me that the chicken comparison falls woefully short. The male sage grouse, which is what most of the ones out here are, has a dark, razor-sharp, fanned tail that looks like the top of a pineapple. Its tiny head pokes out from the top of a white ruff, under which are the air sacs it inflates and pops to make noise. It struts, two steps left, puff, <em>whoop</em>, stop. Two steps right, puff, <em>whoop</em>. Between the spikes and the ruff and the strutting, this isn’t just a chicken — it’s a chicken dressed up for an Oakland Raiders game.</p>
 
-			<figure class="col-sm-10 col-xs-12 big">
+			<figure class="col-sm-12 col-xs-12 big">
 				<img src="https://baynature.atavist.com/data/files/organization/9410/image/raw/mcewan20130-1429648190-42.jpg"/>
 				<figcaption>A chicken dressed up for a Raiders game. | Photo by Rick McEwan, Sage Grouse Initiative.</figcaption>
 			</figure>

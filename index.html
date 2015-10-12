@@ -97,8 +97,7 @@
 		    -o-transition: none;
 		    transition: none;
 		}
-		.blur:hover {
-		    /*border: 1px white solid;*/
+		.bio-box:hover .blur{
 		    -webkit-filter: blur(0px); 
 		    -moz-filter: blur(0px); 
 		    -o-filter: blur(0px); 
@@ -436,7 +435,11 @@ $(document).ready(function() {
     document.getElementById(boxID[i]).style.backgroundImage = "url('" + imageURL[i] + "')";
 	};
 
-
+	$('.bio-box').hover(function () {
+	    jQuery(this).find('.box-image').removeClass('blur');
+	}, function () {
+	    jQuery(this).find('.box-image').addClass('blur');
+	});
 })
 </script>
 </body>
