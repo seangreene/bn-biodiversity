@@ -1,0 +1,463 @@
+<html>
+<head>
+	<title>Sage Grouse</title>
+	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/css/baynature.scss" type="text/css" media="screen, projection"/>
+	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/style.css?1435006863" type="text/css" media="screen, projection"/>
+	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/style-print.css" type="text/css" media="print"/>
+	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/jquery.c2selectbox.css" type="text/css" media="screen"/>
+
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+	<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+<meta charset="utf-8"> 
+<meta property="og:title" content="The Weird, the Rare and the Ugly"/>
+<meta property="og:description" content="Connect to the natural world of the SF Bay Area! We bring you trail and park reviews and photos, local nature journalism, and local nature event listings."/>
+<meta property="og:url" content="http://baynature.org/"/>
+<meta property="og:site_name" content="Bay Nature"/>
+<meta property="fb:admins" content="1403244759"/>
+<meta property="og:image" content="https://baynature.org/wp-content/uploads/2012/08/baynature-Orange-logo-150px.jpg"/>
+
+<link rel="shortcut icon" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/images/favicon.ico"/>
+
+	<style>
+		.row {
+			margin: 0;
+		}
+		.home.page #header {
+			min-height: 100px;
+			position: inherit;
+		}
+		.home.page #main {
+			margin: 0 0 0 0;
+			position: inherit;
+		}
+
+		/**************************
+		
+		    LANDING PAGE CSS
+
+		***************************/
+
+		h1 {
+			text-transform: uppercase;
+			clear: both;
+		    color: #454e9c;
+		    font-family: "ff-dagny-web-pro",sans-serif;
+		    font-size: 42px;
+		    font-weight: bold;
+		    line-height: 42px;
+		    /*color:black;
+		    font-weight:100;*/
+		    margin: 30px auto 30px auto;
+		}
+		.intro-text {
+			text-align: center;
+		}
+		.subhead {
+			margin-bottom: 30px;
+			font-weight: 100;
+		}
+		.bio-box {
+			/* need: width, margin, border, position: absolute; blur effect?*/
+			width: calc(50% - 16px);
+			margin: 0 15px 15px 0;
+		    border: 1px #ccc outset;
+		    position:relative;
+		    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+		}
+		.blur {
+			-webkit-filter: blur(1px);
+		    -moz-filter: blur(1px);
+		    -o-filter: blur(1px);
+		    -ms-filter: blur(1px);
+		    filter: blur(1px);
+		    /* Fallback to SVG filters */
+			filter: url('#blur');
+		    opacity: .8;
+		    -webkit-transition: none;
+		    -moz-transition: none;
+		    -ms-transition: none;
+		    -o-transition: none;
+		    transition: none;
+		}
+		.blur:hover {
+		    /*border: 1px white solid;*/
+		    -webkit-filter: blur(0px); 
+		    -moz-filter: blur(0px); 
+		    -o-filter: blur(0px); 
+		    -ms-filter: blur(0px); 
+		    filter: blur(0px); 
+		    opacity: 1;		    
+		    -webkit-transition: all 0.3s ease-out;
+		    -moz-transition: all 0.3s ease-out;
+		    -ms-transition: all 0.3s ease-out;
+		    -o-transition: all 0.3s ease-out;
+		    transition: all 0.3s ease-out;
+    	}
+		.box-image {
+			/*need: padding-top:100%; background image, */
+			padding-top: 100%;
+			width:100%;
+			background-image: url("http://racheldiazbastin.com/wp-content/gallery/birds/quail-etsy.jpg");
+		    background-size: 100%;
+		    background-repeat: no-repeat;
+		}
+		.species-data {
+		    position: absolute;
+		    text-align: right;
+		    width:95%;
+		    bottom: 0;
+		    right: 0;
+		    left:0;
+		    /*padding: 50% 5% 5% 0;*/
+		}
+		.species-data h3 {
+			color: black;
+			font-size: 30px;
+			line-height: 25px;
+		}
+		.species-data p {
+			font-size: 20px;
+			line-height: 20px;
+			font-weight: 300;
+		}
+		.highlight {
+			padding: 0 3px;
+			background-color: red;
+			color: white;
+		}
+
+		.clear {
+			clear:both;
+		}
+
+		/**************************
+		
+		    ARTICLE PAGE CSS
+
+		***************************/
+
+		.section-header {
+			margin-top: 35px;
+			margin-right: 100px;
+		}
+		.headline-info h2 {
+			font-family: georgia,serif;
+		    font-size: 26px;
+		    font-style: italic;
+		    line-height: 32px;
+		    color: #8c8c8c;
+		    margin: 35px 0 35px;
+		}
+		.story p {
+			width: 650px;
+			margin-left: 100px;
+			font-size: 16px;
+		}
+		.dropcap {
+			color: black;
+		    font-size: 124px;
+		    font-weight: 400;
+		    float: left;
+		    line-height: .75;
+		    margin: 10px 0px 0;
+		    padding: 0 5px 0;
+		}
+		.museum-card {
+			border: 1px solid #d3d3d3;
+			padding-top: 15px;
+		}
+		.museum-card h2 {
+			color: black;
+			font-size: 42px;
+			font-weight: 100;
+			text-transform: uppercase;
+			text-align: center;
+			position: relative;
+		}
+		.museum-card h2:after {
+			position:absolute;
+			left:0;
+			bottom:0;
+			width:100%;
+			height:1px;
+			border-bottom:1px solid #000;
+			content:"";
+		}
+		.card-info p {
+			font-weight: bold;
+		}
+		.card-info span {
+			font-weight: normal;
+		}
+		.spacer {
+			padding-top: calc(100% - 31px);
+		}
+		.big {
+			width: 100%;
+			margin: 15px 0 15px 0;
+		}
+		.right {
+			float:right;
+		    margin: 15px 0 15px 25px;
+		}
+		figcaption {
+			font-size: 14px;
+			font-family: "ff-dagny-web-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    line-height: 19px;
+		    padding: 0 4px 5px;
+		    margin: 0;
+		}
+
+		/**************************
+			RESPONSIVE EMBEDS
+		*************************/
+		.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+		.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+		/*MEDIA QUERIES*/
+		@media (min-width: 1200px){
+			.bio-box {
+				/*min-height: 383.3px;*/
+				/*padding-top: 33%;*/
+			}
+
+		}
+		@media (max-width: 1150px){
+
+		}
+
+
+		@media (max-width: 940px){
+			.bio-box {
+				/*max-height: 470px;*/
+			}
+
+		}
+
+		@media (max-width: 629px){
+			.bio-box {
+				width: 100%;
+				/*padding-top: 100%;*/
+			}
+			.species-data h3{
+				font-size: 28px;
+			}
+			.species-data p {
+				font-size: 18px;
+			}
+			.spacer {
+				padding-top: 10%;
+			}
+			.story p {
+				width: 100%;
+				margin: 0;
+			}
+			.big {
+				padding: 0;
+			}
+			.big img{
+				max-width: 100%;
+			}
+			.right {
+				padding: 0;
+			}
+		}
+
+		@media (max-width: 400px){
+			.bio-box {
+				width: 100%;
+				/*min-height: 400px;*/
+			}
+			.story p {
+				width: 100%;
+				margin: 0;
+			}
+			.spacer {
+				padding-top: 25%;
+			}
+			.big {
+				padding: 0;
+			}
+			.big img{
+				max-width: 100%;
+			}
+			.right {
+				padding: 0;
+			}
+
+		}
+
+	</style>
+</head>
+<body class="home page page-id-4 page-template-default home-page tribe-theme-bay-nature-responsive">
+
+	<div id="header">
+		<a href="http://baynature.org" title="Bay Nature"><h1 id="logo">
+			<img src=https://baynature.org/wp-content/uploads/2012/05/BNLogo_0521_gold_536.png>
+		</h1> </a>
+		<div id="navigation">
+			<ul id="menu-main-menu" class="menu"><li id="menu-item-99175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99175"><a href="http://baynature.org/nature-news/">Nature News</a></li>
+			<li id="menu-item-98003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98003"><a href="/product-category/issues/">Magazine</a></li>
+			<li id="menu-item-54200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54200"><a href="http://baynature.org/about-us/">About</a></li>
+			<li id="menu-item-97970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97970"><a href="http://baynature.org/explore/">Explore</a></li>
+			<li id="menu-item-97971" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97971"><a href="/product-category/subscriptions-renewals/">Subscribe</a></li>
+			<li id="menu-item-97972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97972"><a href="/product/donation-2/">Donate</a></li>
+			</ul>
+		</div>
+		<div class="social-media-icons">
+			<ul>
+			<li class="twitter"><a href="http://twitter.com/#!/baynature" target="_blank">&nbsp;</a></li>
+			<li class="pinterest"><a href="http://pinterest.com/baynature/" target="_blank">&nbsp;</a></li>
+			<li class="facebook"><a href="http://www.facebook.com/BayNature" target="_blank">&nbsp;</a></li>
+			</ul>
+		</div>
+	</div><!--header-->
+
+	<div class="row">
+
+		<div class="section-header col-sm-10 col-sm-offset-1 col-xs-12">
+					
+			<div class="bio-box col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="box-image" ></div>
+			</div>
+
+			<div class="museum-card col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+				<h2 class="col-sm-8 col-sm-offset-2">Greater sage grouse</h2>
+
+				<div class="card-info col-sm-8 col-sm-offset-2">
+					<p>Habitat: <span>SF Bay</span></p>
+					<p>Population: <span>10,000</span></p>
+					<p>Protection status: <span>Endangered</span></p>
+				</div>
+				<div class="spacer"></div>
+			</div>
+
+		</div>	
+
+		<div class="article col-sm-10 col-sm-offset-1 col-xs-12">
+
+			<div class="headline-info col-sm-12 col-md-10">
+
+				<h1>What People Talk About When They Talk About Sage Grouse</h1>
+
+				<h2>Deciphering the future for the most controversial bird since the spotted owl.</h2>
+
+				<p class="byline">by <a href="http://baynature.org/author/ericsimons/">Eric Simons</a></p>
+
+			</div>
+
+			<div class="clear"></div>
+
+			<div class="story">
+				<p><strong><span class="dropcap">S</span>omewhere in the Bodie Hills</strong>, in predawn darkness on a section of dirt road that looks pretty much the same as any other spot on every other dirt road east of the Sierra Nevada, biologist Katrina Krause swings her government pickup aside. “I think this is the spot,” she says. It’s 12 degrees out, so from the heated truck she rolls down the window to double-check. “Yup,” she says.</p>
+
+				<p>High desert prairie marches away from the anonymous parking spot, clumps of bunchgrass and sagebrush shining faintly silver in the light of a waning half moon. Far off down the road a thin sliver of Mono Lake shimmers. On a windless, clear morning the gravel underfoot crunches. Krause packs up a spotting scope, and she and biologist Thad Heater walk into the dark desert. You or I would almost certainly never be able to pick this particular spot out from any other random area on the roadside, but right here and right now it is different, because right here and right now 30 of the West’s most controversial birds are making spectacles of themselves in the sagebrush.</p>
+
+				<p>You notice the noise first, which is of course what Krause was listening for from the car: a poppy, omnidirectional <em>thwap-whoop-whoop-whoop</em>, like a coffee pot percolating in a leaking bathtub. The noise seems to come from everywhere in the sprawling plain, but Krause and Heater swiftly pick out a direction and peer through binoculars. “Look for a flash of white,” Heater says. I raise my glasses, and point them back in the general direction of the car, and suddenly a little contrail streaks through my field of vision. And then another, and another. This anonymous section of desert is swarming with greater sage grouse.</p>
+
+				<p><strong>The sage grouse is sometimes compared to the chicken</strong>, because they are about the same size and have about the same intellectual swiftness. But as light starts to creep over the Bodie Hills, it becomes apparent to me that the chicken comparison falls woefully short. The male sage grouse, which is what most of the ones out here are, has a dark, razor-sharp, fanned tail that looks like the top of a pineapple. Its tiny head pokes out from the top of a white ruff, under which are the air sacs it inflates and pops to make noise. It struts, two steps left, puff, <em>whoop</em>, stop. Two steps right, puff, <em>whoop</em>. Between the spikes and the ruff and the strutting, this isn’t just a chicken — it’s a chicken dressed up for an Oakland Raiders game.</p>
+
+			<figure class="col-sm-10 col-xs-12 big">
+				<img src="https://baynature.atavist.com/data/files/organization/9410/image/raw/mcewan20130-1429648190-42.jpg"/>
+				<figcaption>A chicken dressed up for a Raiders game. | Photo by Rick McEwan, Sage Grouse Initiative.</figcaption>
+			</figure>
+
+				<p>Krause likes to compare the strutting male birds to men trying to pick up women in a club. You’re not sure who they’re dressed up for and who they’re showing off for, she says, but it sure doesn’t look like it’s working. Across the road, on a hillside just above the truck, about 20 male sage grouse are whooping and strutting for maybe four females. Off to our right, two male sage grouse are standing about 15 feet apart, puffing heroically at each other. Heater wonders briefly if there’s a female we can’t see. “They’re both facing the same direction,” he says, and immediately one of the two turns the other way. <em>Whoop</em>.<br></p>
+
+				<p>“A lot of people talk about how dumb the grouse are,” Krause says. “I find them pretty entertaining.”<br></p>
+
+				<p>“They’re not real graceful,” Heater adds. “You wouldn’t look at them and say, ‘That’s a bird that’s a world-class athlete.’”<br></p>
+
+				<p>The grouse takes a step, and bloats. The air sacks flutter. <em>Thwap-whoop</em>!<br></p>
+
+				<p>“I always feel a little bad for the ones who are off on the side,” Krause says, as I put the binoculars down. “It’s like they’re not quite good enough yet.”<br></p>
+
+				<p>One newfangled element of mortal peril for sage grouse is trees and posts. This is a bird evolved for the prairie, and it appears that it simply has never considered the idea that predators might come from the sky. Ravens and raptors perch on trees and pick off grouse eggs because the females don’t think to look up when they leave their nests. They are at least frightened of people — they’ll fly away at the&nbsp;sight of us. But they have never learned to bother with cars and trucks. You can basically drive over them and they’ll just keep strutting, Krause told me. Once, a research team <a href="https://www.youtube.com/watch?v=aC8hUXhUvoc" target="_blank" >built a robot female sage grouse</a>. They released it into the wild, where the male birds immediately tried to mate with it.</p>
+
+				<div class="col-sm-8 col-xs-12 right">
+					<div class="embed-container">
+						<iframe src='https://www.youtube.com/embed/ov9_72xLeF0' frameborder='0' allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<p><strong>The greater sage grouse</strong> is one of 150 candidate species for listing as endangered under the Endangered Species Act. But listing will not happen this year, and this is where the sage grouse story departs from the story of so many other imperiled animals. In mid-December of last year Mark Amodei, a first-term Congressman from just across the state line in Carson City, Nevada, inserted a paragraph into the $1.1 trillion, 1,600-page federal spending bill that ordered that, whatever else might happen, in 2015 the Fish and Wildlife Service was not going to spend one single penny “issuing rules” about — in other&nbsp;words, listing — the greater sage grouse.</p>
+
+				<p>This isn’t a repeat of the spotted owl — it’s bigger. You will hear, if&nbsp;you spend time around sage grouse people, the word “unprecedented” thrown around. Saving the sage grouse could save a half-dozen other species, and an iconic landscape that covers one-tenth of North America. And if it can be saved, in the way its most vocal champions think it can be saved … well, on the future of the sage grouse could hang the future of the Endangered Species Act and the way we protect wildlife in America. One U.S. Fish and Wildlife Service spokesman described the sage grouse to me as the most important conservation story of our generation.</p>
+
+				<p><strong>None of this will be evident</strong>&nbsp;if you’re out on the sagebrush prairie in the twilight, actually looking at a sage grouse. It is not a bird that conveys majesty, nor is it a bird that immediately inspires noble sentiments of conservation. Krause point her binoculars for a few minutes at a clump on the opposite hillside. “Thought it was a grouse,” she says, “but it was just a rock.” The biologists say they’re fooled often by patches of snow.</p>
+
+				<p>Pink dawn light is now streaming over the hills, pulling the sun behind it. While the light heralds the end of the sage grouse’s strutting routine, they don’t fly away. They just melt back into the sage. One by one, they stop the dance, flatten — and disappear. A sage&nbsp;grouse sitting still under a sage clump will be all but invisible until you step on it. Without movement or drama, the count drops. The hillside that an hour ago was crawling with sage grouse is turning anonymous again. By mid-morning, a driver heading down this road will see no hint of anything different or interesting about this familiar stretch of roadside scrub.</p>
+
+				<p>At some point, I look back to my right, where a few minutes ago the two males were puffing and preening at each other. All I see is empty sagebrush prairie, running off to the horizon.</p>
+
+			</div>
+
+				<figure class="big col-sm-12">
+					<img src="https://baynature.atavist.com/data/files/organization/9410/image/raw/biologists-1429644365-89.jpg" />
+					<figcaption>
+					Katrina Krause and Thad Heater, on the hunt for sage grouse.
+					<figcaption>
+				</figure>
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+<div id="bn-footer">
+	
+	<ul><li><a href="http://baynature.org/about-us/">About</a></li><li><a href="http://baynature.org/contact/">Contact</a></li><li><a href="http://baynature.org/product/donation-2/">Donate</a></li><li><a href="/product-category/subscriptions-renewals/">Subscribe</a></li><li><a href="http://baynature.org/advertise/">Advertise</a></li><li><a href="http://baynature.org/volunteer-intern/">Volunteer</a></li></ul>
+ 
+</div>
+
+<!--svg fallback for glass pane effect-->
+<!-- <div class="svg-fallback">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+	  <defs>
+	    <filter id="blur">
+	      <feGaussianBlur stdDeviation="5" />
+	    </filter>
+	  </defs>
+	</svg>
+</div> -->
+
+<script>
+$(document).ready(function() {
+
+	var boxID = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ];
+
+	var imageURL = [
+		'http://racheldiazbastin.com/wp-content/gallery/fish/stickleback-web.jpg',
+		'http://racheldiazbastin.com/wp-content/gallery/birds/nf8x10kestreletsy.jpg',
+		'http://racheldiazbastin.com/wp-content/gallery/birds/quail-etsy.jpg',
+		'http://racheldiazbastin.com/wp-content/gallery/insects/etsy_buprestis-aurulenta.jpg',
+		'http://racheldiazbastin.com/wp-content/gallery/plants/darwinmoth-etsy.jpg',
+		'http://racheldiazbastin.com/wp-content/gallery/plants/flower-paradise-etsy.jpg',
+		'http://racheldiazbastin.com/wp-content/gallery/plants/pickleweed-web.jpg',
+		'http://racheldiazbastin.com/wp-content/gallery/insects/longhornbeetleetsy.jpg',
+		'http://racheldiazbastin.com/wp-content/gallery/insects/etsy_sternotomis-mirabilis.jpg',
+		'http://racheldiazbastin.com/wp-content/gallery/reptiles/geckoetsy.jpg'
+	];
+
+	for (i = 0; i < boxID.length; i++) { 
+    
+    document.getElementById(boxID[i]).style.backgroundImage = "url('" + imageURL[i] + "')";
+	
+	}
+
+	// $('.bio-box').click(function(){
+	// 	$(this).addClass('boom');
+	// });
+})
+</script>
+</body>
+
+</html>
