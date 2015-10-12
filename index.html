@@ -78,6 +78,9 @@
 		    position:relative;
 		    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 		}
+		a .bio-box {
+			color: black;
+		}
 		.blur {
 			-webkit-filter: blur(1px);
 		    -moz-filter: blur(1px);
@@ -111,7 +114,7 @@
 			/*need: padding-top:100%; background image, */
 			padding-top: 100%;
 			width:100%;
-			background-image: url("filler.jpg");
+			/*background-image: url("filler.jpg");*/
 		    background-size: 100%;
 		    background-repeat: no-repeat;
 		}
@@ -139,7 +142,25 @@
 			background-color: red;
 			color: white;
 		}
+		.coming-soon {
+		    position: absolute;
+		    text-align: center;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		    bottom: 0;
+		    margin: auto;
+		    height: 25px;
+		}
+		.coming-soon p {
+			font-size: 16px;
+			line-height: 21px;
 
+			border: 1px solid #d3d3d3;
+			background-color: #ebebeb;
+			width: 50%;
+			margin: 0 auto;
+		}
 		.clear {
 			clear:both;
 		}
@@ -148,7 +169,7 @@
 		/*MEDIA QUERIES*/
 		@media (min-width: 1200px){
 			.bio-box {
-				min-height: 383.3px;
+				/*min-height: 383.3px;*/
 				/*padding-top: 33%;*/
 			}
 
@@ -160,7 +181,7 @@
 
 		@media (max-width: 940px){
 			.bio-box {
-				max-height: 470px;
+				/*max-height: 470px;*/
 			}
 
 		}
@@ -255,6 +276,8 @@
 					</div>
 				</div>
 			</div>							
+			
+			<a href="/stories/sage-grouse">
 			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="box-image blur"  id="3"></div>
 				<div class="species-data">
@@ -267,6 +290,8 @@
 					</div>
 				</div>
 			</div>
+			</a>
+
 			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="box-image blur"  id="4"></div>
 				<div class="species-data">
@@ -340,8 +365,13 @@
 				</div>
 			</div>
 			<div class="bio-box col-lg-4 col-md-4 col-sm-12 col-xs-12" >
-				<div class="box-image blur" id="10"></div>
-				<div class="species-data">
+				<div class="box-image" id="10"></div>
+				
+				<div class="coming-soon">
+					<p>Arriving: <br />
+						January 2016</p>
+				</div>
+				<!-- <div class="species-data">
 					<h3 class="species-name">San Francisco garter snake</h3>
 					<div class="population">
 						<p>Population: <span class="highlight">100,000</span></p>
@@ -349,7 +379,7 @@
 					<div class="status">
 						<p>Status: <span class="highlight">Endangered</span></p>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
@@ -375,7 +405,17 @@
 <script>
 $(document).ready(function() {
 
-	var boxID = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ];
+	var boxID = [	'1',
+					'2',
+					'3',
+					'4',
+					'5',
+					'6',
+					'7',
+					'8',
+					'9',
+					//'10'
+				];
 
 	var imageURL = [
 		'http://racheldiazbastin.com/wp-content/gallery/fish/stickleback-web.jpg',
@@ -387,18 +427,15 @@ $(document).ready(function() {
 		'http://racheldiazbastin.com/wp-content/gallery/plants/pickleweed-web.jpg',
 		'http://racheldiazbastin.com/wp-content/gallery/insects/longhornbeetleetsy.jpg',
 		'http://racheldiazbastin.com/wp-content/gallery/insects/etsy_sternotomis-mirabilis.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/reptiles/geckoetsy.jpg'
+		//'http://racheldiazbastin.com/wp-content/gallery/reptiles/geckoetsy.jpg'
 	];
 
 	for (i = 0; i < boxID.length; i++) { 
     
     document.getElementById(boxID[i]).style.backgroundImage = "url('" + imageURL[i] + "')";
-	
-	}
+	};
 
-	// $('.bio-box').click(function(){
-	// 	$(this).addClass('boom');
-	// });
+
 })
 </script>
 </body>
