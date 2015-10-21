@@ -10,7 +10,11 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	
+    <!--open sans headline font -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<!--libre baskerville font-->
+	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
 
 <meta charset="utf-8"> 
 <meta name="viewport" content="initial-scale=1">
@@ -47,14 +51,22 @@
 			text-transform: uppercase;
 			clear: both;
 		    color: black;
-		    font-family: "ff-dagny-web-pro",sans-serif;
+		    font-family: "Open Sans", sans-serif;
 		    font-size: 50px;
-		    font-weight: bold;
+		    font-weight: 700;
 		    line-height: 55px;
 		    /*color:black;
 		    font-weight:100;*/
 		    margin: 0 auto 30px auto;
 		    text-align: center;
+		}
+		h2 {
+			font-family: "Open Sans", sans-serif;
+			font-size: 30px;
+		}
+		p {
+			font-family: "Libre Baskerville", serif;
+			font-size: 16px;
 		}
 		.bn-sharebuttons {
 			margin: 0 auto 10px;
@@ -71,6 +83,7 @@
 			margin-bottom: 30px;
 			font-weight: 100;
 			text-align: center;
+			font-family: "Libre Baskerville", serif;
 		}
 		.story-container {
 			margin-top: 35px;
@@ -97,8 +110,9 @@
 		    -ms-transition: none;
 		    -o-transition: none;
 		    transition: none;
-		    /* fade */
-
+		}
+		.bio-box:hover {
+			cursor: pointer;
 		}
 		.bio-box:hover .blur{
 		    -webkit-filter: blur(0px); 
@@ -112,8 +126,6 @@
 		    -ms-transition: all 0.3s ease-out;
 		    -o-transition: all 0.3s ease-out;
 		    transition: all 0.3s ease-out;
-		    /* fade */
-
     	}
 		.box-image {
 			/*need: padding-top:100%; background image, */
@@ -124,12 +136,13 @@
 		    background-repeat: no-repeat;
 		}
 		.species-data {
-		    position: absolute;
+			margin-left: 15px;
+		    /*position: absolute;
 		    text-align: right;
 		    width:95%;
 		    bottom: 0;
 		    right: 0;
-		    left:0;
+		    left:0;*/
 		    /*padding: 50% 5% 5% 0;*/
 		}
 /*		.species-data h3 {
@@ -137,13 +150,22 @@
 			font-size: 30px;
 			line-height: 25px;
 		}*/
-		h3.species-name {
+
+		.species-name {
+		    position: absolute;
+		    text-align: right;
+		    width:95%;
+		    bottom: 0;
+		    right: 0;
+		    left:0;
+		}
+		.species-name h3 {
 			font-family: serif;
 			font-size: 20px;
 			line-height: 25px;
 			text-transform: lowercase;
 		}
-		h3.species-name  {
+		.label h3 {
 			padding: 3px;
 			border: 1px solid #999;
 			border-bottom-color: #000;
@@ -161,11 +183,11 @@
 			background-image: linear-gradient(#444, #333);
 			box-shadow: 0 1px 1px #ccc;
 		}
-		.species-data p {
+/*		.species-data p {
 			font-size: 20px;
 			line-height: 20px;
 			font-weight: 300;
-		}
+		}*/
 		.highlight {
 			padding: 0 3px;
 			background-color: red;
@@ -249,7 +271,7 @@
 				width: 100%;
 				/*min-height: 400px;*/
 			}
-			h3.species-name  {
+			.species-name h3  {
 				font-size: 14px;
 			}
 			.story-info {
@@ -269,6 +291,7 @@
 			<img src=https://baynature.org/wp-content/uploads/2012/05/BNLogo_0521_gold_536.png>
 		</h1> </a>
 		<div id="navigation">
+
 			<ul id="menu-main-menu" class="menu"><li id="menu-item-99175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99175"><a href="http://baynature.org/nature-news/">Nature News</a></li>
 			<li id="menu-item-98003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98003"><a href="/product-category/issues/">Magazine</a></li>
 			<li id="menu-item-54200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54200"><a href="http://baynature.org/about-us/">About</a></li>
@@ -304,10 +327,10 @@
 
 
 			<div>
-				<h1>The weird, the rare &amp; the ugly</h1>
+				<h1>The weird, the rare and the ugly</h1>
 			</div>
 
-			<div class="subhead col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+			<div class="subhead col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
 				<p><em>Learning to love the sea blite and other stories of the Bay Area's endangered, uncharming and crucial flora and fauna.</em></p>
 			</div>
 
@@ -469,22 +492,24 @@
 			
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="1"></div>
-				<div class="species-data">
-					<h3 class="species-name"><span>Galapagos damselfish<span></h3>
+				<div class="species-name label">
+					<h3><span>Galapagos damselfish<span></h3>
 				</div>
 			</div>
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
 					<h2>A galapagos damselfish in distress</h2>
-					<div class="population">
-						<p>Population: <span class="highlight">100,000</span></p>
-					</div>
-					<div class="status">
-						<p>Status: <span class="highlight">Endangered</span></p>
-					</div>
-					<div class="habitat">
-						<p>Habitat: San Francisco Bay</p>
+					<div class="species-data">
+						<div class="population">
+							<p>Population: <span class="highlight">100,000</span></p>
+						</div>
+						<div class="status">
+							<p>Status: <span class="highlight">Endangered</span></p>
+						</div>
+						<div class="habitat">
+							<p>Habitat: San Francisco Bay</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -497,22 +522,24 @@
 
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="2"></div>
-				<div class="species-data">
-					<h3 class="species-name"><span>Marsh chicken<span></h3>
+				<div class="species-name label">
+					<h3><span>Marsh chicken<span></h3>
 				</div>
 			</div>							
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
 					<h2>The call of the marsh chicken</h2>
-					<div class="population">
-						<p>Population: <span class="highlight">100,000</span></p>
-					</div>
-					<div class="status">
-						<p>Status: <span class="highlight">Endangered</span></p>
-					</div>
-					<div class="habitat">
-						<p>Habitat: San Francisco Bay</p>
+					<div class="species-data">
+						<div class="population">
+							<p>Population: <span class="highlight">100,000</span></p>
+						</div>
+						<div class="status">
+							<p>Status: <span class="highlight">Endangered</span></p>
+						</div>
+						<div class="habitat">
+							<p>Habitat: San Francisco Bay</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -526,8 +553,8 @@
 			<a href="/bn-biodiversity/stories/sage-grouse">
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="3"></div>
-				<div class="species-data">
-					<h3 class="species-name"><span>Greater sage grouse<span></h3>
+				<div class="species-name label">
+					<h3><span>Greater sage grouse<span></h3>
 				</div>
 			</div>
 			</a>
@@ -535,14 +562,16 @@
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
 					<h2>What people talk about when they talk about the greater sage grouse</h2>
-					<div class="population">
-						<p>Population: <span class="highlight">100,000</span></p>
-					</div>
-					<div class="status">
-						<p>Status: <span class="highlight">Endangered</span></p>
-					</div>
-					<div class="habitat">
-						<p>Habitat: San Francisco Bay</p>
+					<div class="species-data">
+						<div class="population">
+							<p>Population: <span class="highlight">100,000</span></p>
+						</div>
+						<div class="status">
+							<p>Status: <span class="highlight">Endangered</span></p>
+						</div>
+						<div class="habitat">
+							<p>Habitat: San Francisco Bay</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -555,22 +584,24 @@
 
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="4"></div>
-				<div class="species-data">
-					<h3 class="species-name"><span>Mission Blue butterfly<span></h3>
+				<div class="species-name label">
+					<h3><span>Mission Blue butterfly<span></h3>
 				</div>
 			</div>
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
 					<h2>Mission Blue butterfly blues</h2>
-					<div class="population">
-						<p>Population: <span class="highlight">100,000</span></p>
-					</div>
-					<div class="status">
-						<p>Status: <span class="highlight">Endangered</span></p>
-					</div>
-					<div class="habitat">
-						<p>Habitat: San Francisco Bay</p>
+					<div class="species-data">
+						<div class="population">
+							<p>Population: <span class="highlight">100,000</span></p>
+						</div>
+						<div class="status">
+							<p>Status: <span class="highlight">Endangered</span></p>
+						</div>
+						<div class="habitat">
+							<p>Habitat: San Francisco Bay</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -583,22 +614,24 @@
 
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="5"></div>
-				<div class="species-data">
-					<h3 class="species-name"><span>Livermore tarplant<span></h3>
+				<div class="species-name label">
+					<h3><span>Livermore tarplant<span></h3>
 				</div>
 			</div>
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
 					<h2>Livermore tarplant: A scratch and sniff adventure</h2>
-					<div class="population">
-						<p>Population: <span class="highlight">100,000</span></p>
-					</div>
-					<div class="status">
-						<p>Status: <span class="highlight">Endangered</span></p>
-					</div>
-					<div class="habitat">
-						<p>Habitat: San Francisco Bay</p>
+					<div class="species-data">
+						<div class="population">
+							<p>Population: <span class="highlight">100,000</span></p>
+						</div>
+						<div class="status">
+							<p>Status: <span class="highlight">Endangered</span></p>
+						</div>
+						<div class="habitat">
+							<p>Habitat: San Francisco Bay</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -611,22 +644,24 @@
 
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="6"></div>
-				<div class="species-data">
-					<h3 class="species-name"><span>Plant TBA<span></h3>
+				<div class="species-name label">
+					<h3><span>Plant TBA<span></h3>
 				</div>
 			</div>
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
 					<h2>Plant headline tk tk tk tk tk</h2>
-					<div class="population">
-						<p>Population: <span class="highlight">100,000</span></p>
-					</div>
-					<div class="status">
-						<p>Status: <span class="highlight">Endangered</span></p>
-					</div>
-					<div class="habitat">
-						<p>Habitat: San Francisco Bay</p>
+					<div class="species-data">
+						<div class="population">
+							<p>Population: <span class="highlight">100,000</span></p>
+						</div>
+						<div class="status">
+							<p>Status: <span class="highlight">Endangered</span></p>
+						</div>
+						<div class="habitat">
+							<p>Habitat: San Francisco Bay</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -640,22 +675,24 @@
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 
 			col-xs-12">
 				<div class="box-image blur"  id="7"></div>
-				<div class="species-data">
-					<h3 class="species-name"><span>California sea blite<span></h3>
+				<div class="species-name label">
+					<h3><span>California sea blite<span></h3>
 				</div>
 			</div>
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
 					<h2>But who will love the sea blite?</h2>
-					<div class="population">
-						<p>Population: <span class="highlight">100,000</span></p>
-					</div>
-					<div class="status">
-						<p>Status: <span class="highlight">Endangered</span></p>
-					</div>
-					<div class="habitat">
-						<p>Habitat: San Francisco Bay</p>
+					<div class="species-data">
+						<div class="population">
+							<p>Population: <span class="highlight">100,000</span></p>
+						</div>
+						<div class="status">
+							<p>Status: <span class="highlight">Endangered</span></p>
+						</div>
+						<div class="habitat">
+							<p>Habitat: San Francisco Bay</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -668,22 +705,24 @@
 
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="8"></div>
-				<div class="species-data">
-					<h3 class="species-name"><span>Ant TBA<span></h3>
+				<div class="species-name label">
+					<h3><span>Ant TBA<span></h3>
 				</div>
 			</div>
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
 					<h2>Ant headline tk tk tk tk tk</h2>
-					<div class="population">
-						<p>Population: <span class="highlight">100,000</span></p>
-					</div>
-					<div class="status">
-						<p>Status: <span class="highlight">Endangered</span></p>
-					</div>
-					<div class="habitat">
-						<p>Habitat: San Francisco Bay</p>
+					<div class="species-data">
+						<div class="population">
+							<p>Population: <span class="highlight">100,000</span></p>
+						</div>
+						<div class="status">
+							<p>Status: <span class="highlight">Endangered</span></p>
+						</div>
+						<div class="habitat">
+							<p>Habitat: San Francisco Bay</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -697,22 +736,24 @@
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 
 			col-xs-12">
 				<div class="box-image blur"  id="9"></div>
-				<div class="species-data">
-					<h3 class="species-name"><span>Insect/invert/herp<span></h3>
+				<div class="species-name label">
+					<h3><span>Insect/invert/herp<span></h3>
 				</div>
 			</div>
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
 					<h2>Headline about some sort of invert or snake tk tk</h2>
-					<div class="population">
-						<p>Population: <span class="highlight">100,000</span></p>
-					</div>
-					<div class="status">
-						<p>Status: <span class="highlight">Endangered</span></p>
-					</div>
-					<div class="habitat">
-						<p>Habitat: San Francisco Bay</p>
+					<div class="species-data">
+						<div class="population">
+							<p>Population: <span class="highlight">100,000</span></p>
+						</div>
+						<div class="status">
+							<p>Status: <span class="highlight">Endangered</span></p>
+						</div>
+						<div class="habitat">
+							<p>Habitat: San Francisco Bay</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -731,9 +772,11 @@
 					<p>Arriving: <br />
 						January 2016</p>
 				</div>
-				<!-- <div class="species-data">
-					<h3 class="species-name"><span>San Francisco garter snake<span></h3>
-					<div class="population">
+
+				<!-- class="species-name label" 
+				<h3><span>San Francisco garter snake<span></h3>
+				</div>
+					<div class="p
 						<p>Population: <span class="highlight">100,000</span></p>
 					</div>
 					<div class="status">
@@ -748,15 +791,17 @@
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
-					<h2>A story coming in the future</h2>
-					<div class="population">
-						<p>Population: <span class="highlight">100,000</span></p>
-					</div>
-					<div class="status">
-						<p>Status: <span class="highlight">Endangered</span></p>
-					</div>
-					<div class="habitat">
-						<p>Habitat: San Francisco Bay</p>
+					<h2>San Francisco garter snake coming soon to a garden near you</h2>
+					<div class="species-data">
+						<div class="population">
+							<p>Population: <span class="highlight">100,000</span></p>
+						</div>
+						<div class="status">
+							<p>Status: <span class="highlight">Endangered</span></p>
+						</div>
+						<div class="habitat">
+							<p>Habitat: San Francisco Bay</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -768,15 +813,8 @@
 	</div><!--end bio-boxes-->
 </div><!--end row-->
 
-
-<div id="bn-footer">
-	
-	<ul><li><a href="http://baynature.org/about-us/">About</a></li><li><a href="http://baynature.org/contact/">Contact</a></li><li><a href="http://baynature.org/product/donation-2/">Donate</a></li><li><a href="/product-category/subscriptions-renewals/">Subscribe</a></li><li><a href="http://baynature.org/advertise/">Advertise</a></li><li><a href="http://baynature.org/volunteer-intern/">Volunteer</a></li></ul>
- 
-</div>
-
 <!--svg fallback for glass pane effect-->
-<div class="svg-fallback">
+<!-- <div class="svg-fallback">
 	<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
 	  <defs>
 	    <filter id="blur">
@@ -784,7 +822,15 @@
 	    </filter>
 	  </defs>
 	</svg>
+</div> -->
+
+<div id="bn-footer">
+	
+	<ul><li><a href="http://baynature.org/about-us/">About</a></li><li><a href="http://baynature.org/contact/">Contact</a></li><li><a href="http://baynature.org/product/donation-2/">Donate</a></li><li><a href="/product-category/subscriptions-renewals/">Subscribe</a></li><li><a href="http://baynature.org/advertise/">Advertise</a></li><li><a href="http://baynature.org/volunteer-intern/">Volunteer</a></li></ul>
+ 
 </div>
+
+
 
 <script>
 $(document).ready(function() {
