@@ -7,9 +7,13 @@
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/jquery.c2selectbox.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	<!--<link href="/bn-biodiversity/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/bn-biodiversity/css/bootstrap.min.css" rel="stylesheet">
     <script src="/bn-biodiversity/js/jquery.min.js"></script>
-    <script src="/bn-biodiversity/js/bootstrap.min.js"></script>-->
+    <script src="/bn-biodiversity/js/bootstrap.min.js"></script>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -27,6 +31,9 @@
 	<!--libre baskerville font-->
 	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
 
+	<!-- PROJECT CSS FILE -->
+	<link rel="stylesheet" href="/css/biodiversity-stylesheet.css">
+
 <meta charset="utf-8"> 
 <meta name="viewport" content="initial-scale=1">
 <meta property="og:title" content="The Weird, the Rare and the Ugly"/>
@@ -38,377 +45,11 @@
 
 <link rel="shortcut icon" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/images/favicon.ico"/>
 
-	<style>
-		@viewport{
-		    zoom: 1.0;
-		    width: extend-to-zoom;
-		}
-		@-ms-viewport{
-		    width: extend-to-zoom;
-		    zoom: 1.0;
-		}
-		.row {
-			margin: 0;
-		}
-		.home.page #header {
-			min-height: 100px;
-			position: inherit;
-		}
-		.home.page #main {
-			margin: 0 0 0 0;
-			position: inherit;
-		}
 
-		/**************************
-		
-		    LANDING PAGE CSS
-
-		***************************/
-
-		h1 {
-			text-transform: uppercase;
-			clear: both;
-		    color: black;
-		    font-family: "Open Sans",sans-serif;
-		    font-size: 42px;
-		    font-weight: 700;
-		    line-height: 42px;
-		    /*color:black;
-		    font-weight:100;*/
-		    margin: 15px auto 30px auto;
-		}
-		.bn-sharebuttons {
-			margin: 0 auto;
-			float: none;
-			text-align: center;
-		}
-		.bn-sharebuttons a {
-			color: black;
-		}
-		.intro-text {
-			text-align: center;
-		}
-		.subhead {
-			margin-bottom: 30px;
-			font-family: "Libre Baskerville", serif;
-			font-weight: 100;
-		}
-		.bio-box {
-			/* need: width, margin, border, position: absolute; blur effect?*/
-			width: calc(50% - 16px);
-			margin: 0 15px 15px 0;
-		    border: 1px #ccc outset;
-		    position:relative;
-		    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-		}
-		.blur {
-			-webkit-filter: blur(1px);
-		    -moz-filter: blur(1px);
-		    -o-filter: blur(1px);
-		    -ms-filter: blur(1px);
-		    filter: blur(1px);
-		    /* Fallback to SVG filters */
-			filter: url('#blur');
-		    opacity: .8;
-		    -webkit-transition: none;
-		    -moz-transition: none;
-		    -ms-transition: none;
-		    -o-transition: none;
-		    transition: none;
-		}
-		.blur:hover {
-		    /*border: 1px white solid;*/
-		    -webkit-filter: blur(0px); 
-		    -moz-filter: blur(0px); 
-		    -o-filter: blur(0px); 
-		    -ms-filter: blur(0px); 
-		    filter: blur(0px); 
-		    opacity: 1;		    
-		    -webkit-transition: all 0.3s ease-out;
-		    -moz-transition: all 0.3s ease-out;
-		    -ms-transition: all 0.3s ease-out;
-		    -o-transition: all 0.3s ease-out;
-		    transition: all 0.3s ease-out;
-    	}
-		.box-image {
-			/*need: padding-top:100%; background image, */
-			padding-top: 100%;
-			width:100%;
-			background-image: url("http://racheldiazbastin.com/wp-content/gallery/birds/quail-etsy.jpg");
-		    background-size: 100%;
-		    background-repeat: no-repeat;
-		}
-		.species-data {
-		    position: absolute;
-		    text-align: right;
-		    width:95%;
-		    bottom: 0;
-		    right: 0;
-		    left:0;
-		    /*padding: 50% 5% 5% 0;*/
-		}
-		.species-data h3 {
-			color: black;
-			font-size: 30px;
-			line-height: 25px;
-		}
-		.species-data p {
-			font-size: 20px;
-			line-height: 20px;
-			font-weight: 300;
-		}
-		.highlight {
-			padding: 0 3px;
-			background-color: red;
-			color: white;
-		}
-
-		.clear {
-			clear:both;
-		}
-
-		/**************************
-		
-		    ARTICLE PAGE CSS
-
-		***************************/
-		.bn-sharebuttons-article {
-			margin: 5px 0;
-			padding: 0;
-			float: left;
-			text-align: left;
-		}
-		.section-header {
-			margin-top: 35px;
-			margin-right: 100px;
-		}
-		.headline-info h2 {
-			font-family: "Libre Baskerville", serif;
-		    font-size: 26px;
-		    font-style: italic;
-		    line-height: 32px;
-		    color: #8c8c8c;
-		    margin: 35px 0 15px;
-		}
-		p {
-			font-family: "Libre Baskerville", serif;
-		}
-		.story p {
-			width: 650px;
-			margin-left: 8.333333333333332%;
-			font-size: 18px;
-			line-height: 31px;
-		}
-		.dropcap {
-			color: black;
-		    font-size: 124px;
-		    font-weight: 800;
-		    float: left;
-		    line-height: .75;
-		    margin: 10px 0px 0;
-		    padding: 0 5px 0;
-		}
-		.museum-card {
-			border: 1px solid #d3d3d3;
-			padding-top: 15px;
-		}
-		.museum-card h2 {
-			color: black;
-			font-size: 42px;
-			font-weight: 100;
-			text-transform: uppercase;
-			text-align: center;
-			position: relative;
-		}
-		.museum-card h2:after {
-			position:absolute;
-			left:0;
-			bottom:0;
-			width:100%;
-			height:1px;
-			border-bottom:1px solid #000;
-			content:"";
-		}
-		.card-info p {
-			font-weight: bold;
-		}
-		.card-info span {
-			font-weight: normal;
-		}
-		.spacer {
-			padding-top: calc(100% - 31px);
-		}
-		.big {
-			width: 100%;
-			margin: 15px 0 15px 0;
-		}
-		.fullscreen {
-			width: 100%;
-			margin: 15px 0 15px 0;
-			padding: 0;	
-			position: relative;		
-		}
-		.photo-quote {
-			position: absolute;
-		}
-		#quote-one {
-		    top: 10%;
-		    left: 5%;
-		    font-size: 40px;		
-		}
-		.right {
-			float:right;
-		    margin: 15px 0 15px 25px;
-		}
-		figcaption {
-			font-size: 14px;
-			font-family: "Open Sans", sans-serif;
-		    line-height: 19px;
-		    padding: 0 4px 5px;
-		    margin: 0;
-		}
-
-		/**************************
-			RESPONSIVE EMBEDS
-		*************************/
-		.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
-		.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
-
-		/*MEDIA QUERIES*/
-		@media (min-width: 1200px){
-			.bio-box {
-				/*min-height: 383.3px;*/
-				/*padding-top: 33%;*/
-			}
-			.story p {
-				width: 650px;
-				margin-left: 8.333333333333332%;
-			}
-		}
-		@media (max-width: 1150px){
-			.story p {
-				width: 650px;
-				margin-left: 8.333333333333332%;
-			}
-		}
-
-
-		@media (max-width: 940px){
-			.bio-box {
-				/*max-height: 470px;*/
-			}
-			.story p {
-				width: 600px;
-				margin-left: 0;
-			}
-		}
-		@media (max-width: 768px){
-			.museum-card {
-				width: 50%;
-				padding-top: 0;
-			}
-			.spacer {
-    			padding-top: 0;
-			}
-			.story p {
-				width: 600px;
-				margin-left: 0;
-			}
-			.big {
-				padding: 0;
-			}
-			.big img {
-				max-width: 100%;
-			}
-		}
-
-		@media (max-width: 629px){
-			.bio-box {
-				width: 100%;
-				/*padding-top: 100%;*/
-			}
-			.museum-card {
-				width: 100%;
-			}
-
-			.species-data h3{
-				font-size: 28px;
-			}
-			.species-data p {
-				font-size: 18px;
-			}
-			.spacer {
-				padding-top: 10%;
-			}
-			.story p {
-				width: 100%;
-				margin: 0;
-			}
-			.big {
-				padding: 0;
-			}
-			.big img{
-				max-width: 100%;
-			}
-			.right {
-				padding: 0;
-			}
-		}
-
-		@media (max-width: 400px){
-			.bio-box {
-				width: 100%;
-				/*min-height: 400px;*/
-			}
-			.museum-card {
-				width: 100%;
-			}
-			.story p {
-				width: 100%;
-				margin: 0;
-			}
-			.spacer {
-				padding-top: 25%;
-			}
-			.big {
-				padding: 0;
-			}
-			.big img{
-				max-width: 100%;
-			}
-			.right {
-				padding: 0;
-			}
-
-		}
-
-	</style>
 </head>
-<body class="home page page-id-4 page-template-default home-page tribe-theme-bay-nature-responsive">
+<body>
 
-	<div id="header">
-		<a href="http://baynature.org" title="Bay Nature"><h1 id="logo">
-			<img src=https://baynature.org/wp-content/uploads/2012/05/BNLogo_0521_gold_536.png>
-		</h1> </a>
-		<div id="navigation">
-			<ul id="menu-main-menu" class="menu"><li id="menu-item-99175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99175"><a href="http://baynature.org/nature-news/">Nature News</a></li>
-			<li id="menu-item-98003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98003"><a href="/product-category/issues/">Magazine</a></li>
-			<li id="menu-item-54200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54200"><a href="http://baynature.org/about-us/">About</a></li>
-			<li id="menu-item-97970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97970"><a href="http://baynature.org/explore/">Explore</a></li>
-			<li id="menu-item-97971" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97971"><a href="/product-category/subscriptions-renewals/">Subscribe</a></li>
-			<li id="menu-item-97972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97972"><a href="/product/donation-2/">Donate</a></li>
-			</ul>
-		</div>
-		<div class="social-media-icons">
-			<ul>
-			<li class="twitter"><a href="http://twitter.com/#!/baynature" target="_blank">&nbsp;</a></li>
-			<li class="pinterest"><a href="http://pinterest.com/baynature/" target="_blank">&nbsp;</a></li>
-			<li class="facebook"><a href="http://www.facebook.com/BayNature" target="_blank">&nbsp;</a></li>
-			</ul>
-		</div>
-	</div><!--header-->
-
+<header>
 	<div class="row">
 
 		<div class="section-header col-sm-10 col-sm-offset-1 col-xs-12">
@@ -433,10 +74,13 @@
 			</div>
 
 			<div class="bio-box col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<div class="box-image" ></div>
+				<figure>
+					<img src="http://racheldiazbastin.com/wp-content/gallery/birds/quail-etsy.jpg" />
+				</figure>
+
 			</div>
 
-			<div class="museum-card col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<div class="museum-card col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
 				<h2 class="col-sm-8 col-sm-offset-2">Greater sage grouse</h2>
 
@@ -445,11 +89,14 @@
 					<p>Population: <span>10,000</span></p>
 					<p>Protection status: <span>Endangered</span></p>
 				</div>
-				<div class="spacer"></div>
+				<!-- <div class="spacer"></div> -->
 			</div>
+		</div>
+	</div>
+</header>
 
-		</div>	
-
+<article>
+	<div class="row">
 		<div class="article col-sm-10 col-sm-offset-1 col-xs-12">
 
 			<div class="headline-info">
@@ -503,11 +150,11 @@
 			</div>
 		</div>
 
-		<figure class="fullscreen col-sm-12">
+		<figure class="giant col-sm-12">
 			<img src="https://baynature.atavist.com/data/files/organization/9410/image/raw/biologists-1429644365-89.jpg" />
 			<figcaption>
 			Katrina Krause and Thad Heater, on the hunt for sage grouse.
-			<figcaption>
+			</figcaption>
 
 			<div class="photo-quote" id="quote-one">
 				“Thought it was a grouse, but it was just a rock.”
@@ -519,58 +166,9 @@
 
 		</div>
 
-		</div>
-
-
-
 	</div>
+</article>
 
-<div id="bn-footer">
-	
-	<ul><li><a href="http://baynature.org/about-us/">About</a></li><li><a href="http://baynature.org/contact/">Contact</a></li><li><a href="http://baynature.org/product/donation-2/">Donate</a></li><li><a href="/product-category/subscriptions-renewals/">Subscribe</a></li><li><a href="http://baynature.org/advertise/">Advertise</a></li><li><a href="http://baynature.org/volunteer-intern/">Volunteer</a></li></ul>
- 
-</div>
-
-<!--svg fallback for glass pane effect-->
-<!-- <div class="svg-fallback">
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-	  <defs>
-	    <filter id="blur">
-	      <feGaussianBlur stdDeviation="5" />
-	    </filter>
-	  </defs>
-	</svg>
-</div> -->
-
-<script>
-$(document).ready(function() {
-
-	var boxID = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ];
-
-	var imageURL = [
-		'http://racheldiazbastin.com/wp-content/gallery/fish/stickleback-web.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/birds/nf8x10kestreletsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/birds/quail-etsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/insects/etsy_buprestis-aurulenta.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/plants/darwinmoth-etsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/plants/flower-paradise-etsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/plants/pickleweed-web.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/insects/longhornbeetleetsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/insects/etsy_sternotomis-mirabilis.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/reptiles/geckoetsy.jpg'
-	];
-
-	for (i = 0; i < boxID.length; i++) { 
-    
-    document.getElementById(boxID[i]).style.backgroundImage = "url('" + imageURL[i] + "')";
-	
-	}
-
-	// $('.bio-box').click(function(){
-	// 	$(this).addClass('boom');
-	// });
-})
-</script>
 </body>
 
 </html>

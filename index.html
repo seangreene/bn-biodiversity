@@ -1,6 +1,18 @@
 <html>
 <head>
 	<title>The weird, the rare and the ugly</title>
+
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="initial-scale=1">
+	<meta property="og:title" content="The Weird, the Rare and the Ugly"/>
+	<meta property="og:description" content="Connect to the natural world of the SF Bay Area! We bring you trail and park reviews and photos, local nature journalism, and local nature event listings."/>
+	<meta property="og:url" content="http://baynature.org/"/>
+	<meta property="og:site_name" content="Bay Nature"/>
+	<meta property="fb:admins" content="1403244759"/>
+	<meta property="og:image" content="https://baynature.org/wp-content/uploads/2012/08/baynature-Orange-logo-150px.jpg"/>
+
+	<link rel="shortcut icon" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/images/favicon.ico"/>
+
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/css/baynature.scss" type="text/css" media="screen, projection"/>
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/style.css?1435006863" type="text/css" media="screen, projection"/>
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/style-print.css" type="text/css" media="print"/>
@@ -11,286 +23,25 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	
+
+	<!-- PROJECT CSS FILE -->
+	<link rel="stylesheet" href="/css/biodiversity-stylesheet.css">
+
+
     <!--open sans headline font -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<!--libre baskerville font-->
 	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
-
-<meta charset="utf-8"> 
-<meta name="viewport" content="initial-scale=1">
-<meta property="og:title" content="The Weird, the Rare and the Ugly"/>
-<meta property="og:description" content="Connect to the natural world of the SF Bay Area! We bring you trail and park reviews and photos, local nature journalism, and local nature event listings."/>
-<meta property="og:url" content="http://baynature.org/"/>
-<meta property="og:site_name" content="Bay Nature"/>
-<meta property="fb:admins" content="1403244759"/>
-<meta property="og:image" content="https://baynature.org/wp-content/uploads/2012/08/baynature-Orange-logo-150px.jpg"/>
-
-<link rel="shortcut icon" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/images/favicon.ico"/>
-
-	<style>
-		@viewport{
-		    zoom: 1.0;
-		    width: extend-to-zoom;
-		}
-		@-ms-viewport{
-		    width: extend-to-zoom;
-		    zoom: 1.0;
-		}
-		.row {
-			margin: 0;
-		}
-		.home.page #header {
-			min-height: 100px;
-			position: inherit;
-		}
-		.home.page #main {
-			margin: 0 0 0 0;
-			position: inherit;
-		}
-		h1 {
-			text-transform: uppercase;
-			clear: both;
-		    color: black;
-		    font-family: "Open Sans", sans-serif;
-		    font-size: 50px;
-		    font-weight: 700;
-		    line-height: 55px;
-		    /*color:black;
-		    font-weight:100;*/
-		    margin: 0 auto 30px auto;
-		    text-align: center;
-		}
-		h2 {
-			font-family: "Open Sans", sans-serif;
-			font-size: 30px;
-		}
-		p {
-			font-family: "Libre Baskerville", serif;
-			font-size: 16px;
-		}
-		.bn-sharebuttons {
-			margin: 0 auto 10px;
-			float: none;
-			text-align: center;
-		}
-		.bn-sharebuttons a {
-			color: black;
-		}
-		.intro-text {
-			text-align: center;
-		}
-		.subhead {
-			margin-bottom: 30px;
-			font-weight: 100;
-			text-align: center;
-			font-family: "Libre Baskerville", serif;
-		}
-		.story-container {
-			margin-top: 35px;
-		}
-		.bio-box {
-		    border: 1px #ccc outset;
-		    position:relative;
-		    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-		}
-		a .bio-box {
-			color: black;
-		}
-		.blur {
-			-webkit-filter: blur(2px);
-		    -moz-filter: blur(2px);
-		    -o-filter: blur(2px);
-		    -ms-filter: blur(2px);
-		    filter: blur(2px);
-		    /* Fallback to SVG filters */
-			/*filter: url('#blur');*/
-		    opacity: .8;
-		    -webkit-transition: none;
-		    -moz-transition: none;
-		    -ms-transition: none;
-		    -o-transition: none;
-		    transition: none;
-		}
-		.bio-box:hover {
-			cursor: pointer;
-		}
-		.bio-box:hover .blur{
-		    -webkit-filter: blur(0px); 
-		    -moz-filter: blur(0px); 
-		    -o-filter: blur(0px); 
-		    -ms-filter: blur(0px); 
-		    filter: blur(0px); 
-		    opacity: 1;		    
-		    -webkit-transition: all 0.3s ease-out;
-		    -moz-transition: all 0.3s ease-out;
-		    -ms-transition: all 0.3s ease-out;
-		    -o-transition: all 0.3s ease-out;
-		    transition: all 0.3s ease-out;
-    	}
-		.box-image {
-			/*need: padding-top:100%; background image, */
-			padding-top: 100%;
-			width:100%;
-			/*background-image: url("filler.jpg");*/
-		    background-size: 100%;
-		    background-repeat: no-repeat;
-		}
-		.species-data {
-			margin-left: 15px;
-		    /*position: absolute;
-		    text-align: right;
-		    width:95%;
-		    bottom: 0;
-		    right: 0;
-		    left:0;*/
-		    /*padding: 50% 5% 5% 0;*/
-		}
-/*		.species-data h3 {
-			color: black;
-			font-size: 30px;
-			line-height: 25px;
-		}*/
-
-		.species-name {
-		    position: absolute;
-		    text-align: right;
-		    width:95%;
-		    bottom: 0;
-		    right: 0;
-		    left:0;
-		}
-		.species-name h3 {
-			font-family: serif;
-			font-size: 20px;
-			line-height: 25px;
-			text-transform: lowercase;
-		}
-		.label h3 {
-			padding: 3px;
-			border: 1px solid #999;
-			border-bottom-color: #000;
-			display: inline-block;
-			color: #fff;
-			font-family: monospace;
-			font-size: 16px;
-			letter-spacing: .5em;
-			text-shadow:
-	    		/*top*/   0 -1px 1px #aaa,
-	    		/*right*/ 1px 0 1px #aaa,
-	    		/*bottom*/ 0 1px 0 #666,
-	    		/*left*/ -1px 0 1px #aaa;
-			background-color: #333;
-			background-image: linear-gradient(#444, #333);
-			box-shadow: 0 1px 1px #ccc;
-		}
-/*		.species-data p {
-			font-size: 20px;
-			line-height: 20px;
-			font-weight: 300;
-		}*/
-		.highlight {
-			padding: 0 3px;
-			background-color: red;
-			color: white;
-		}
-		.coming-soon {
-		    position: absolute;
-		    text-align: center;
-		    top: 0;
-		    right: 0;
-		    left: 0;
-		    bottom: 0;
-		    margin: auto;
-		    height: 25px;
-		}
-		.coming-soon p {
-			font-size: 16px;
-			font-family: serif;
-			text-transform: lowercase;
-			line-height: 21px;
-
-			border: 1px solid #d3d3d3;
-			background-color: #ebebeb;
-			width: 50%;
-			margin: 0 auto;
-		}
-		.story-info {
-			padding-top: 10%;
-			padding-left: 25px;
-		}
-		.clear {
-			clear:both;
-		}
-
-
-		/*MEDIA QUERIES*/
-		@media (min-width: 1200px){
-			.bio-box {
-				/*min-height: 383.3px;*/
-				/*padding-top: 33%;*/
-			}
-
-		}
-		@media (max-width: 1150px){
-
-		}
-
-
-		@media (max-width: 940px){
-			.bio-box {
-				/*max-height: 470px;*/
-			}
-
-		}
-
-		@media (max-width: 629px){
-			.bio-box {
-				/*width: calc(50% - 16px);*/
-				/*padding-top: 100%;*/
-				width: 100%;
-			}
-			.story-info {
-				width: 100%;
-				padding: 0;
-				margin-bottom: 25px;
-			}
-			.species-data h3{
-				font-size: 20px;
-			}
-			.species-data p {
-				font-size: 18px;
-			}
-		}
-
-		@media (max-width: 400px){
-			h1 {
-				font-size: 36px;
-				line-height: 40px;
-			}
-			.bio-box {
-				width: 100%;
-				/*min-height: 400px;*/
-			}
-			.species-name h3  {
-				font-size: 14px;
-			}
-			.story-info {
-				width: 100%;
-				padding: 0;
-				margin-bottom: 25px;
-			}
-
-		}
-
-	</style>
+	
 </head>
-<body class="home page page-id-4 page-template-default home-page tribe-theme-bay-nature-responsive">
+
+<body>
 
 	<div id="header">
-		<a href="http://baynature.org" title="Bay Nature"><h1 id="logo">
-			<img src=https://baynature.org/wp-content/uploads/2012/05/BNLogo_0521_gold_536.png>
-		</h1> </a>
-		<div id="navigation">
+		<div id="logo">
+			 <a href="http://baynature.org" title="Bay Nature"><img src=https://baynature.org/wp-content/uploads/2012/05/BNLogo_0521_gold_536.png></a>
+		</div> 
+		<!-- <div id="navigation">
 
 			<ul id="menu-main-menu" class="menu"><li id="menu-item-99175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99175"><a href="http://baynature.org/nature-news/">Nature News</a></li>
 			<li id="menu-item-98003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98003"><a href="/product-category/issues/">Magazine</a></li>
@@ -306,11 +57,11 @@
 			<li class="pinterest"><a href="http://pinterest.com/baynature/" target="_blank">&nbsp;</a></li>
 			<li class="facebook"><a href="http://www.facebook.com/BayNature" target="_blank">&nbsp;</a></li>
 			</ul>
-		</div>
+		</div> -->
 	</div><!--header-->
 
 	<div class="row">
-		<div class="into-text col-sm-10 col-sm-offset-1 col-xs-12">
+		<div class="intro-text col-sm-10 col-sm-offset-1 col-xs-12">
 
 			<div class="bn-sharebuttons">
 				<a href="https://twitter.com/share?url=http://seangreene.github.io/bn-biodiversity&amp;text=The%20Weird,%20the%20Rare%20and%20the%20Ugly%20via@BayNature&amp;hashtags=biodiversity" target="_blank" class="btn btn-social-icon btn-twitter">
@@ -337,163 +88,16 @@
 		</div>
 	</div>
 
-<!-- 	<div class="row">
+<div class="row" id="scroll">
 
-    <style media="screen">
-
-    .wrap {
-      width: 200px;
-      height: 200px;
-      position: relative;
-      margin: 0 auto 40px;
-      border: 1px solid #CCC;
-      -webkit-perspective: 1000px;
-         -moz-perspective: 1000px;
-           -o-perspective: 1000px;
-              perspective: 1000px;
-    }
-
-    #cube {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      -webkit-transform-style: preserve-3d;
-         -moz-transform-style: preserve-3d;
-           -o-transform-style: preserve-3d;
-              transform-style: preserve-3d;
-      -webkit-transition: -webkit-transform 1s;
-         -moz-transition: -moz-transform 1s;
-           -o-transition: -o-transform 1s;
-              transition: transform 1s;
-    }
-
-    #cube figure {
-      display: block;
-      position: absolute;
-      width: 196px;
-      height: 196px;
-      border: 2px solid black;
-      line-height: 196px;
-      font-size: 120px;
-      font-weight: bold;
-      color: white;
-      text-align: center;
-    }
-
-    #cube.panels-backface-invisible figure {
-      -webkit-backface-visibility: hidden;
-         -moz-backface-visibility: hidden;
-           -o-backface-visibility: hidden;
-              backface-visibility: hidden;
-    }
-
-    #cube .front  {
-      -webkit-transform: translateZ( 100px );
-         -moz-transform: translateZ( 100px );
-           -o-transform: translateZ( 100px );
-              transform: translateZ( 100px );
-    }
-    #cube .back   {
-      -webkit-transform: rotateX( -180deg ) translateZ( 100px );
-         -moz-transform: rotateX( -180deg ) translateZ( 100px );
-           -o-transform: rotateX( -180deg ) translateZ( 100px );
-              transform: rotateX( -180deg ) translateZ( 100px );
-    }
-    #cube .right {
-      -webkit-transform: rotateY(   90deg ) translateZ( 100px );
-         -moz-transform: rotateY(   90deg ) translateZ( 100px );
-           -o-transform: rotateY(   90deg ) translateZ( 100px );
-              transform: rotateY(   90deg ) translateZ( 100px );
-    }
-    #cube .left {
-      -webkit-transform: rotateY(  -90deg ) translateZ( 100px );
-         -moz-transform: rotateY(  -90deg ) translateZ( 100px );
-           -o-transform: rotateY(  -90deg ) translateZ( 100px );
-              transform: rotateY(  -90deg ) translateZ( 100px );
-    }
-    #cube .top {
-      -webkit-transform: rotateX(   90deg ) translateZ( 100px );
-         -moz-transform: rotateX(   90deg ) translateZ( 100px );
-           -o-transform: rotateX(   90deg ) translateZ( 100px );
-              transform: rotateX(   90deg ) translateZ( 100px );
-    }
-    #cube .bottom {
-      -webkit-transform: rotateX(  -90deg ) translateZ( 100px );
-         -moz-transform: rotateX(  -90deg ) translateZ( 100px );
-           -o-transform: rotateX(  -90deg ) translateZ( 100px );
-              transform: rotateX(  -90deg ) translateZ( 100px );
-    }
-
-    #cube.show-front {
-      -webkit-transform: translateZ( -100px );
-         -moz-transform: translateZ( -100px );
-           -o-transform: translateZ( -100px );
-              transform: translateZ( -100px );
-    }
-    #cube.show-back {
-      -webkit-transform: translateZ( -100px ) rotateX( -180deg );
-         -moz-transform: translateZ( -100px ) rotateX( -180deg );
-           -o-transform: translateZ( -100px ) rotateX( -180deg );
-              transform: translateZ( -100px ) rotateX( -180deg );
-    }
-    #cube.show-right {
-      -webkit-transform: translateZ( -100px ) rotateY(  -90deg );
-         -moz-transform: translateZ( -100px ) rotateY(  -90deg );
-           -o-transform: translateZ( -100px ) rotateY(  -90deg );
-              transform: translateZ( -100px ) rotateY(  -90deg );
-    }
-    #cube.show-left {
-      -webkit-transform: translateZ( -100px ) rotateY(   90deg );
-         -moz-transform: translateZ( -100px ) rotateY(   90deg );
-           -o-transform: translateZ( -100px ) rotateY(   90deg );
-              transform: translateZ( -100px ) rotateY(   90deg );
-    }
-    #cube.show-top {
-      -webkit-transform: translateZ( -100px ) rotateX(  -90deg );
-         -moz-transform: translateZ( -100px ) rotateX(  -90deg );
-           -o-transform: translateZ( -100px ) rotateX(  -90deg );
-              transform: translateZ( -100px ) rotateX(  -90deg );
-    }
-    #cube.show-bottom {
-      -webkit-transform: translateZ( -100px ) rotateX(   90deg );
-         -moz-transform: translateZ( -100px ) rotateX(   90deg );
-           -o-transform: translateZ( -100px ) rotateX(   90deg );
-              transform: translateZ( -100px ) rotateX(   90deg );
-    }
-
-  </style>
-
-  <section class="wrap">
-    <div id="cube" class="show-front">
-      <figure class="front blur"></figure>
-      <figure class="back" style="background-image: url(http://racheldiazbastin.com/wp-content/gallery/fish/stickleback-web.jpg); background-size: cover;">></figure>
-      <figure class="right"></figure>
-      <figure class="left"></figure>
-      <figure class="top"></figure>
-      <figure class="bottom"></figure>
-    </div>
-  </section>
-
-
-
-
-
-
-
-	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-	
-	</div> -->
-
-<div class="row">
-
-	<div class="bio-boxes col-sm-10 col-sm-offset-1 col-xs-12">
+	<div id="stories" class="bio-boxes col-sm-10 col-sm-offset-1 col-xs-12">
 
 		<div class="story-container">
 			
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="1"></div>
 				<div class="species-name label">
-					<h3><span>Galapagos damselfish<span></h3>
+					<h3>Galapagos damselfish</h3>
 				</div>
 			</div>
 
@@ -523,7 +127,7 @@
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="2"></div>
 				<div class="species-name label">
-					<h3><span>Marsh chicken<span></h3>
+					<h3>Marsh chicken</h3>
 				</div>
 			</div>							
 
@@ -548,16 +152,14 @@
 
 		<div class="clear"></div>
 
-		<div class="story-container">
+		<div id="sage-grouse" class="story-container">
 
-			<a href="/bn-biodiversity/stories/sage-grouse">
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
-				<div class="box-image blur"  id="3"></div>
+				<div class="box-image blur" id="3"></div>
 				<div class="species-name label">
-					<h3><span>Greater sage grouse<span></h3>
+					<h3>Greater sage grouse</h3>
 				</div>
 			</div>
-			</a>
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
@@ -585,7 +187,7 @@
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="4"></div>
 				<div class="species-name label">
-					<h3><span>Mission Blue butterfly<span></h3>
+					<h3>Mission Blue butterfly</h3>
 				</div>
 			</div>
 
@@ -615,7 +217,7 @@
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="5"></div>
 				<div class="species-name label">
-					<h3><span>Livermore tarplant<span></h3>
+					<h3>Livermore tarplant</h3>
 				</div>
 			</div>
 
@@ -645,7 +247,7 @@
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="6"></div>
 				<div class="species-name label">
-					<h3><span>Plant TBA<span></h3>
+					<h3>Plant TBA</h3>
 				</div>
 			</div>
 
@@ -676,7 +278,7 @@
 			col-xs-12">
 				<div class="box-image blur"  id="7"></div>
 				<div class="species-name label">
-					<h3><span>California sea blite<span></h3>
+					<h3>California sea blite</h3>
 				</div>
 			</div>
 
@@ -706,7 +308,7 @@
 			<div class="bio-box col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="box-image blur"  id="8"></div>
 				<div class="species-name label">
-					<h3><span>Ant TBA<span></h3>
+					<h3>Ant TBA</h3>
 				</div>
 			</div>
 
@@ -737,7 +339,7 @@
 			col-xs-12">
 				<div class="box-image blur"  id="9"></div>
 				<div class="species-name label">
-					<h3><span>Insect/invert/herp<span></h3>
+					<h3>Insect/invert/herp</h3>
 				</div>
 			</div>
 
@@ -774,7 +376,7 @@
 				</div>
 
 				<!-- class="species-name label" 
-				<h3><span>San Francisco garter snake<span></h3>
+				<h3>San Francisco garter snake</h3>
 				</div>
 					<div class="p
 						<p>Population: <span class="highlight">100,000</span></p>
@@ -811,6 +413,8 @@
 		<div class="clear"></div>
 
 	</div><!--end bio-boxes-->
+
+	<div id="newArticle" class="row"></div>
 </div><!--end row-->
 
 <!--svg fallback for glass pane effect-->
@@ -824,16 +428,15 @@
 	</svg>
 </div> -->
 
-<div id="bn-footer">
-	
-	<ul><li><a href="http://baynature.org/about-us/">About</a></li><li><a href="http://baynature.org/contact/">Contact</a></li><li><a href="http://baynature.org/product/donation-2/">Donate</a></li><li><a href="/product-category/subscriptions-renewals/">Subscribe</a></li><li><a href="http://baynature.org/advertise/">Advertise</a></li><li><a href="http://baynature.org/volunteer-intern/">Volunteer</a></li></ul>
- 
-</div>
-
-
 
 <script>
 $(document).ready(function() {
+
+	var speciesName = [	
+
+		'Galapagos damselfish', 'Clapper rail', 'Greater sage grouse', 'Mission Blue butterfly', 'Livermore tarplant', 'Plant tk', 'California sea blite', 'Ant tk', 'insect / herp / invertebrate', 'San Francisco garter snake'
+
+	];
 
 	var boxID = [	'1',
 					'2',
@@ -860,19 +463,83 @@ $(document).ready(function() {
 		//'http://racheldiazbastin.com/wp-content/gallery/reptiles/geckoetsy.jpg'
 	];
 
+	//loop to add background images
 	for (i = 0; i < boxID.length; i++) { 
     
     document.getElementById(boxID[i]).style.backgroundImage = "url('" + imageURL[i] + "')";
 	};
 
+	//blur  and unblur boxes on hover
 	$('.bio-box').hover(function () {
 	    jQuery(this).find('.box-image').removeClass('blur');
 	}, function () {
 	    jQuery(this).find('.box-image').addClass('blur');
 	});
 
+	$('.bio-box .blur').hover(function(){
+		$(this).css("cursor","pointer");
+	});
+	$('.label').hover(function(){
+		$(this).css("cursor","pointer");
+	});
+
+	//load new story on click
+	$('.bio-box').on("click", function(){
+
+		//resize story boxes to fit in the new navigation
+		//create the navigation class
+		$('.bio-box').animate({'width':'100%'}, {duration:300})
+		$('.story-info')
+		// .animate(
+		// 	{'float': 'right'},
+		//     {'width': '8.33333332%'},
+		//     {'position': 'absolute'},
+		//     {'padding': 0},
+		//     {'margin-right': '25px'},
+		//     {'top': 0},
+		//     {'right': 0},
+		// 	{duration:300}
+		// 	)
+		.addClass('story-info-nav-items').removeClass('story-info')
+		.animate({'width':'100%'}, {duration:300})
+		$('#stories').animate( {duration:300}).addClass('story-info-nav')
+		//add project title to the navigation. when you click it, it refreshes the page to go back to the home page
+		$('.story-info-nav').prepend('<h2 class="nav-head"><a href="/">The Weird, the Rare and the Ugly</a></h2>')
+		$('.story-hed h2').each(function(i){
+			$(this).html(speciesName[i])
+		});
+
+		//getting rid of things we don't need in the navigation
+		$('.label').css({'display':'none'})
+		$('.species-data').css({'display':'none'})
+		$('.coming-soon').css({'display':'none'})
+
+	});
+
+	$('#sage-grouse').on("click", function(){
+		//replace headline and article sections with new story content		
+		$('.intro-text').load("/stories/sage-grouse/index.html header");
+        $("#newArticle").load("/stories/sage-grouse/index.html article");
+        //scroll to top of page
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+	})
+    //modifies URL?
+	function ChangeUrl(title, url) {
+	    if (typeof (history.pushState) != "undefined") {
+	        var obj = { Title: 'Sage Grouse', Url: '/stories/sage-grouse' };
+	        history.pushState(obj, obj.Title, obj.Url);
+	    } else {
+	        alert("Browser does not support HTML5.");
+	    }
+	}
+    $(function () {
+        $("#sage-grouse").click(function () {
+            ChangeUrl('Sage Grouse', '/stories/sage-grouse');
+        });
+    });
 })
 </script>
 </body>
-
+</html>
 </html>
