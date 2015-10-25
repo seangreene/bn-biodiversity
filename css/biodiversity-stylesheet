@@ -1,0 +1,349 @@
+<style>
+	@viewport{
+	    zoom: 1.0;
+	    width: extend-to-zoom;
+	}
+	@-ms-viewport{
+	    width: extend-to-zoom;
+	    zoom: 1.0;
+	}
+	.article {
+		margin-bottom: 50px;
+	}
+	.row {
+		margin: 0;
+	}
+	.home.page #header {
+		min-height: 100px;
+		position: inherit;
+	}
+	.home.page #main {
+		margin: 0 0 0 0;
+		position: inherit;
+	}
+
+	/**************************
+	
+	    LANDING PAGE CSS
+
+	***************************/
+
+	h1 {
+		text-transform: uppercase;
+		clear: both;
+	    color: black;
+	    font-family: "Open Sans",sans-serif;
+	    font-size: 42px;
+	    font-weight: 700;
+	    line-height: 42px;
+	    /*color:black;
+	    font-weight:100;*/
+	    margin: 15px auto 30px auto;
+	}
+	.bn-sharebuttons {
+		margin: 0 auto;
+		float: none;
+		text-align: center;
+	}
+	.bn-sharebuttons a {
+		color: black;
+	}
+	.intro-text {
+		text-align: center;
+	}
+	.subhead {
+		margin-bottom: 30px;
+		font-family: "Libre Baskerville", serif;
+		font-weight: 100;
+	}
+	.bio-box {
+		/* need: width, margin, border, position: absolute; blur effect?*/
+		width: calc(50% - 16px);
+		margin: 0 15px 15px 0;
+	    border: 1px #ccc outset;
+	    position:relative;
+	    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	}
+	.blur {
+		-webkit-filter: blur(1px);
+	    -moz-filter: blur(1px);
+	    -o-filter: blur(1px);
+	    -ms-filter: blur(1px);
+	    filter: blur(1px);
+	    /* Fallback to SVG filters */
+		filter: url('#blur');
+	    opacity: .8;
+	    -webkit-transition: none;
+	    -moz-transition: none;
+	    -ms-transition: none;
+	    -o-transition: none;
+	    transition: none;
+	}
+	.blur:hover {
+	    /*border: 1px white solid;*/
+	    -webkit-filter: blur(0px); 
+	    -moz-filter: blur(0px); 
+	    -o-filter: blur(0px); 
+	    -ms-filter: blur(0px); 
+	    filter: blur(0px); 
+	    opacity: 1;		    
+	    -webkit-transition: all 0.3s ease-out;
+	    -moz-transition: all 0.3s ease-out;
+	    -ms-transition: all 0.3s ease-out;
+	    -o-transition: all 0.3s ease-out;
+	    transition: all 0.3s ease-out;
+	}
+	.box-image {
+		/*need: padding-top:100%; background image, */
+		padding-top: 100%;
+		width:100%;
+		background-image: url("http://racheldiazbastin.com/wp-content/gallery/birds/quail-etsy.jpg");
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	}
+	.species-data {
+	    position: absolute;
+	    text-align: right;
+	    width:95%;
+	    bottom: 0;
+	    right: 0;
+	    left:0;
+	    /*padding: 50% 5% 5% 0;*/
+	}
+	.species-data h3 {
+		color: black;
+		font-size: 30px;
+		line-height: 25px;
+	}
+	.species-data p {
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 300;
+	}
+	.highlight {
+		padding: 0 3px;
+		background-color: red;
+		color: white;
+	}
+
+	.clear {
+		clear:both;
+	}
+
+	/**************************
+	
+	    ARTICLE PAGE CSS
+
+	***************************/
+	.bn-sharebuttons-article {
+		margin: 5px 0;
+		padding: 0;
+		float: left;
+		text-align: left;
+	}
+	.section-header {
+		margin-top: 35px;
+		margin-right: 100px;
+	}
+	.headline-info h2 {
+		font-family: "Libre Baskerville", serif;
+	    font-size: 26px;
+	    font-style: italic;
+	    line-height: 32px;
+	    color: #8c8c8c;
+	    margin: 35px 0 15px;
+	}
+	p {
+		font-family: "Libre Baskerville", serif;
+	}
+	.story p {
+		width: 600px;
+		margin-left: 16.666666666666664%;
+		font-size: 18px;
+		line-height: 31px;
+	}
+	.dropcap {
+		color: black;
+	    font-size: 124px;
+	    font-weight: 800;
+	    float: left;
+	    line-height: .75;
+	    margin: 10px 0px 0;
+	    padding: 0 5px 0;
+	}
+	.museum-card {
+		border: 1px solid #d3d3d3;
+		padding-top: 15px;
+	}
+	.museum-card h2 {
+		color: black;
+		font-size: 42px;
+		font-weight: 100;
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+	}
+	.museum-card h2:after {
+		position:absolute;
+		left:0;
+		bottom:0;
+		width:100%;
+		height:1px;
+		border-bottom:1px solid #000;
+		content:"";
+	}
+	.card-info p {
+		font-weight: bold;
+	}
+	.card-info span {
+		font-weight: normal;
+	}
+	.spacer {
+		padding-top: calc(100% - 31px);
+	}
+	.big {
+		width: 100%;
+		margin: 15px 0 15px 0;
+	}
+	.fullscreen {
+		width: 100%;
+		margin: 15px 0 15px 0;
+		padding: 0;	
+		position: relative;		
+	}
+	.photo-quote {
+		position: absolute;
+	}
+	#quote-one {
+	    top: 10%;
+	    left: 5%;
+	    font-size: 40px;		
+	}
+	.right {
+		float:right;
+	    margin: 15px 0 15px 25px;
+	}
+	figcaption {
+		font-size: 14px;
+		font-family: "Open Sans", sans-serif;
+	    line-height: 19px;
+	    padding: 0 4px 5px;
+	    margin: 0;
+	}
+
+	/**************************
+		RESPONSIVE EMBEDS
+	*************************/
+	.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+	.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+	/*MEDIA QUERIES*/
+	@media (min-width: 1200px){
+		.bio-box {
+			/*min-height: 383.3px;*/
+			/*padding-top: 33%;*/
+		}
+		.story p {
+			width: 600px;
+			margin-left: 16.666666666666664%;
+		}
+	}
+	@media (max-width: 1150px){
+		.story p {
+			width: 600px;
+			margin-left: 16.666666666666664%;
+		}
+	}
+
+
+	@media (max-width: 940px){
+		.bio-box {
+			/*max-height: 470px;*/
+		}
+		.story p {
+			width: 600px;
+			margin-left: 0;
+		}
+	}
+	@media (max-width: 768px){
+		.museum-card {
+			width: 50%;
+			padding-top: 0;
+		}
+		.spacer {
+			padding-top: 0;
+		}
+		.story p {
+			width: 600px;
+			margin-left: 0;
+		}
+		.big {
+			padding: 0;
+		}
+		.big img {
+			max-width: 100%;
+		}
+	}
+
+	@media (max-width: 629px){
+		.bio-box {
+			width: 100%;
+			/*padding-top: 100%;*/
+		}
+		.museum-card {
+			width: 100%;
+		}
+
+		.species-data h3{
+			font-size: 28px;
+		}
+		.species-data p {
+			font-size: 18px;
+		}
+		.spacer {
+			padding-top: 10%;
+		}
+		.story p {
+			width: 100%;
+			margin: 0;
+		}
+		.big {
+			padding: 0;
+		}
+		.big img{
+			max-width: 100%;
+		}
+		.right {
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 400px){
+		.bio-box {
+			width: 100%;
+			/*min-height: 400px;*/
+		}
+		.museum-card {
+			width: 100%;
+		}
+		.story p {
+			width: 100%;
+			margin: 0;
+		}
+		.spacer {
+			padding-top: 25%;
+		}
+		.big {
+			padding: 0;
+		}
+		.big img{
+			max-width: 100%;
+		}
+		.right {
+			padding: 0;
+		}
+
+	}
+
+</style>

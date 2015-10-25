@@ -1,0 +1,476 @@
+<style>
+	@viewport{
+	    zoom: 1.0;
+	    width: extend-to-zoom;
+	}
+	@-ms-viewport{
+	    width: extend-to-zoom;
+	    zoom: 1.0;
+	}
+	article {
+		margin-bottom: 50px;
+	}
+	.row {
+		margin: 0;
+	}
+	#header {
+		min-height: 50px;
+		position: inherit;
+	}
+	#logo {
+		height: 50px;
+		text-align: left;
+	}
+	#logo img {
+		height: 50px;			
+	}
+
+	h1 {
+		text-transform: uppercase;
+		clear: both;
+	    color: black;
+	    font-family: "Open Sans", sans-serif;
+	    font-size: 50px;
+	    font-weight: 700;
+	    line-height: 55px;
+	    /*color:black;
+	    font-weight:100;*/
+	    margin: 0 auto 30px auto;
+	    text-align: center;
+	}
+	h2 {
+		font-family: "Open Sans", sans-serif;
+		font-size: 30px;
+	}
+	p {
+		font-family: "Libre Baskerville", serif;
+		font-size: 16px;
+	}
+	.bn-sharebuttons {
+		margin: 0 auto 10px;
+		float: none;
+		text-align: center;
+	}
+	.bn-sharebuttons a {
+		color: black;
+	}
+	.intro-text {
+		text-align: center;
+	}
+	.subhead {
+		margin-bottom: 30px;
+		font-weight: 100;
+		text-align: center;
+		font-family: "Libre Baskerville", serif;
+	}
+	.story-container {
+		margin-top: 35px;
+	}
+	.bio-box {
+	    border: 1px #ccc outset;
+	    position:relative;
+	    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	}
+	a .bio-box {
+		color: black;
+	}
+	.blur {
+		-webkit-filter: blur(2px);
+	    -moz-filter: blur(2px);
+	    -o-filter: blur(2px);
+	    -ms-filter: blur(2px);
+	    filter: blur(2px);
+	    /* Fallback to SVG filters */
+		/*filter: url('#blur');*/
+	    opacity: .8;
+	    -webkit-transition: none;
+	    -moz-transition: none;
+	    -ms-transition: none;
+	    -o-transition: none;
+	    transition: none;
+	}
+	.bio-box:hover .blur{
+	    -webkit-filter: blur(0px); 
+	    -moz-filter: blur(0px); 
+	    -o-filter: blur(0px); 
+	    -ms-filter: blur(0px); 
+	    filter: blur(0px); 
+	    opacity: 1;		    
+	    -webkit-transition: all 0.3s ease-out;
+	    -moz-transition: all 0.3s ease-out;
+	    -ms-transition: all 0.3s ease-out;
+	    -o-transition: all 0.3s ease-out;
+	    transition: all 0.3s ease-out;
+	}
+	.box-image {
+		/*need: padding-top:100%; background image, */
+		padding-top: 100%;
+		width:100%;
+		/*background-image: url("filler.jpg");*/
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	}
+	.species-data {
+		margin-left: 15px;
+	    /*position: absolute;
+	    text-align: right;
+	    width:95%;
+	    bottom: 0;
+	    right: 0;
+	    left:0;*/
+	    /*padding: 50% 5% 5% 0;*/
+	}
+/*		.species-data h3 {
+		color: black;
+		font-size: 30px;
+		line-height: 25px;
+	}*/
+
+	.species-name {
+	    position: absolute;
+	    text-align: right;
+	    width:95%;
+	    bottom: 0;
+	    right: 0;
+	    left:0;
+	}
+	.species-name h3 {
+		font-family: serif;
+		font-size: 20px;
+		line-height: 25px;
+		text-transform: lowercase;
+	}
+	.label h3 {
+		padding: 3px 6px;
+		border: 1px solid #999;
+		border-bottom-color: #000;
+		display: inline-block;
+		color: #fff;
+		font-family: monospace;
+		font-size: 16px;
+		letter-spacing: .5em;
+		text-shadow:
+    		/*top*/   0 -1px 1px #aaa,
+    		/*right*/ 1px 0 1px #aaa,
+    		/*bottom*/ 0 1px 0 #666,
+    		/*left*/ -1px 0 1px #aaa;
+		background-color: #333;
+		background-image: linear-gradient(#444, #333);
+		box-shadow: 0 1px 1px #ccc;
+	}
+/*		.species-data p {
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 300;
+	}*/
+	.highlight {
+		padding: 0 3px;
+		background-color: red;
+		color: white;
+	}
+	.coming-soon {
+	    position: absolute;
+	    text-align: center;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    bottom: 0;
+	    margin: auto;
+	    height: 25px;
+	}
+	.coming-soon p {
+		font-size: 16px;
+		font-family: serif;
+		text-transform: lowercase;
+		line-height: 21px;
+
+		border: 1px solid #d3d3d3;
+		background-color: #ebebeb;
+		width: 50%;
+		margin: 0 auto;
+	}
+	.story-info {
+		padding-top: 10%;
+		padding-left: 25px;
+	}
+	.clear {
+		clear:both;
+	}
+
+	/**************************
+	
+	    SIDE NAV CSS
+
+	***************************/
+
+	.nav-head {
+		font-size: 15px;
+		color: black;
+	}
+	.nav-head a {
+		color:black;
+		text-decoration: none;
+	}
+	.story-info-nav {
+		float: right;
+	    width: 8.33333332%;
+	    position: absolute;
+	    padding: 0;
+	    margin-right: 25px;
+	    top: 0;
+	    right: 0;
+	}
+	.story-info-nav-items {
+	    padding: 0;
+	    clear: both;
+	}
+	.story-info-nav .story-container {
+		margin-top: 5px;
+	}
+	.story-info-nav .story-hed h2 {
+		font-size: 15px;
+	}
+
+
+
+
+
+	/**************************
+	
+	    ARTICLE PAGE CSS
+
+	***************************/
+
+	.bn-sharebuttons-article {
+		margin: 5px 0;
+		padding: 0;
+		float: left;
+		text-align: left;
+	}
+	.section-header {
+		margin-top: 35px;
+		margin-right: 100px;
+	}
+	.headline-info h2 {
+		font-family: "Libre Baskerville", serif;
+	    font-size: 26px;
+	    /*font-style: italic;*/
+	    line-height: 32px;
+	    /*color: #8c8c8c;*/
+	    margin: 35px 0 15px;
+	}
+	p {
+		font-family: "Libre Baskerville", serif;
+	}
+	.story p {
+		width: 600px;
+		margin-left: 16.666666666666664%;
+		font-size: 18px;
+		line-height: 31px;
+	}
+	.dropcap {
+		color: black;
+	    font-size: 124px;
+	    font-weight: 800;
+	    float: left;
+	    line-height: .75;
+	    margin: 10px 0px 0;
+	    padding: 0 5px 0;
+	}
+	.museum-card {
+		border: 1px solid #d3d3d3;
+		padding-top: 15px;
+	}
+	.museum-card h2 {
+		color: black;
+		font-size: 42px;
+		font-weight: 100;
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+	}
+	.museum-card h2:after {
+		position:absolute;
+		left:0;
+		bottom:0;
+		width:100%;
+		height:1px;
+		border-bottom:1px solid #000;
+		content:"";
+	}
+	.card-info p {
+		font-weight: bold;
+	}
+	.card-info span {
+		font-weight: normal;
+	}
+	.spacer {
+		padding-top: calc(100% - 31px);
+	}
+	.big {
+		width: 100%;
+		margin: 15px 0 15px 0;
+	}
+	.giant {
+		width: 100%;
+		margin: 15px 0 15px 0;
+		padding: 0;	
+		position: relative;		
+	}
+	.giant img {
+		max-width: 100%;
+	}
+	.photo-quote {
+		position: absolute;
+	}
+	#quote-one {
+		position: absolute;
+	    top: 10%;
+	    left: 5%;
+	    font-size: 40px;		
+	}
+	.right {
+		float:right;
+	    margin: 15px 0 15px 25px;
+	}
+	figcaption {
+		font-size: 14px;
+		font-family: "Open Sans", sans-serif;
+	    line-height: 19px;
+	    padding: 0 4px 5px;
+	    margin: 0;
+	}
+
+	/**************************
+		RESPONSIVE EMBEDS
+	*************************/
+	.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+	.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+	/*MEDIA QUERIES*/
+	@media (min-width: 1200px){
+		.bio-box {
+			/*min-height: 383.3px;*/
+			/*padding-top: 33%;*/
+		}
+		.story p {
+			width: 600px;
+			margin-left: 16.666666666666664%;
+		}
+	}
+	@media (max-width: 1150px){
+		.story p {
+			width: 600px;
+			margin-left: 16.666666666666664%;
+		}
+	}
+
+
+	@media (max-width: 940px){
+		.bio-box {
+			/*max-height: 470px;*/
+		}
+		.story p {
+			width: 600px;
+			margin-left: 0;
+		}
+	}
+	@media (max-width: 768px){
+		.museum-card {
+			width: 50%;
+			padding-top: 0;
+		}
+		.spacer {
+			padding-top: 0;
+		}
+		.story p {
+			width: 600px;
+			margin-left: 0;
+		}
+		.big {
+			padding: 0;
+		}
+		.big img {
+			max-width: 100%;
+		}
+	}
+
+	@media (max-width: 629px){
+		.bio-box {
+			width: 100%;
+			/*padding-top: 100%;*/
+		}
+		.museum-card {
+			width: 100%;
+		}
+		.story-info {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 25px;
+		}
+		.species-data h3{
+			font-size: 20px;
+		}
+		.species-data p {
+			font-size: 18px;
+		}
+		.spacer {
+			padding-top: 10%;
+		}
+		.story p {
+			width: 100%;
+			margin: 0;
+		}
+		.big {
+			padding: 0;
+		}
+		.big img{
+			max-width: 100%;
+		}
+		.right {
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 400px){
+		h1 {
+			font-size: 36px;
+			line-height: 40px;
+		}
+
+		.species-name h3  {
+			font-size: 14px;
+		}
+		.story-info {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 25px;
+		}
+		.bio-box {
+			width: 100%;
+			/*min-height: 400px;*/
+		}
+		.museum-card {
+			width: 100%;
+		}
+		.story p {
+			width: 100%;
+			margin: 0;
+		}
+		.spacer {
+			padding-top: 25%;
+		}
+		.big {
+			padding: 0;
+		}
+		.big img{
+			max-width: 100%;
+		}
+		.right {
+			padding: 0;
+		}
+
+	}
+
+</style>
