@@ -518,8 +518,8 @@ $(document).ready(function() {
 
 	$('#sage-grouse').on("click", function(){
 		//replace headline and article sections with new story content		
-		$('.intro-text').load("/stories/sage-grouse/index.html header");
-        $("#newArticle").load("/stories/sage-grouse/index.html article");
+		$('.intro-text').load("/bn-biodiversity/stories/sage-grouse/index.html header");
+        $("#newArticle").load("/bn-biodiversity/stories/sage-grouse/index.html article");
         //scroll to top of page
         document.body.scrollTop = document.documentElement.scrollTop = 0;
 
@@ -535,7 +535,7 @@ $(document).ready(function() {
 	}
     $(function () {
         $("#sage-grouse").click(function () {
-            ChangeUrl('Sage Grouse', '/stories/sage-grouse');
+            ChangeUrl('Sage Grouse', 'bn-biodiversity/stories/sage-grouse');
         });
     });
 })
