@@ -67,11 +67,17 @@
 		margin-top: 35px;
 	}
 	.bio-box {
+		width: 50%;
+		float: left;
 	    border: 1px #ccc outset;
 	    position:relative;
 	    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 	}
-	a .bio-box {
+	.story-info {
+		width: 50%;
+		float: left;		
+	}
+	.story-container a {
 		color: black;
 	}
 	.blur {
@@ -221,6 +227,7 @@
 	    right: 0;
 	}
 	.story-info-nav-items {
+		width: 100%;
 	    padding: 0;
 	    clear: both;
 	}
@@ -229,6 +236,7 @@
 	}
 	.story-info-nav .story-hed h2 {
 		font-size: 15px;
+		margin-top:5px;
 	}
 
 
@@ -247,9 +255,20 @@
 		float: left;
 		text-align: left;
 	}
+	.lead-box {
+		width: 50%;
+		float: left;
+	    border: 1px #ccc outset;
+	    position:relative;
+	    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	}
 	.section-header {
 		margin-top: 35px;
 		margin-right: 100px;
+	}
+	.headline-info {
+	    width: 83.33333333%;
+		margin-left: 8.33333333%;
 	}
 	.headline-info h2 {
 		font-family: "Libre Baskerville", serif;
@@ -311,23 +330,26 @@
 		width: 100%;
 		margin: 15px 0 15px 0;
 	}
-	.giant {
+	.big img {
 		width: 100%;
-		margin: 15px 0 15px 0;
+	}
+	.quote-box {
 		padding: 0;	
 		position: relative;		
 	}
-	.giant img {
-		max-width: 100%;
+	.quote-box figure {
+		position: absolute;
+		z-index: 0;
 	}
 	.photo-quote {
 		position: absolute;
+		z-index: 20;
 	}
 	#quote-one {
-		position: absolute;
-	    top: 10%;
+	    padding-top: 10%;
 	    left: 5%;
-	    font-size: 40px;		
+	    font-size: 40px;
+	    font-style: italic;	
 	}
 	.right {
 		float:right;
@@ -377,6 +399,16 @@
 		}
 	}
 	@media (max-width: 768px){
+		.bio-box {
+			width: 100%;
+		}
+		.lead-box {
+			width: 100%;
+		}
+		.story-info {
+			width: 100%;
+			padding-top: 10px;
+		}
 		.museum-card {
 			width: 50%;
 			padding-top: 0;
@@ -397,9 +429,20 @@
 	}
 
 	@media (max-width: 629px){
+		.article {
+			width: 100%;
+			margin: 0;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 		.bio-box {
 			width: 100%;
-			/*padding-top: 100%;*/
+		}
+		.story-info {
+			width: 100%;
+		}
+		.lead-box {
+			width: 100%;
 		}
 		.museum-card {
 			width: 100%;
@@ -457,6 +500,7 @@
 		.story p {
 			width: 100%;
 			margin: 0;
+			padding-bottom: 5px;
 		}
 		.spacer {
 			padding-top: 25%;
