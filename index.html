@@ -81,7 +81,7 @@
 
 		<div class="story-container">
 			
-			<div class="bio-box windowpane">
+			<div class="bio-box">
 				<div class="box-image blur"  id="1"></div>
 				<div class="species-name label">
 					<h3>Galapagos damselfish</h3>
@@ -111,7 +111,7 @@
 
 		<div class="story-container">
 
-			<div class="bio-box windowpane">
+			<div class="bio-box">
 				<div class="box-image blur"  id="2"></div>
 				<div class="species-name label">
 					<h3>Marsh chicken</h3>
@@ -140,7 +140,7 @@
 		<div class="clear"></div>
 
 		<div id="sage-grouse" class="story-container">
-			<div class="bio-box windowpane">
+			<div class="bio-box">
 				<div class="box-image blur" id="3"></div>
 				<div class="species-name label">
 					<h3>Greater sage grouse</h3>
@@ -169,7 +169,7 @@
 
 		<div class="story-container">
 
-			<div class="bio-box windowpane">
+			<div class="bio-box">
 				<div class="box-image blur"  id="4"></div>
 				<div class="species-name label">
 					<h3>Mission Blue butterfly</h3>
@@ -199,7 +199,7 @@
 
 		<div class="story-container">
 
-			<div class="bio-box windowpane">
+			<div class="bio-box">
 				<div class="box-image blur"  id="5"></div>
 				<div class="species-name label">
 					<h3>Livermore tarplant</h3>
@@ -229,7 +229,7 @@
 
 		<div class="story-container">
 
-			<div class="bio-box windowpane">
+			<div class="bio-box">
 				<div class="box-image blur"  id="6"></div>
 				<div class="species-name label">
 					<h3>Plant TBA</h3>
@@ -259,7 +259,7 @@
 
 		<div class="story-container">
 
-			<div class="bio-box windowpane">
+			<div class="bio-box">
 				<div class="box-image blur"  id="7"></div>
 				<div class="species-name label">
 					<h3>California sea blite</h3>
@@ -289,7 +289,7 @@
 
 		<div class="story-container">
 
-			<div class="bio-box windowpane">
+			<div class="bio-box">
 				<div class="box-image blur"  id="8"></div>
 				<div class="species-name label">
 					<h3>Ant TBA</h3>
@@ -319,7 +319,7 @@
 
 		<div class="story-container">
 
-			<div class="bio-box windowpane">
+			<div class="bio-box">
 				<div class="box-image blur"  id="9"></div>
 				<div class="species-name label">
 					<h3>Insect/invert/herp</h3>
@@ -350,7 +350,7 @@
 		<div class="story-container" id="test">
 
 
-			<div class="bio-box windowpane" >
+			<div class="bio-box" >
 				<div class="box-image" id="10"></div>
 				
 				<div class="coming-soon">
@@ -446,11 +446,7 @@ $(document).ready(function() {
 		$(this).replaceWith('<img class="illustration" src="' + imageURL[i] + '" />')
 	});
 
-	//maintaining square shape of bio-boxes 
-	var cw = $('.bio-box').width();
-		$('.bio-box').css({
-	    'height': cw + 'px'
-	});
+
 	// for (i = 0; i < boxID.length; i++) { 
     
  //    	$('.box-image').append('<img src="http://racheldiazbastin.com/wp-content/gallery/insects/etsy_sternotomis-mirabilis.jpg" />');
