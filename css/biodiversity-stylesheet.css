@@ -84,7 +84,7 @@
 	.bio-box:after {
 		content: '';
 		position:absolute;
-		background-image: url(http://seangreene.github.io/bn-biodiversity/optimised.svg) no-repeat;		background-size: cover;
+		background-image: url("http://seangreene.github.io/bn-biodiversity/optimised.svg") no-repeat;		background-size: cover;
 		top: 0; right: 0; bottom: 0; left: 0;
 	}
 	.bio-box img {
