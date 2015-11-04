@@ -69,9 +69,10 @@
 	.bio-box {
 		width: 50%;
 		float: left;
-	    border: 1px #ccc outset;
+	    /*border: 1px #ccc outset;*/
 	    position:relative;
 	    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	    overflow:hidden;
 	}
 	.story-info {
 		width: 50%;
@@ -80,7 +81,24 @@
 	.story-container a {
 		color: black;
 	}
-	.blur {
+	.bio-box:after {
+		content: '';
+		position:absolute;
+		background: url(/optimised.svg) no-repeat;
+		background-size: cover;
+		top: 0; right: 0; bottom: 0; left: 0;
+	}
+	.bio-box img {
+		position: relative;
+		width: 100%
+	}
+
+/*	.box-image {
+		width:100%;
+		position:absolute;
+	    padding-top: 50%;
+	}*/
+/*	.blur {
 		-webkit-filter: blur(2px);
 	    -moz-filter: blur(2px);
 	    -o-filter: blur(2px);
@@ -88,13 +106,13 @@
 	    filter: blur(2px);
 	    /* Fallback to SVG filters */
 		/*filter: url('#blur');*/
-	    opacity: .8;
+/*	    opacity: .8;
 	    -webkit-transition: none;
 	    -moz-transition: none;
 	    -ms-transition: none;
 	    -o-transition: none;
 	    transition: none;
-	}
+	}*/
 	.bio-box:hover .blur{
 	    -webkit-filter: blur(0px); 
 	    -moz-filter: blur(0px); 
@@ -108,14 +126,8 @@
 	    -o-transition: all 0.3s ease-out;
 	    transition: all 0.3s ease-out;
 	}
-	.box-image {
-		/*need: padding-top:100%; background image, */
-		padding-top: 100%;
-		width:100%;
-		/*background-image: url("filler.jpg");*/
-	    background-size: 100%;
-	    background-repeat: no-repeat;
-	}
+
+
 	.species-data {
 		margin-left: 15px;
 	    /*position: absolute;
@@ -225,6 +237,10 @@
 	    margin-right: 25px;
 	    top: 0;
 	    right: 0;
+	}
+	.story-info-nav .bio-box {
+		width:100%;
+		box-shadow: 0 0 0;
 	}
 	.story-info-nav-items {
 		width: 100%;
