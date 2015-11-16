@@ -59,7 +59,7 @@
 	<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
 
 	<!-- howler js for audio -->
-	<script src="/js/howler.min.js"></script>
+	<script src="http://seangreene.github.io/bn-biodiversity/js/howler.min.js"></script>
 
 
 
@@ -215,7 +215,7 @@
 				</div>
 
 				<style>
-				#locator { height: 200px; }
+				#locator { height: 250px; }
 				</style>
 				<div class="col-sm-8 col-sm-offset-2">
 					<div id="locator" class="locator">
@@ -229,7 +229,7 @@
 					var layer = new L.StamenTileLayer("watercolor");
 					var map = new L.Map("locator", {
 					    center: new L.LatLng(38.118097, -122.507525),
-					    zoom: 10,
+					    zoom: 8,
 					    // zoomControl:false 
 					});
 					map.addLayer(layer);
