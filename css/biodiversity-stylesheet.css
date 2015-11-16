@@ -68,6 +68,8 @@
 	}
 	p {
 		font-family: "Libre Baskerville", serif;
+		font-style: normal;
+		font-weight: 400;
 		font-size: 16px;
 	}
 	.bn-sharebuttons {
@@ -421,8 +423,8 @@
 		width: 600px;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 18px;
-		line-height: 24px;
+		font-size: 16px;
+		line-height: 28px;
 		padding-bottom: 5px;
 	}
 	blockquote {
@@ -479,24 +481,6 @@
 	}
 	.big img {
 		width: 100%;
-	}
-	.quote-box {
-		padding: 0;	
-		position: relative;		
-	}
-	.quote-box figure {
-		position: absolute;
-		z-index: 0;
-	}
-	.photo-quote {
-		position: absolute;
-		z-index: 20;
-	}
-	#quote-one {
-	    padding-top: 10%;
-	    left: 5%;
-	    font-size: 40px;
-	    font-style: italic;	
 	}
 	.right {
 		float:right;
@@ -729,7 +713,7 @@
 		.story p {
 			width: 100%;
 			margin: 0;
-			padding-bottom: 5px;
+			padding: 0 10px 15px 10px;
 		}
 		.spacer {
 			padding-top: 25%;
