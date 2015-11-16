@@ -52,6 +52,20 @@
 	h2 a:hover {
 		text-decoration: none;
 	}
+	h2.epilogue, h2.credits {
+		text-transform: uppercase;
+		margin: 15px auto;
+		text-align: center;
+		font-weight: bold;
+    	font-size: 25px;
+    	cursor: pointer;
+	}
+	.epilogue:hover {
+		opacity: 0.6;
+	}
+	.introduction {
+		margin-bottom: 30px;
+	}
 	p {
 		font-family: "Libre Baskerville", serif;
 		font-size: 16px;
@@ -352,11 +366,15 @@
 	    border: 1px #ccc outset;
 	    position:relative;
 	    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	    overflow: hidden;
 	}
 	.museum-card {
 		border: 1px solid #d3d3d3;
 		padding-top: 15px;
-		background: url(/filler.jpg);
+		background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/linedpaper.png);
+		width: calc(50% - 15px);
+		margin-left: 15px;
+		float: left;
 	}
 	.museum-card h2 {
 		color: black;
@@ -387,6 +405,7 @@
 	.story h2 {
 		font-family: "Libre Baskerville", serif;
 	    font-size: 26px;
+	    font-weight: bold;
 	    font-style: italic;
 	    line-height: 32px;
 	    /*color: #8c8c8c;*/
@@ -437,19 +456,14 @@
 	    padding: 0 5px 0;
 	}
 	.pull-quote {
-		margin: 25px 0 25px 5%;
-		width: 85%;
+	    margin: 25px auto;
+	    width: 60%;
+	    text-align: center;
 	}
 	p.quote {
 	    font-size: 42px;
 	    line-height: 48px;
 	    margin: 0;		
-	}
-	p.quote:before {
-		content: '“';
-	}
-	p.quote:after {
-		content: '”';
 	}
 	p.quote-credit {
 		font-size: 14px;
@@ -491,6 +505,10 @@
 	figure {
 		margin: 15px auto;
 	}
+	.map-container {
+		margin-top: 15px;
+    	margin-bottom: 35px;
+	}
 	figure.right {
 		max-width: 700px;
 	}
@@ -520,6 +538,16 @@
 	.sound i:hover {
 		opacity: 0.6;
 		cursor: pointer;
+	}
+	.audio-controller {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.sound figcaption {
+		text-align: center;
+		width: 60%;
+		margin-right: auto;
+   		margin-left: auto;
 	}
 	input{
 	    display:none\9!important;
@@ -592,9 +620,9 @@
 		}
 		.story p {
 			width: 600px;
-			margin-left: 0;
 		}
 	}
+
 	@media (max-width: 768px){
 		.species-box {
 			width: 100%;

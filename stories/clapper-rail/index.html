@@ -1,6 +1,18 @@
 <html>
 <head>
 	<title>The Clapper Rail Calls at Dawn</title>
+	
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="initial-scale=1">
+	<meta property="og:title" content="The Weird, the Rare and the Ugly"/>
+	<meta property="og:description" content="Connect to the natural world of the SF Bay Area! We bring you trail and park reviews and photos, local nature journalism, and local nature event listings."/>
+	<meta property="og:url" content="http://baynature.org/"/>
+	<meta property="og:site_name" content="Bay Nature"/>
+	<meta property="fb:admins" content="1403244759"/>
+	<meta property="og:image" content="https://baynature.org/wp-content/uploads/2012/08/baynature-Orange-logo-150px.jpg"/>
+	<link rel="shortcut icon" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/images/favicon.ico"/>
+
+
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/css/baynature.scss" type="text/css" media="screen, projection"/>
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/style.css?1435006863" type="text/css" media="screen, projection"/>
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/style-print.css" type="text/css" media="print"/>
@@ -18,41 +30,39 @@
     <script src="/js/bootstrap.min.js"></script>
 	-->
 
-	<!-- jquery cdn -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <!-- Latest compiled and minified CSS -->
+
+    <!-- bootstrap css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
-
+	<!--leaflet-->
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <!--open sans headline font -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<!--libre baskerville font-->
 	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
-
 	<!-- PROJECT CSS FILE -->
-	<!--local-->
+		<!--local-->
 	<link rel="stylesheet" href="/css/biodiversity-stylesheet.css">
-	<!--web-->
+		<!--web-->
 	<link rel="stylesheet" href="/bn-biodiversity/css/biodiversity-stylesheet.css">
 
-<meta charset="utf-8"> 
-<meta name="viewport" content="initial-scale=1">
-<meta property="og:title" content="The Weird, the Rare and the Ugly"/>
-<meta property="og:description" content="Connect to the natural world of the SF Bay Area! We bring you trail and park reviews and photos, local nature journalism, and local nature event listings."/>
-<meta property="og:url" content="http://baynature.org/"/>
-<meta property="og:site_name" content="Bay Nature"/>
-<meta property="fb:admins" content="1403244759"/>
-<meta property="og:image" content="https://baynature.org/wp-content/uploads/2012/08/baynature-Orange-logo-150px.jpg"/>
 
-<link rel="shortcut icon" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/images/favicon.ico"/>
+
+	<!-- jquery cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- boostrap cdn -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!--maps js -->
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+
+	<!-- howler js for audio -->
+	<script src="/js/howler.min.js"></script>
+
+
+
 
 
 </head>
@@ -81,54 +91,54 @@
   		<div class="navbar-collapse collapse">
       		<ul class="nav navbar-nav">
 		
-				<div class="nav-item col-sm-2 col-xs-6">
+				<div class="nav-item nav1 col-sm-2 col-xs-6">
 					<li>Galapagos damselfish</li>
-					<img src="/filler.jpg">
+					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item col-sm-2 col-xs-6">
+				<div class="nav-item nav2 col-sm-2 col-xs-6">
 					<li>Clapper rail</li>
-					<img src="/filler.jpg">
+					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item col-sm-2 col-xs-6">
+				<div class="nav-item nav3 col-sm-2 col-xs-6">
 					<li>Greater sage grouse</li>
-					<img src="/filler.jpg">
+					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item col-sm-2 col-xs-6">
+				<div class="nav-item nav4 col-sm-2 col-xs-6">
 					<li>Mission Blue butterfly</li>
-					<img src="/filler.jpg">
+					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item col-sm-2 col-xs-6">
+				<div class="nav-item nav5 col-sm-2 col-xs-6">
 					<li>Livermore tarplant</li>
-					<img src="/filler.jpg">
+					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item col-sm-2 col-xs-6">
+				<div class="nav-item nav6 col-sm-2 col-xs-6">
 					<li>Plant tk</li>
-					<img src="/filler.jpg">
+					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item col-sm-2 col-xs-6">
+				<div class="nav-item nav7 col-sm-2 col-xs-6">
 					<li>California sea blite</li>
-					<img src="/filler.jpg">
+					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item col-sm-2 col-xs-6">
+				<div class="nav-item nav8 col-sm-2 col-xs-6">
 					<li>Ant tk</li>
-					<img src="/filler.jpg">
+					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item col-sm-2 col-xs-6">
+				<div class="nav-item nav9 col-sm-2 col-xs-6">
 					<li>insect / herp / invertebrate</li>
-					<img src="/filler.jpg">
+					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item col-sm-2 col-xs-6">
+				<div class="nav-item nav10 col-sm-2 col-xs-6">
 					<li>San Francisco garter snake</li>
-					<img src="/filler.jpg">
+					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 			</ul>
 		</div>
@@ -158,6 +168,8 @@
 	//nav-item height = img width
 	var cw = $('img').width();
 	$('.nav-item').css({'height':cw+'px'});
+
+	$('.nav2').addClass('active');
 
 </script>
 
@@ -192,7 +204,7 @@
 
 			</div>
 
-			<div class="museum-card col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="museum-card">
 
 				<h2 class="col-sm-8 col-sm-offset-2">Clapper rail</h2>
 
@@ -201,6 +213,33 @@
 					<p>Population: <span>10,000</span></p>
 					<p>Protection status: <span>Endangered</span></p>
 				</div>
+
+				<style>
+				#locator { height: 200px; }
+				</style>
+				<div class="col-sm-8 col-sm-offset-2">
+					<div id="locator" class="locator">
+
+
+					</div>
+				</div>
+				<script>
+				
+					// replace "toner" here with "terrain" or "watercolor"
+					var layer = new L.StamenTileLayer("watercolor");
+					var map = new L.Map("locator", {
+					    center: new L.LatLng(38.118097, -122.507525),
+					    zoom: 10,
+					    // zoomControl:false 
+					});
+					map.addLayer(layer);
+
+					var marker = L.marker([38.118097, -122.507525]).addTo(map);
+				    // marker.bindPopup("<strong>A Marsh on the Petaluma River</strong><br>The 18-mile winding path of the Petaluma River supports the largest ancient tidal marsh in the San Francisco Bay Area, as well as thousands of acres of restored wetlands.").openPopup();
+				    
+				    map.scrollWheelZoom.disable();
+
+				</script>
 				
 			</div>
 		</div>
@@ -233,10 +272,42 @@
 			<p>“Forty-two degrees.”</p>
 			<p>She notes the temperature and the location on the clipboard. Next to them, she scribbles in the most important number, the number behind dozens of pre-dawn trips to the marsh this spring, the number that explains why we’re all out breathing fog wreaths at 5:30 a.m. on a 42-degree March morning on the Petaluma River: zero. Zero clapper rails heard.</p>
 			<p>Wood pulls the engine cord and guides the boat back out into the darkness of the river. One data point down, seven more to go. The hunt for the clapper rail is on.</p>
+
+			<style>
+			#map-marsh {
+				height: 400px;
+			}
+
+			</style>
+			<div class="col-sm-8 col-sm-offset-2 col-xs-12 map-container">
+				<div id="map-marsh">
+
+
+				</div>
+
+				<ficaption><strong>A Marsh on the Petaluma River</strong> | The 18-mile winding path of the Petaluma River supports the largest ancient tidal marsh in the San Francisco Bay Area, as well as thousands of acres of restored wetlands.</figcaption>
+			</div>
+			<script>
 			
+				// replace "toner" here with "terrain" or "watercolor"
+				var layer = new L.StamenTileLayer("terrain");
+				var map = new L.Map("map-marsh", {
+				    center: new L.LatLng(38.118097, -122.507525),
+				    zoom: 12
+				});
+				map.addLayer(layer);
+
+				var marker = L.marker([38.118097, -122.507525]).addTo(map);
+			    marker.bindPopup("<strong>A Marsh on the Petaluma River</strong><br>The 18-mile winding path of the Petaluma River supports the largest ancient tidal marsh in the San Francisco Bay Area, as well as thousands of acres of restored wetlands.").openPopup();
+
+			    map.scrollWheelZoom.disable();
+
+			</script>
+
+
 			<h2>The Bird. The Legend. The Rock Star.</h2>
 
-			<figure class="col-sm-12 col-xs-12 big">
+			<figure class="big">
 				<img src="https://baynature.atavist.com/data/files/organization/9410/image/derivative/scale~1600x1600xcanscaleup~clra-1403905603-84.jpg"/>
 				<figcaption>The California clapper rail. |&nbsp;Photo by&nbsp;<a href="https://www.flickr.com/photos/jerryting/" target="_blank">Jerry Ting</a></figcaption>
 			</figure>
@@ -249,8 +320,8 @@
 			<p>“I love the little things, I love hearing them call,” says Grijalva, now a PhD student in ecosystem sciences at UC Davis. “It’s really gratifying in the morning, they’re so loud. You don’t understand how loud they are. And when you’re listening to them, to not really know where they are. They could be standing right next to you.”</p>
 
 			<figure class="col-sm-8 col-xs-12 right">
-				<img src="https://dh1rvgpokacch.cloudfront.net/atavist/9410/image/derivative/scale~500x5000x0x0~marshdarknes-1403305240-28.jpg">
-				<figcaption>The Gregarious Clapper Rail | Photo by Wendy Naruo, courtesy USGS</figcaption>
+				<img src="https://baynature.atavist.com/data/files/organization/9410/image/derivative/scale~500x5000~clra3wendy-1403048474-17.jpg">
+				<figcaption>The gregarious Clapper Rail | Photo by Wendy Naruo, courtesy USGS</figcaption>
 			</figure>
 
 			<p>The California clapper rail is not just secretive; it is quite rare. While the rail once ranged from Humboldt Bay to Morro Bay, Point Blue’s latest estimate puts the global population at around 1,200, all in the San Francisco Bay. Marsh destruction, early-20th-century hunting, and predators like cats, rats and foxes led to the rail’s near-extinction, and in 1970 an official listing as endangered under the federal Endangered Species Act. At the time, there were an estimated 4,000 clapper rails around the Bay; by the early 1990s some estimates put the number at 300. Despite a moderate rebound to its current population, the predators aren’t going away and in the future sea level rise threatens most of the Bay Area’s tidal marshes.</p>
@@ -313,7 +384,7 @@
 
 			<h2>Interlude: Call of the Clapper Rail</h2>
 
-			<figure class="col-sm-12 col-xs-12 big">
+			<figure class="big">
 				<img src="https://baynature.atavist.com/data/files/organization/9410/image/derivative/scale~1600x1600xcanscaleup~clracalling-1403039667-81.jpg"/>
 				<figcaption>A rail expresses itself. |&nbsp;Photo by&nbsp;<a href="https://www.flickr.com/photos/jerryting/" target="_blank">Jerry Ting</a></figcaption>
 			</figure>
@@ -330,84 +401,47 @@
 			<p>Elrod marks a “1” on the clipboard.</p>
 
 			<div class="sound">
-				<h3>Listen:</h3>
-				<i id="play" class="fa fa-play-circle"></i>
-				<!-- <i id="pause" class="fa fa-pause"></i> -->
-
-
-				<audio>
-				  <!-- <source src="" type="audio/ogg"> -->
-				  <!-- <source src="https://dh1rvgpokacch.cloudfront.net/atavist/9410/audio/raw/kekburcut-1403296688-31.mp3" type="audio/mpeg"> -->
-				Your browser does not support the audio element.
-				</audio>
-
-				<input type="range" id="seek" value="0" max=""/>
+				
+				<h3><strong>Listen:</strong> The Call of the Clapper Rail									
+				<div class="audio-controller">
+					<i class="fa fa-play"></i>
+				</div>
+				<!-- <input type="range" id="seek" value="0" max=""/> -->
 
 				<figcaption>The kek-burr call of the California clapper rail, recorded by Jules Evens in Napa County.</figcaption>
 			</div>
 
 			<script>
 			$(document).ready(function(){
-			    play = $('#play');
-			    pause = $('#pause');
-			    close = $('#close');
-			    //note to self: can declare .ogg file here using comma
-			    audio = new Audio('https://dh1rvgpokacch.cloudfront.net/atavist/9410/audio/raw/kekburcut-1403296688-31.mp3');
-			    duration = audio.duration;
-					// if (audio.canPlayType('audio/mpeg;')) {
-				 //    audio.type= 'audio/mpeg';
-				 //    audio.src= 'music/track1.mp3';
-				 //    } else {
-				 //    audio.type= 'audio/ogg';
-				 //    audio.src= 'music/track1.ogg';
-				 //    }
-
-					// play.on('click', function(e) {
-					// 	e.preventDefault();
-					// 	audio.play();
-
-					// 	$(this).replaceWith('<i id="pause" class="fa fa-pause"></i>');
-					// 	$('#close').fadeIn(300);
-					// 	$('#seek').attr('max',audio.duration);
-					// });
-				 
-				 //    pause.on('click', function(e) {
-				 //        e.preventDefault();
-				 //        audio.pause();
-				 //        $(this).replaceWith('<i id="play" class="fa fa-play-circle"></i>');
-				 
-				 //    });
-				    // $('#close').click(function(e) {
-				    //     e.preventDefault();
-				    //     container.removeClass('containerLarge');
-				    //     cover.removeClass('coverLarge');
-				    //     song.pause();
-				    //     song.currentTime = 0;
-				    //     $('#pause').replaceWith('<a class="button gradient" id="play" href="" title=""></a>');
-				    //     $('#close').fadeOut(300);
-				    // });
-					$('#play').on('click', function(){
-						var audio = new Audio('https://dh1rvgpokacch.cloudfront.net/atavist/9410/audio/raw/kekburcut-1403296688-31.mp3');
-						duration = audio.duration;
-						audio.play();
-						$(this).replaceWith('<i id="pause" class="fa fa-pause"></i>');
 				
-					});
-					$('#pause').on('click', function(){
-						audio.pause();
-						$(this).replaceWith('<i id="play" class="fa fa-play-circle"></i>');
-				
-					});				
-				$("#seek").bind("change", function() {
-	        		audio.currentTime = $(this).val();
-	       			$("#seek").attr("max", audio.duration);
-	    		});
-
-				audio.addEventListener('timeupdate',function (){
-				    curtime = parseInt(audio.currentTime, 10);
-				        $("#seek").attr("value", curtime);
+				var sound = new Howl({
+					//note to self: can declare .ogg file here using comma
+					urls: ['https://dh1rvgpokacch.cloudfront.net/atavist/9410/audio/raw/kekburcut-1403296688-31.mp3'],
+					volume: 0.5,
+				    onend: function() {
+					    $('i').replaceWith('<i class="fa fa-play"></i>');
+					    $('.audio-controller').removeClass('playing');
+					  },
+				    onplay: function() {
+					    $('i').replaceWith('<i class="fa fa-pause"></i>');
+					    $('.audio-controller').addClass('playing');
+					  },
+					onpause: function(){
+					    $('i').replaceWith('<i class="fa fa-play"></i>');
+					    $('.audio-controller').removeClass('playing');					 
+					},
+					onloaderror: function(){
+					    $('i').replaceWith('<p style="font-family:Arial, sans-serif;">Sorry! This sound failed to load.</p>');
+					}
 				});
 
+				$('.audio-controller').on('click', function(){
+				    if ( $(this).hasClass("playing") ) {
+				    	sound.pause();
+				    } else {
+					sound.stop().play();
+				    }
+				});
 			})
 
 			</script>
@@ -415,7 +449,7 @@
 			<h2>Existence, Defined: A Math Problem</h2>
 
 			<blockquote>
-				<p>I once found myself seated on an airplane next to a charming woman whose interests revolved primarily around the activities of her very energetic family. At one point in the conversation came the inevitable question: “What sort of work do you do?” I confess that I rather hate that question … I replied to the woman: “Well, I work with fish populations. The trouble with fish is that you never get to see the whole population. They’re not like trees, whose numbers could perhaps be estimated by flying over the forest. Mostly, you see fish only when they’re caught … So, you see, if you study fish populations, you tend to get little pieces of information here and there. These bits of information are like the tip of the iceberg; they’re part of a much larger story. My job is to try to put the story together. I’m a detective, really, who assembles clues into a coherent picture.</p>
+				I once found myself seated on an airplane next to a charming woman whose interests revolved primarily around the activities of her very energetic family. At one point in the conversation came the inevitable question: “What sort of work do you do?” I confess that I rather hate that question … I replied to the woman: “Well, I work with fish populations. The trouble with fish is that you never get to see the whole population. They’re not like trees, whose numbers could perhaps be estimated by flying over the forest. Mostly, you see fish only when they’re caught … So, you see, if you study fish populations, you tend to get little pieces of information here and there. These bits of information are like the tip of the iceberg; they’re part of a much larger story. My job is to try to put the story together. I’m a detective, really, who assembles clues into a coherent picture.
 			</blockquote>
 			<p class="blockquote-id"><strong>&mdash;Jon Schnute, “Data, uncertainty, model ambiguity, and model identification.” Natural Resource Modeling, 1987</strong></p>
 
@@ -478,14 +512,23 @@
 			<p>The timer beeps. Dee-dee-dee.</p>
 			<p>Elrod holds the clipboard aloft. She enters the zero.</p>
 
-			<figure class="col-sm-12 col-xs-12 col-sm-offset-2">
+			<figure class="col-sm-8 col-xs-12 col-sm-offset-2">
 				<img src="https://baynature.atavist.com/data/files/organization/9410/image/derivative/scale~1023x5000~jkwclra2013-1403048083-17.jpg">
 				<figcaption>At the Edge of the Marsh</figcaption>
 			</figure>
-
+			
 	</div>
 </div>
 </article>
+
+
+<script>
+	//balancing lead box and museum card widths and heights
+	var cw = $('.lead-box figure').width();
+	$('.lead-box').css({'height':cw+'px'});
+	$('.museum-card').css({'height':cw+'px'});
+
+</script>
 
 </body>
 
