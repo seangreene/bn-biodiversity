@@ -115,16 +115,16 @@
 		<div class="story-container">
 			<a href="">
 			<div class="species-box">
-				<img src="http://racheldiazbastin.com/wp-content/gallery/plants/darwinmoth-etsy.jpg" class="illustration" />
+				<img src="media/illos/tarweed.jpg" class="illustration" />
 				<div class="species-name label">
-					<h3>Livermore tarplant</h3>
+					<h3>Livermore tarweed</h3>
 				</div>
 			</div>
 			</a>
 
 			<div class="story-info">
 				<div class="story-hed">
-					<h2><a href="">Livermore tarplant: A scratch and sniff adventure</a></h2>
+					<h2><a href="">Livermore tarweed: A scratch and sniff adventure</a></h2>
 					<div class="species-data">
 						<div class="population">
 							<p>Population: <span class="highlight">100,000</span></p>
@@ -144,9 +144,9 @@
 		<div class="clear"></div>
 
 		<div class="story-container">
-			<a href="">
+			<a href="stories/galapagos-damselfish">
 			<div class="species-box">
-				<img src="http://racheldiazbastin.com/wp-content/gallery/fish/stickleback-web.jpg" class="illustration" />
+				<img src="media/illos/azurina.jpg" class="illustration" />
 				<div class="species-name label">
 					<h3>Galapagos damselfish</h3>
 				</div>
@@ -155,7 +155,7 @@
 
 			<div class="story-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="story-hed">
-					<h2><a href="">A galapagos damselfish in distress</a></h2>
+					<h2><a href="stories/galapagos-damselfish">A galapagos damselfish in distress</a></h2>
 					<div class="species-data">
 						<div class="population">
 							<p>Population: <span class="highlight">100,000</span></p>
@@ -240,7 +240,7 @@
 		<div class="story-container">
 			<a href="">
 			<div class="species-box">
-				<img src="http://racheldiazbastin.com/wp-content/gallery/insects/etsy_buprestis-aurulenta.jpg" class="illustration" />
+				<img src="media/illos/missionblue.jpg" class="illustration" />
 				<div class="species-name label">
 					<h3>Mission Blue butterfly</h3>
 				</div>
@@ -450,9 +450,6 @@
 	</div>
 
 </div>
-<!--svg fallback for glass pane effect-->
-<div class="window-pane" style="display:none;">
-
 
 </div>
 
@@ -503,7 +500,16 @@ $(document).ready(function() {
 	$('.species-name').hover(function(){
 		$(this).css("cursor","pointer");
 	});
-	
+
+
+
+	//make something happen when scrolling to the very bottom of a page
+	// $(window).on('scroll', function(){
+	// 	if($(window).scrollTop() > $(document).height() - $(window).height() - 100){
+	// 		//do something here
+	// 		$("#something").css({'height':'300px'})
+	// 	}
+	// });
 })
 
 </script>
