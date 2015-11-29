@@ -1,10 +1,10 @@
 //some scripts for the navigation
 var imageURL = [
-	'/media/illos/tarweed.jpg',
-	'/media/illos/azurina.jpg',
+	'media/illos/tarweed.jpg',
+	'media/illos/azurina.jpg',
 	'http://racheldiazbastin.com/wp-content/gallery/birds/nf8x10kestreletsy.jpg',
 	'http://racheldiazbastin.com/wp-content/gallery/birds/quail-etsy.jpg',
-	'/media/illos/missionblue.jpg',
+	'media/illos/missionblue.jpg',
 	'http://racheldiazbastin.com/wp-content/gallery/plants/flower-paradise-etsy.jpg',
 	'http://racheldiazbastin.com/wp-content/gallery/plants/pickleweed-web.jpg',
 	'http://racheldiazbastin.com/wp-content/gallery/insects/longhornbeetleetsy.jpg',
