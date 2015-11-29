@@ -7,13 +7,16 @@
 	    width: extend-to-zoom;
 	    zoom: 1.0;
 	}
+	body {
+		padding-bottom: 25px;
+	}
 	article {
 		margin-bottom: 50px;
 	}
 	.row {
 		margin: 0;
 	}
-	#header {
+	header {
 		min-height: 50px;
 		position: inherit;
 	}
@@ -28,12 +31,13 @@
 		padding-top: 0;
 
 	}
-
+	h1, h2, h3, h4 {
+		font-family: "Open Sans", sans-serif;
+	}
 	h1 {
 		text-transform: uppercase;
 		clear: both;
 	    color: black;
-	    font-family: "Open Sans", sans-serif;
 	    font-size: 50px;
 	    font-weight: 700;
 	    line-height: 55px;
@@ -43,7 +47,6 @@
 	    text-align: center;
 	}
 	h2 {
-		font-family: "Open Sans", sans-serif;
 		font-size: 30px;
 	}
 	h2 a {
@@ -99,6 +102,9 @@
 	    position:relative;
 	    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 	    overflow:hidden;
+	}
+	.species-name:hover , .species-box:hover {
+		cursor:pointer;
 	}
 	.story-info {
 		width: 50%;
@@ -171,18 +177,10 @@
 
 	/**************************
 	
-	    SIDE NAV CSS
+	   NAV CSS
 
 	***************************/
-/*	nav {
-		float: right;
-	    width: 8.33333332%;
-	    position: absolute;
-	    padding: 0;
-	    margin-right: 25px;
-	    top: 0;
-	    right: 0;
-	}*/
+
 	.navbar-header {
 		/*float: left;*/
 	}
@@ -355,7 +353,7 @@
 	}
 	.pull-quote {
 	    margin: 25px auto;
-	    width: 60%;
+	    width: 100%;
 	    text-align: center;
 	}
 	p.quote {
@@ -431,7 +429,73 @@
 		margin-right: auto;
    		margin-left: auto;
 	}
-
+	footer {
+		background-color: black;
+		overflow: scroll;
+	}
+	.more {
+		float: right;
+		position: static;
+		bottom: 0;
+		cursor: pointer;
+	}
+	.more span {
+		font-size: 3em;
+		color: #333;
+		text-transform: uppercase;
+	}
+	#more-drawer {
+		background-color: black;
+	}
+	#more-drawer i.fa-times {
+		float: right;
+		color: #d3d3d3;
+		padding: 10px;
+		display:none;
+		cursor: pointer;	
+	}
+	#more-drawer #more-stories {
+		background-color: black;
+		display:none;
+	}
+	#more-drawer a:hover {
+		opacity: 0.6;
+	}
+	#more-drawer a img:hover {
+		opacity: 0.6;
+	}
+	#more-stories h3 a {
+		color: white;
+		text-decoration: none;
+		font-weight: normal;
+		margin-bottom: 30px;
+	}
+	#more-stories div {
+		margin-right: 5px;
+	}
+	#more-stories div h4 {
+	    color: black;
+	    font-weight: normal;
+	}
+	#more-stories div h4 a {
+		color: black;
+	}
+	#more-stories div a:hover {
+		text-decoration: none;
+		opacity: 0.6;
+	}
+	#more-stories div a h4:hover {
+		opacity: 0.6;
+	}
+	#more-stories div.current_story {
+		border: 5px solid #dbdbdb;
+		opacity: 0.6;
+	}
+	#more-drawer #more-stories img {
+		width: 100%;
+    	margin-bottom: 10px;
+		float: left;
+	}
 	/**************************
 		RESPONSIVE EMBEDS
 	*************************/

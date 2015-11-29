@@ -29,7 +29,12 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 	-->
-
+	<style>
+		#fishFader {position:relative;}
+		#fishFader img{position:absolute;z-index:1; width:"100%"}
+		#second {display:none; z-index: -1;}
+		#fishFader figcaption {position: absolute; bottom: -5;}
+	</style>
 
 
     <!-- bootstrap css -->
@@ -85,30 +90,30 @@
     	<div class="clear"></div>
   		<div class="navbar-collapse collapse">
       		<ul class="nav navbar-nav">
-		
+
 				<div class="nav-item nav1 col-sm-2 col-xs-6">
-					<li>Galapagos damselfish</li>
+					<li>Livermore tarplant</li>
 					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav2 col-sm-2 col-xs-6">
-					<li>Clapper rail</li>
-					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
+					<li>Galapagos damselfish</li>
+					<a href="/stories/galapagos-damselfish" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav3 col-sm-2 col-xs-6">
-					<li>Greater sage grouse</li>
-					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
+					<li>Clapper rail</li>
+					<a href="/stories/clapper-rail" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav4 col-sm-2 col-xs-6">
-					<li>Mission Blue butterfly</li>
-					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
+					<li>Greater sage grouse</li>
+					<a href="/stories/sage-grouse" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav5 col-sm-2 col-xs-6">
-					<li>Livermore tarplant</li>
-					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
+					<li>Mission Blue butterfly</li>
+					<a href="/stories/mission-blue" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav6 col-sm-2 col-xs-6">
@@ -139,34 +144,6 @@
 		</div>
 	</div>
 </nav>
-
-<script>
-
-	var imageURL = [
-		'http://racheldiazbastin.com/wp-content/gallery/fish/stickleback-web.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/birds/nf8x10kestreletsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/birds/quail-etsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/insects/etsy_buprestis-aurulenta.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/plants/darwinmoth-etsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/plants/flower-paradise-etsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/plants/pickleweed-web.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/insects/longhornbeetleetsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/insects/etsy_sternotomis-mirabilis.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/reptiles/geckoetsy.jpg',
-	];
-
-	//loop to add illustrations
-	$('.nav-item img').each(function(i){
-		$(this).attr("src", imageURL[i])
-	})
-	
-	//nav-item height = img width
-	var cw = $('img').width();
-	$('.nav-item').css({'height':cw+'px'});
-
-	$('.nav2').addClass('active');
-
-</script>
 
 <header>
 	<div class="row">
@@ -213,10 +190,7 @@
 				#locator { height: 250px; }
 				</style>
 				<div class="col-sm-8 col-sm-offset-2">
-					<div id="locator" class="locator">
-
-
-					</div>
+					<div id="locator" class="locator"></div>
 				</div>
 				<script>
 				
@@ -230,7 +204,6 @@
 					map.addLayer(layer);
 
 					var marker = L.marker([38.118097, -122.507525]).addTo(map);
-				    // marker.bindPopup("<strong>A Marsh on the Petaluma River</strong><br>The 18-mile winding path of the Petaluma River supports the largest ancient tidal marsh in the San Francisco Bay Area, as well as thousands of acres of restored wetlands.").openPopup();
 				    
 				    map.scrollWheelZoom.disable();
 
@@ -242,6 +215,7 @@
 </header>
 
 <article>
+<div class="container">
 	<div class="row">
 
 		<div class="story">
@@ -254,29 +228,11 @@
 			<p>This “type specimen” was collected on a Galapagos expedition in 1893 by Stanford biologist Edmund Heller, labeled and stored at Stanford and then assumed into the Academy’s collection in the 1960s. Some species are so common that Rocha is content to just drop their holotypes in the mail for other researchers to examine. With Azurina, he chuckles at the idea. Trusting the mailbox is not the kind of thing you can do when the 100-year-old thing in the bottle becomes irreplaceable.</p>
 			<p>Rocha twists the lid off and pulls the fish out. Its silver color has faded to yellow. Size and shape-wise, it looks like he’s holding a dinner sardine; you could picture it on toast. Rocha flicks at its pectoral fin to demonstrate the lifelike preservation granted by formalin injection. As we talk, he rests the fish gently on top of the open jar. I stare at the fish. Rocha stares at the fish. Out of an empty, black eye, the fish stares hollowly at the ceiling.</p>
 
-			<figure  class="col-sm-8 col-sm-offset-2 col-xs-12">
-				<img id="fish" src="/media/images/azurina_eupalama_original_web.jpg" width="100%"/>
+			<figure id="fishFader" class="col-md-10 col-md-offset-1 col-sm-12 col-sm-12 col-xs-12">
+ 				<img id="first" src="/media/images/azurina_eupalama_original_web.jpg" />
+				<img id="second" src="/media/images/azurina_eupalema_googeley_eyes_2.jpg" />
 				<figcaption>Azurina eupalama, from the original species description.</figcaption>
 			</figure>
-
-			<script>
-			    $(window).scroll(function(event){
-        			
-        			var scroll = $(window).scrollTop();
-			        var swimmer = $('#fish').offset().top;
-
-			        var fish_height = $('img').height();
-
-			        //console.log( fish_height );
-
-			        if ( scroll > (swimmer - fish_height) ) {
-			        	$('#fish').attr('src', '/media/images/azurina_eupalema_googeley_eyes.jpg');	      
-			        } else {
-			        	$('#fish').attr('src', '/media/images/azurina_eupalama_original_web.jpg');	      
-
-			        }
-			    });
-			</script>
 
 			<p><strong><em>Azurina eupalama</em>, rather manifestly</strong>, is not a fish that anyone misses. It does not exude charisma, like the dodo. It does not represent some great tragedy of American hubris, like the passenger pigeon. It is not the target of resurrection schemes, like the mammoth. Somewhat against the odds given everything else we’re doing to the planet, it was not even directly our fault that the Galapagos damselfish disappeared.</p>
 			<p>And yet: we’re now missing something out there in the world, and this little guy resting on the jar is a formalin-stuffed relic, a symbol of absence, of scarcity, of zero. Ever since Rocha first told me about it, several years ago, it has lodged in my brain, and I find that to examine it and hold it is in some small way to plug into the incomprehensible enormity of the universe. Its unique existence hints at answers, if only I could ask it the right question.</p>
@@ -285,7 +241,7 @@
 			<p>John McCosker, the chair of the Academy’s Department of Aquatic Biology, who took the last photo of Azurina and wrote the paper suggesting it had gone extinct, has spent his life fighting to save life in the oceans — but says that without scientific knowledge, it’s hard to make any judgment at all about the value of an extinction.</p>
 			<p>“Are we going to stop all life on Earth, all competition with living plants and animals?” he says. “It’s a question you have to ask. The way you can prepare to answer that is by knowing as much as you can about every species and their role in the ecosystem, and what would life on Earth be like after its extinction.”</p>
 						
-			<figure class="col-sm-8 col-xs-12 right">
+			<figure class="col-sm-6 col-xs-12 right">
 				<img src="/media/images/hamlet_eric.jpg" />
 				<figcaption>Alas, poor fish, I knew … well, I never knew you. (Illustration by Rachel Diaz-Bastin)</figcaption>
 			</figure>
@@ -299,7 +255,7 @@
 			<p>It’s the <em>something</em> that’s always the problem.</p>
 			<p>We put the fish away in the jar, and reversed down the collection aisle, past biological riches that would take decades to understand. Rocha spun the wheel on the giant library-stack cabinets to pull them back together again, locking the extinct and endangered fish back in the anonymous darkness.</p>
 
-			<figure class="col-sm-8 col-sm-offset-2 col-xs-12">
+			<figure class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
 				<img src="/media/images/azurina_reef.jpg" />
 				<figcaption>Illustration by Rachel Diaz-Bastin</figcaption>
 			</figure>
@@ -323,19 +279,127 @@
 
 
 		</div>
+
+	</div>
 			
+	<div class="row" >
+		<div class="more">
+			<span>More    </span> <i class="fa fa-bars fa-3x"></i> 
+		</div>
+
 	</div>
 </div>
 </article>
 
 
-<script>
-	//balancing lead box and museum card widths and heights
-	var cw = $('.lead-box figure').width();
-	$('.lead-box').css({'height':cw+'px'});
-	$('.museum-card').css({'height':cw+'px'});
+<footer>
+	<div class="row" id="more-drawer">
 
+		<div class="col-sm-12" id="more-stories">
+
+			<i class="fa fa-times fa-3x"></i>
+
+			<h3><a href="">Weird, Rare, Ugly</a></h3>
+
+			<div class="col-sm-2 col-xs-5 more1 thumbnail">
+				<a href="" >
+				<img src="/media/illos/tarweed.jpg" class="img-thumbnail">
+				<h4>Livermore tarweed</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more2 thumbnail">
+				<a href="/stories/galapagos-damselfish" >
+				<img src="/media/illos/azurina.jpg" class="img-thumbnail">
+				<h4>Galapagos damselfish</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more3 thumbnail">
+				<a href="/stories/clapper-rail" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>Clapper rail</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more4 thumbnail">
+				<a href="/stories/sage-grouse" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>Greater sage grouse</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more5 thumbnail">
+				<a href="/stories/mission-blue" ><img src="/media/illos/missionblue.jpg" class="img-thumbnail">
+				<h4>Mission blue butterfly</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more6 thumbnail">
+				<a href="" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>Plant TK</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more7 thumbnail">
+				<a href="" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>California sea blite</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more8 thumbnail">
+				<a href="" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>Ant tk</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more9 thumbnail">
+				<a href="" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>Insect / Herp</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more10 thumbnail">
+				<a href="" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>San Francisco garter snake</h4>
+				</a>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+<!--IMPORTANT: Project scripts: -->
+<script src="/js/biodiversity-scripts.js"></script>
+
+<script>
+//page specific scripts
+
+	//active status for nav and more drawers
+	$('.nav2').addClass('active');	
+	$('.more2').addClass('current_story');
+
+	//scroll event on fish illustrations
+	$(window).scroll(function(event){
+
+		var h = $('#first').height();
+		var ch = $('#fishFader figcaption').height();
+		$('#fishFader').css({'height': h + ch + 'px'});
+
+		var scroll = $(window).scrollTop();
+		var swimmer = $('#fishFader').offset().top;
+
+		var fish_height = $('#fishFader').height();
+
+		if ( scroll > (swimmer - fish_height) ) {
+			$('#second').fadeIn('slow');
+			$('#first').fadeOut('slow');
+		} 
+
+		if ( scroll < (swimmer - fish_height) ) {
+			$('#first').fadeIn('slow');
+			$('#second').fadeOut('slow');
+		}
+
+	});
 </script>
+
 
 </body>
 

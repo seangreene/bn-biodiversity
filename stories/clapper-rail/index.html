@@ -48,6 +48,14 @@
 	<link rel="stylesheet" href="/bn-biodiversity/css/biodiversity-stylesheet.css">
 
 
+	<style>
+	#locator { height: 250px; }
+
+	#map-marsh {
+		height: 400px;
+	}
+
+	</style>
 
 	<!-- jquery cdn -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -60,9 +68,6 @@
 
 	<!-- howler js for audio -->
 	<script src="http://seangreene.github.io/bn-biodiversity/js/howler.min.js"></script>
-
-
-
 
 
 </head>
@@ -90,30 +95,30 @@
     	<div class="clear"></div>
   		<div class="navbar-collapse collapse">
       		<ul class="nav navbar-nav">
-		
+
 				<div class="nav-item nav1 col-sm-2 col-xs-6">
-					<li>Galapagos damselfish</li>
+					<li>Livermore tarplant</li>
 					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav2 col-sm-2 col-xs-6">
-					<li>Clapper rail</li>
-					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
+					<li>Galapagos damselfish</li>
+					<a href="/stories/galapagos-damselfish" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav3 col-sm-2 col-xs-6">
-					<li>Greater sage grouse</li>
-					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
+					<li>Clapper rail</li>
+					<a href="/stories/clapper-rail" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav4 col-sm-2 col-xs-6">
-					<li>Mission Blue butterfly</li>
-					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
+					<li>Greater sage grouse</li>
+					<a href="/stories/sage-grouse" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav5 col-sm-2 col-xs-6">
-					<li>Livermore tarplant</li>
-					<a href="" class="thumbnail"><img src="/filler.jpg"></a>
+					<li>Mission Blue butterfly</li>
+					<a href="/stories/mission-blue" class="thumbnail"><img src="/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav6 col-sm-2 col-xs-6">
@@ -144,34 +149,6 @@
 		</div>
 	</div>
 </nav>
-
-<script>
-
-	var imageURL = [
-		'http://racheldiazbastin.com/wp-content/gallery/fish/stickleback-web.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/birds/nf8x10kestreletsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/birds/quail-etsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/insects/etsy_buprestis-aurulenta.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/plants/darwinmoth-etsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/plants/flower-paradise-etsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/plants/pickleweed-web.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/insects/longhornbeetleetsy.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/insects/etsy_sternotomis-mirabilis.jpg',
-		'http://racheldiazbastin.com/wp-content/gallery/reptiles/geckoetsy.jpg',
-	];
-
-	//loop to add illustrations
-	$('.nav-item img').each(function(i){
-		$(this).attr("src", imageURL[i])
-	})
-	
-	//nav-item height = img width
-	var cw = $('img').width();
-	$('.nav-item').css({'height':cw+'px'});
-
-	$('.nav2').addClass('active');
-
-</script>
 
 <header>
 	<div class="row">
@@ -214,14 +191,8 @@
 					<p>Protection status: <span>Endangered</span></p>
 				</div>
 
-				<style>
-				#locator { height: 250px; }
-				</style>
 				<div class="col-sm-8 col-sm-offset-2">
-					<div id="locator" class="locator">
-
-
-					</div>
+					<div id="locator" class="locator"></div>
 				</div>
 				<script>
 				
@@ -235,7 +206,6 @@
 					map.addLayer(layer);
 
 					var marker = L.marker([38.118097, -122.507525]).addTo(map);
-				    // marker.bindPopup("<strong>A Marsh on the Petaluma River</strong><br>The 18-mile winding path of the Petaluma River supports the largest ancient tidal marsh in the San Francisco Bay Area, as well as thousands of acres of restored wetlands.").openPopup();
 				    
 				    map.scrollWheelZoom.disable();
 
@@ -249,6 +219,7 @@
 <div class="clear"></div>
 
 <article>
+<div class="container">
 	<div class="row">
 
 		<div class="story">
@@ -275,12 +246,6 @@
 			<p>She notes the temperature and the location on the clipboard. Next to them, she scribbles in the most important number, the number behind dozens of pre-dawn trips to the marsh this spring, the number that explains why we’re all out breathing fog wreaths at 5:30 a.m. on a 42-degree March morning on the Petaluma River: zero. Zero clapper rails heard.</p>
 			<p>Wood pulls the engine cord and guides the boat back out into the darkness of the river. One data point down, seven more to go. The hunt for the clapper rail is on.</p>
 
-			<style>
-			#map-marsh {
-				height: 400px;
-			}
-
-			</style>
 			<div class="col-sm-8 col-sm-offset-2 col-xs-12 map-container">
 				<div id="map-marsh">
 
@@ -413,41 +378,6 @@
 				<figcaption>The kek-burr call of the California clapper rail, recorded by Jules Evens in Napa County.</figcaption>
 			</div>
 
-			<script>
-			$(document).ready(function(){
-				
-				var sound = new Howl({
-					//note to self: can declare .ogg file here using comma
-					urls: ['https://dh1rvgpokacch.cloudfront.net/atavist/9410/audio/raw/kekburcut-1403296688-31.mp3'],
-					volume: 0.5,
-				    onend: function() {
-					    $('i').replaceWith('<i class="fa fa-play"></i>');
-					    $('.audio-controller').removeClass('playing');
-					  },
-				    onplay: function() {
-					    $('i').replaceWith('<i class="fa fa-pause"></i>');
-					    $('.audio-controller').addClass('playing');
-					  },
-					onpause: function(){
-					    $('i').replaceWith('<i class="fa fa-play"></i>');
-					    $('.audio-controller').removeClass('playing');					 
-					},
-					onloaderror: function(){
-					    $('i').replaceWith('<p style="font-family:Arial, sans-serif;">Sorry! This sound failed to load.</p>');
-					}
-				});
-
-				$('.audio-controller').on('click', function(){
-				    if ( $(this).hasClass("playing") ) {
-				    	sound.pause();
-				    } else {
-					sound.stop().play();
-				    }
-				});
-			})
-
-			</script>
-
 			<div class="clear"></div>
 
 			<h2>Existence, Defined: A Math Problem</h2>
@@ -522,15 +452,138 @@
 			</figure>
 			
 	</div>
+
+	</div>
+			
+	<div class="row" >
+		<div class="more">
+			<span>More    </span> <i class="fa fa-bars fa-3x"></i> 
+		</div>
+
+	</div>
 </div>
 </article>
 
 
+<footer>
+	<div class="row" id="more-drawer">
+
+		<div class="col-sm-12" id="more-stories">
+
+			<i class="fa fa-times fa-3x"></i>
+
+			<h3><a href="">Weird, Rare, Ugly</a></h3>
+
+			<div class="col-sm-2 col-xs-5 more1 thumbnail">
+				<a href="" >
+				<img src="/media/illos/tarweed.jpg" class="img-thumbnail">
+				<h4>Livermore tarweed</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more2 thumbnail">
+				<a href="/stories/galapagos-damselfish" >
+				<img src="/media/illos/azurina.jpg" class="img-thumbnail">
+				<h4>Galapagos damselfish</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more3 thumbnail">
+				<a href="/stories/clapper-rail" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>Clapper rail</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more4 thumbnail">
+				<a href="/stories/sage-grouse" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>Greater sage grouse</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more5 thumbnail">
+				<a href="/stories/mission-blue" ><img src="/media/illos/missionblue.jpg" class="img-thumbnail">
+				<h4>Mission blue butterfly</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more6 thumbnail">
+				<a href="" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>Plant TK</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more7 thumbnail">
+				<a href="" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>California sea blite</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more8 thumbnail">
+				<a href="" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>Ant tk</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more9 thumbnail">
+				<a href="" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>Insect / Herp</h4>
+				</a>
+			</div>
+			<div class="col-sm-2 col-xs-5 more10 thumbnail">
+				<a href="" >
+				<img src="/media/images/filler.jpg" class="img-thumbnail">
+				<h4>San Francisco garter snake</h4>
+				</a>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+<!--IMPORTANT: Project scripts: -->
+<script src="/js/biodiversity-scripts.js"></script>
+
+
 <script>
+	//nav and more drawer active states
+	$('.nav3').addClass('active');
+	$('.more3').addClass('current_story');
+
 	//balancing lead box and museum card widths and heights
 	var cw = $('.lead-box figure').width();
 	$('.lead-box').css({'height':cw+'px'});
 	$('.museum-card').css({'height':cw+'px'});
+
+	//sound player
+	$(document).ready(function(){
+		
+		var sound = new Howl({
+			//note to self: can declare .ogg file here using comma
+			urls: ['https://dh1rvgpokacch.cloudfront.net/atavist/9410/audio/raw/kekburcut-1403296688-31.mp3'],
+			volume: 0.5,
+		    onend: function() {
+			    $('i').replaceWith('<i class="fa fa-play"></i>');
+			    $('.audio-controller').removeClass('playing');
+			  },
+		    onplay: function() {
+			    $('i').replaceWith('<i class="fa fa-pause"></i>');
+			    $('.audio-controller').addClass('playing');
+			  },
+			onpause: function(){
+			    $('i').replaceWith('<i class="fa fa-play"></i>');
+			    $('.audio-controller').removeClass('playing');					 
+			},
+			onloaderror: function(){
+			    $('i').replaceWith('<p style="font-family:Arial, sans-serif;">Sorry! This sound failed to load.</p>');
+			}
+		});
+
+		$('.audio-controller').on('click', function(){
+		    if ( $(this).hasClass("playing") ) {
+		    	sound.pause();
+		    } else {
+			sound.stop().play();
+		    }
+		});
+	})
 
 </script>
 
