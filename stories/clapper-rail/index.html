@@ -68,7 +68,7 @@
 
 	<!-- howler js for audio -->
 	<script src="http://seangreene.github.io/bn-biodiversity/js/howler.min.js"></script>
-
+	<script src="/js/wavesurfer.js"></script>
 
 </head>
 <body>
@@ -373,8 +373,11 @@
 				<div class="audio-controller">
 					<i class="fa fa-play"></i>
 				</div>
-				<!-- <input type="range" id="seek" value="0" max=""/> -->
 
+				<div id="wave"></div>
+
+				<!-- <input type="range" id="seek" value="0" max=""/>
+ -->
 				<figcaption>The kek-burr call of the California clapper rail, recorded by Jules Evens in Napa County.</figcaption>
 			</div>
 
@@ -555,35 +558,62 @@
 
 	//sound player
 	$(document).ready(function(){
-		
+		var wavesurfer = WaveSurfer.create({
+		    container: '#wave',
+		    waveColor: '#fdaaaa',
+		    progressColor: '#ff0000'
+		});
+
 		var sound = new Howl({
+
 			//note to self: can declare .ogg file here using comma
 			urls: ['https://dh1rvgpokacch.cloudfront.net/atavist/9410/audio/raw/kekburcut-1403296688-31.mp3'],
 			volume: 0.5,
-		    onend: function() {
-			    $('i').replaceWith('<i class="fa fa-play"></i>');
-			    $('.audio-controller').removeClass('playing');
-			  },
-		    onplay: function() {
-			    $('i').replaceWith('<i class="fa fa-pause"></i>');
-			    $('.audio-controller').addClass('playing');
-			  },
-			onpause: function(){
-			    $('i').replaceWith('<i class="fa fa-play"></i>');
-			    $('.audio-controller').removeClass('playing');					 
-			},
-			onloaderror: function(){
-			    $('i').replaceWith('<p style="font-family:Arial, sans-serif;">Sorry! This sound failed to load.</p>');
-			}
+		 //    onend: function() {
+			//     $('i').replaceWith('<i class="fa fa-play"></i>');
+			//     $('.audio-controller').removeClass('playing');
+			//   },
+		 //    onplay: function() {
+			//     $('i').replaceWith('<i class="fa fa-pause"></i>');
+			//     $('.audio-controller').addClass('playing');
+			//   },
+			// onpause: function(){
+			//     $('i').replaceWith('<i class="fa fa-play"></i>');
+			//     $('.audio-controller').removeClass('playing');					 
+			// },
+			// onloaderror: function(){
+			//     $('i').replaceWith('<p style="font-family:Arial, sans-serif;">Sorry! This sound failed to load.</p>');
+			// }
 		});
 
+		wavesurfer.load(sound['_src']);
+		//wavesurfer.setVolume(0.5);
+
+		wavesurfer.on('play', function(){
+			    $('i').replaceWith('<i class="fa fa-pause"></i>');
+			    $('.audio-controller').addClass('playing');
+		});
+		wavesurfer.on('pause', function(){
+			    $('i').replaceWith('<i class="fa fa-play"></i>');
+			    $('.audio-controller').removeClass('playing');	
+		});
+		wavesurfer.on('error', function(){
+			    $('i').replaceWith('<p style="font-family:Arial, sans-serif;">Sorry! This sound failed to load.</p>');
+		});
+		wavesurfer.on('finish', function(){
+			    $('i').replaceWith('<i class="fa fa-play"></i>');
+			    $('.audio-controller').removeClass('playing');
+		});		
 		$('.audio-controller').on('click', function(){
 		    if ( $(this).hasClass("playing") ) {
-		    	sound.pause();
+		    	//sound.pause();
+		    	wavesurfer.pause();
 		    } else {
-			sound.stop().play();
+				// sound.stop().play();
+				wavesurfer.play();
 		    }
 		});
+		
 	})
 
 </script>

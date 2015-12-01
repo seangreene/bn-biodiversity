@@ -27,19 +27,29 @@ $('.museum-card').css({'height':cw+'px'});
 
 //opens more drawer and fades out the link
 $('.more').click(function(){
+	//opens drawer
 	$('#more-drawer').animate({'height':'500px'}, {duration: 300});
+	//fades out more hamburger
 	$('.more').fadeOut("slow", "swing");
+	//fades in close button
 	$('.fa-times').fadeIn("slow", "swing");
+	//makes the stories visible
 	$('#more-drawer #more-stories').css({'display':'block'});
+	//scrolls you to the bottom of the page as the drawer opens up
 	$("html, body").animate({ scrollTop: $(document).height() }, "slow", "swing");
 		return false;
 });
 
 //closes the more drawer and fadesin the more link
 $('.fa-times').click(function(){
+	//closes drawer
 	$('#more-drawer').animate({'height':'0px'}, {duration:300});
+	//fades back in hamburger
 	$('.more').fadeIn("slow", "swing");
+	//fades out close button
 	$('.fa-times').fadeOut("slow", "swing");
+	//hides the stories again
+	$('#more-drawer #more-stories').css({'display':'none'});
 });
 
 $(document).ready(function(){
