@@ -2,14 +2,14 @@
 var imageURL = [
 	'media/illos/tarweed.jpg',
 	'media/illos/azurina.jpg',
-	'http://racheldiazbastin.com/wp-content/gallery/birds/nf8x10kestreletsy.jpg',
-	'http://racheldiazbastin.com/wp-content/gallery/birds/quail-etsy.jpg',
+	'media/images/filler.jpg',
+	'media/illos/grouse.jpg',
 	'media/illos/missionblue.jpg',
-	'http://racheldiazbastin.com/wp-content/gallery/plants/flower-paradise-etsy.jpg',
-	'http://racheldiazbastin.com/wp-content/gallery/plants/pickleweed-web.jpg',
-	'http://racheldiazbastin.com/wp-content/gallery/insects/longhornbeetleetsy.jpg',
-	'http://racheldiazbastin.com/wp-content/gallery/insects/etsy_sternotomis-mirabilis.jpg',
-	'http://racheldiazbastin.com/wp-content/gallery/reptiles/geckoetsy.jpg',
+	'media/images/filler.jpg',
+	'media/images/filler.jpg',
+	'media/images/filler.jpg',
+	'media/images/filler.jpg',
+	'media/images/filler.jpg',
 ];
 
 //loop to add illustrations
@@ -39,6 +39,20 @@ $('.more').click(function(){
 	$("html, body").animate({ scrollTop: $(document).height() }, "slow", "swing");
 		return false;
 });
+
+//REMOVES THE NAV ITEMS WE'RE NOT USING FOR NOW, BECAUSE I AM BEING LAZY
+//DELETE THESE AS STORIES ARE PUBLISHED
+$('.nav6').remove();
+$('.nav7').remove();
+$('.nav8').remove();
+$('.nav9').remove();
+$('.nav10').remove();
+
+$('.more6').remove();
+$('.more7').remove();
+$('.more8').remove();
+$('.more9').remove();
+$('.more10').remove();
 
 //closes the more drawer and fadesin the more link
 $('.fa-times').click(function(){

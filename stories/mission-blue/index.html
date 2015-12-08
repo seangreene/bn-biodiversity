@@ -56,12 +56,13 @@
 	<!-- boostrap cdn -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+    <script src="/bn-biodiversity/js/jquery.lazyload.js"></script>
+
 	<!--maps js -->
 	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 	<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
 
-	<!-- howler js for audio -->
-	<script src="http://seangreene.github.io/bn-biodiversity/js/howler.min.js"></script>
+
 
 </head>
 <body>
@@ -225,7 +226,7 @@
 			<p><span class="dropcap">T</span>he Mission blue butterfly takes its name from San Francisco — the original population was discovered on Twin Peaks, at the time considered part of the Mission — and is the city’s only endangered butterfly. It probably never was widespread, but in the modern era it is incredibly rare. When the Endangered Species Act became law in 1974, there were a lot of creatures that everyone already knew were endangered, and the Mission blue was one of them. It went onto the list in the first big batch of insect listing in 1976. It has declined since then.</p>
 
 			<figure class="col-sm-6 col-xs-12 right">
-				<img src="https://baynature.org/wp-content/uploads/2015/05/Mission_Blue_butterfly.jpg" />
+				<img src="https://baynature.org/wp-content/uploads/2015/05/Mission_Blue_butterfly.jpg" data-original="https://baynature.org/wp-content/uploads/2015/05/Mission_Blue_butterfly.jpg" class="lazy" />
 				<figcaption>A male Mission blue. (Photo by Patrick Kobernus, USFWS)</figcaption>
 
 				<img src="https://baynature.org/wp-content/uploads/2015/05/DSC_0251.jpg">
@@ -243,7 +244,7 @@
 			<p>The butterfly is about the size of a quarter, and mostly an off-white that’s invisible behind plastic. Its folded wings hide the electric blue that give it its name. This pregnant female —“gravid,” in lepidopterist lingo — will go into a cooler, and the cooler will go to Twin Peaks, where the butterfly will be released to lay her eggs.</p>
 
 			<figure class="col-sm-6 col-xs-12 left">
-				<img src="https://baynature.org/wp-content/uploads/2015/05/DSC_0263.jpg">
+				<img src="https://baynature.org/wp-content/uploads/2015/05/DSC_0263.jpg" data-original="https://baynature.org/wp-content/uploads/2015/05/DSC_0263.jpg" class="lazy" >
 				<figcaption>Kirra Swenerton and Liam O’Brien place a captured Mission blue in its plastic container.</figcaption>
 			</figure>
 
@@ -251,7 +252,7 @@
 			<p>The first winter after they started moving butterflies, they found evidence of Mission blue larvae feeding on lupines on Twin Peaks. In 2010, they saw adults flying on Twin Peaks, even though they hadn’t transferred any that year — meaning some of the eggs from the previous year had successfully hatched. In 2011, they saw larvae. Weiss estimates that there are now around 100 female Mission blue butterflies on Twin Peaks, and the team has seen them expanding into new areas on the hilltops, further cementing the idea that the population is self-reproducing. “They’ve taken,” Weiss says, and they’re now at the point where they might even be able to wind down their translocation effort. Weiss said it’s hard to say what the Mission blue carrying capacity of Twin Peaks might be, but the population is past concerns about a genetic bottleneck, and at some point you don’t gain much by adding a few dozen more to the flutter. This year’s translocation might have been the last push the butterfly needed.</p>
 
 			<figure class="col-sm-6 col-xs-12 right">
-				<img src="https://baynature.org/wp-content/uploads/2015/05/DSC_0284.jpg">
+				<img src="https://baynature.org/wp-content/uploads/2015/05/DSC_0284.jpg" data-original="https://baynature.org/wp-content/uploads/2015/05/DSC_0284.jpg" class="lazy">
 				<figcaption>The view north from San Bruno Mountain.</figcaption>
 			</figure>
 
@@ -261,23 +262,12 @@
 			<p>But the act of freeing a butterfly, in a place you know is its home, temporarily clears out those questions from the foggy side of conservation. The butterflies are pretty, and they’re local. Transplanting them seems to work. Catch the butterfly, release the butterfly: it’s a straightforward, clarifying, obvious mission. “This is a happy endangered species story,” Swenerton said at one point. “People want to be part of it.”</p>
 
 			<figure class="col-sm-6 col-sm-offset-3 col-xs-12">
-				<img src="https://baynature.org/wp-content/uploads/2015/05/DSC_0303.jpg">
+				<img src="https://baynature.org/wp-content/uploads/2015/05/DSC_0303.jpg" data-original="https://baynature.org/wp-content/uploads/2015/05/DSC_0303.jpg" class="lazy">
 				<figcaption>San Francisco Recreation and Parks Department Natural Resources Manager Kirra Swenerton releases a Mission blue butterfly on Twin Peaks.</figcaption>
 			</figure>
 
 			<p><strong>Late in the day,</strong> Swenerton sat next to a lupine on Twin Peaks, where she’d just opened up the container and let a butterfly out. Once they release the butterfly, they keep a net in place over it for a while, to encourage the butterfly to lay its eggs on that plant, so Swenerton was watching the butterfly crawl around on the inside of the cloth. As it warmed up after its time in the cooler, the butterfly started to probe with tiny antennae for a way into the fresh air.</p>
 			<p>Twin Peaks with your back to the view is inglorious: a scrubby red slope, weary with litter, crowned by tourists pointing over your shoulder, suggesting that the important stuff is the other direction. But Swenerton sat with the butterfly, her head bent over the net. “All’s well, kiddo,” she said.</p>
-
-
-
-
-						
-
-			
-
-
-
-
 
 		</div>
 			
@@ -295,10 +285,11 @@
 
 <footer>
 	<div class="row" id="more-drawer">
+			<i class="fa fa-times fa-3x"></i>
 
 		<div class="col-sm-12" id="more-stories">
-
-			<i class="fa fa-times fa-3x"></i>
+			
+			<h3><a href="/bn-biodiversity">Weird, Rare, Ugly</a></h3>
 
 			<h3><a href="/bn-biodiversity">Weird, Rare, Ugly</a></h3>
 
@@ -322,7 +313,7 @@
 			</div>
 			<div class="col-sm-2 col-xs-5 more4 thumbnail">
 				<a href="/bn-biodiversity/stories/sage-grouse" >
-				<img src="media/images/filler.jpg" class="img-thumbnail">
+				<img src="media/illos/grouse.jpg" class="img-thumbnail">
 				<h4>Greater sage grouse</h4>
 				</a>
 			</div>
@@ -372,6 +363,12 @@
 
 
 <script>
+
+	$("img.lazy").lazyload({
+		threshold: 900,
+		effect : "fadeIn"
+	});
+
 	//nav and more drawer active classes
 	$('.nav5').addClass('active');
 	$('.more5').addClass('current_story');

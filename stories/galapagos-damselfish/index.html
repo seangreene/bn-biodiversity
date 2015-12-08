@@ -53,6 +53,7 @@
 	<link rel="stylesheet" href="/css/biodiversity-stylesheet.css">
 		<!--web-->
 	<link rel="stylesheet" href="/bn-biodiversity/css/biodiversity-stylesheet.css">
+    <script src="/bn-biodiversity/js/jquery.lazyload.js"></script>
 
 
 	<!-- jquery cdn -->
@@ -241,7 +242,7 @@
 			<p>“Are we going to stop all life on Earth, all competition with living plants and animals?” he says. “It’s a question you have to ask. The way you can prepare to answer that is by knowing as much as you can about every species and their role in the ecosystem, and what would life on Earth be like after its extinction.”</p>
 						
 			<figure class="col-sm-6 col-xs-12 right">
-				<img src="media/images/hamlet_eric.jpg" />
+				<img src="media/images/hamlet_eric.jpg" data-original="media/images/hamlet_eric.jpg" class="lazy" />
 				<figcaption>Alas, poor fish, I knew … well, I never knew you. (Illustration by Rachel Diaz-Bastin)</figcaption>
 			</figure>
 
@@ -255,7 +256,7 @@
 			<p>We put the fish away in the jar, and reversed down the collection aisle, past biological riches that would take decades to understand. Rocha spun the wheel on the giant library-stack cabinets to pull them back together again, locking the extinct and endangered fish back in the anonymous darkness.</p>
 
 			<figure class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-				<img src="media/images/azurina_reef.jpg" />
+				<img src="media/images/azurina_reef.jpg" data-original="media/images/azurina_reef.jpg" class="lazy" />
 				<figcaption>Illustration by Rachel Diaz-Bastin</figcaption>
 			</figure>
 
@@ -293,10 +294,11 @@
 
 <footer>
 	<div class="row" id="more-drawer">
+			<i class="fa fa-times fa-3x"></i>
 
 		<div class="col-sm-12" id="more-stories">
-
-			<i class="fa fa-times fa-3x"></i>
+			
+			<h3><a href="/bn-biodiversity">Weird, Rare, Ugly</a></h3>
 
 			<h3><a href="/bn-biodiversity">Weird, Rare, Ugly</a></h3>
 
@@ -320,7 +322,7 @@
 			</div>
 			<div class="col-sm-2 col-xs-5 more4 thumbnail">
 				<a href="/bn-biodiversity/stories/sage-grouse" >
-				<img src="media/images/filler.jpg" class="img-thumbnail">
+				<img src="media/illos/grouse.jpg" class="img-thumbnail">
 				<h4>Greater sage grouse</h4>
 				</a>
 			</div>
@@ -369,6 +371,11 @@
 <script src="/bn-biodiversity/js/biodiversity-scripts.js"></script>
 <script>
 //page specific scripts
+
+	$("img.lazy").lazyload({
+		threshold: 900,
+		effect : "fadeIn"
+	});
 
 	//active status for nav and more drawers
 	$('.nav2').addClass('active');	
