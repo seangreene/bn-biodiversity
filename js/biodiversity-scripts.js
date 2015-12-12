@@ -2,7 +2,7 @@
 var imageURL = [
 	'media/illos/tarweed.jpg',
 	'media/illos/azurina.jpg',
-	'media/images/filler.jpg',
+	'media/illos/clapper-rail.jpg',
 	'media/illos/grouse.jpg',
 	'media/illos/missionblue.jpg',
 	'media/images/filler.jpg',
