@@ -1,10 +1,27 @@
+//lazy loader
+$(function() {
+	$("img.lazy").lazyload({
+		threshold: 900,
+		effect : "fadeIn"
+	});
+});
+
+//social buttons
+//opens tweet and fb shares in new browser windows
+function tweetBtn() {
+    var tweetWindow = window.open("https://twitter.com/share?url=http://seangreene.github.io/bn-biodiversity&amp;text=The%20Weird,%20the%20Rare%20and%20the%20Ugly%20via@BayNature&amp;hashtags=biodiversity", "", "width=700, height=253");
+}
+function fbBtn() {
+    var fbWindow = window.open("http://www.facebook.com/sharer.php?u=https://seangreene.github.io/bn-biodiversity", "", "width=700, height=253");
+}
+
 //some scripts for the navigation
 var imageURL = [
 	'media/illos/tarweed.jpg',
-	'media/illos/azurina.jpg',
-	'media/illos/clapper-rail.jpg',
-	'media/illos/grouse.jpg',
 	'media/illos/missionblue.jpg',
+	'media/illos/grouse.jpg',
+	'media/illos/clapper-rail.jpg',
+	'media/illos/azurina.jpg',
 	'media/images/filler.jpg',
 	'media/images/filler.jpg',
 	'media/images/filler.jpg',
@@ -19,7 +36,7 @@ $('.nav-item img').each(function(i){
 
 //nav-item height = img width
 var cw = $('img').width();
-$('.nav-item').css({'height':cw+'px'});
+
 //balancing lead box and museum card widths and heights
 var cw = $('.lead-box figure').width();
 $('.lead-box').css({'height':cw+'px'});
