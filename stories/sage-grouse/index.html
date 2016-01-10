@@ -66,22 +66,40 @@
 	<div class="container-fluid">
 		
 		<div class="navbar-header navbar-left">
-	    	<a id="logo" class="navbar-brand navbar-left" href="http://baynature.org">
+	    	<a id="logo" class="navbar-brand navbar-left hide-small" href="http://baynature.org" >
 	        	<img alt="Bay Nature" src="https://baynature.org/wp-content/uploads/2012/05/BNLogo_0521_gold_536.png">
 	    	</a>
-    	</div>
+	    	<div class="nav-head navbar-link navbar-left">
+	    		<a href="/bn-biodiversity">Weird, Ugly, Rare</a>
+	    	</div>
 
-    	<div class="nav-head navbar-link navbar-left">
-    		<a href="/bn-biodiversity">The Weird, the Rare &amp; the Ugly</a>
     	</div>
 
     	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
+			<i class="fa fa-bars fa-lg"></i>
     	</button>
 
+		<button type="button" onclick="tweetBtn()" class="navbar-toggle nav-share" data-toggle="collapse" data-target=".share-collapse">
+			<i class="fa fa-twitter fa-lg"></i>
+		</button>
+
+		<!-- <a href="http://www.facebook.com/sharer.php?u=https://seangreene.github.io/bn-biodiversity" target="_blank" > -->
+			<button onclick="fbBtn()" type="button" class="navbar-toggle nav-share" data-toggle="collapse" data-target=".share-collapse">
+				<i class="fa fa-facebook fa-lg"></i>
+			</button>
+		<!-- </a> -->
+
+		<a 	href="mailto:?Subject=The Weird, the Rare and the Ugly&amp;Body=Check%20out%20these%20Bay%20Nature%20stories http://seangreene.github.io/bn-biodiversity">
+			<button type="button" class="navbar-toggle nav-share hide-small" data-toggle="collapse" data-target=".share-collapse">
+				<i class="fa fa-envelope fa-lg"></i>
+			</button>
+		</a>
+
+    	<div class="collapse">
+    		<i class="fa fa-share"></i>
+    	</div>
     	<div class="clear"></div>
+
   		<div class="navbar-collapse collapse">
       		<ul class="nav navbar-nav">
 
@@ -90,14 +108,9 @@
 					<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item nav2 col-sm-2 col-xs-6">
-					<li>Galapagos damselfish</li>
-					<a href="/bn-biodiversity/stories/galapagos-damselfish" class="thumbnail"><img src="media/images/filler.jpg"></a>
-				</div>
-
-				<div class="nav-item nav3 col-sm-2 col-xs-6">
-					<li>Clapper rail</li>
-					<a href="/bn-biodiversity/stories/clapper-rail" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				<div class="nav-item nav5 col-sm-2 col-xs-6">
+					<li>Mission Blue butterfly</li>
+					<a href="/bn-biodiversity/stories/mission-blue" class="thumbnail"><img src="media/images/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav4 col-sm-2 col-xs-6">
@@ -105,9 +118,14 @@
 					<a href="/bn-biodiversity/stories/sage-grouse" class="thumbnail"><img src="media/images/filler.jpg"></a>
 				</div>
 
-				<div class="nav-item nav5 col-sm-2 col-xs-6">
-					<li>Mission Blue butterfly</li>
-					<a href="/bn-biodiversity/stories/mission-blue" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				<div class="nav-item nav3 col-sm-2 col-xs-6">
+					<li>Clapper rail</li>
+					<a href="/bn-biodiversity/stories/clapper-rail" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav2 col-sm-2 col-xs-6">
+					<li>Galapagos damselfish</li>
+					<a href="/bn-biodiversity/stories/galapagos-damselfish" class="thumbnail"><img src="media/images/filler.jpg"></a>
 				</div>
 
 				<div class="nav-item nav6 col-sm-2 col-xs-6">
