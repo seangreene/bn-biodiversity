@@ -29,7 +29,9 @@
 	}
 	#logo {
 		padding-top: 0;
-
+	}
+	#logopng {
+		background: url('bnlogo.png') 100% 100%;
 	}
 	h1, h2, h3, h4 {
 		font-family: "Open Sans", sans-serif;
@@ -129,6 +131,9 @@
 		text-align: center;
 		font-family: "Libre Baskerville", serif;
 	}
+	.subhead p {
+		padding-bottom: 5px;
+	}
 	.story-container {
 		margin-top: 35px;
 	}
@@ -162,7 +167,11 @@
 	.species-data {
 		margin-left: 15px;
 	}
-
+	.species-data p {
+		font-family: "Open Sans", sans-serif;
+		color: #666;
+		padding: 5px 0;
+	}
 	.species-name {
 	    position: absolute;
 	    text-align: right;
@@ -179,8 +188,8 @@
 		color: black;
 	}
 	.highlight {
-		padding: 0 3px;
-		background-color: red;
+		padding: 4px;
+		background-color: #ff5555;
 		color: white;
 	}
 	.coming-soon {
@@ -341,7 +350,6 @@
 		font-family: "Libre Baskerville", serif;
 	    font-size: 26px;
 	    font-weight: bold;
-	    font-style: italic;
 	    line-height: 32px;
 	    /*color: #8c8c8c;*/
 	    margin: 35px 0 15px;
@@ -361,9 +369,9 @@
 		padding-bottom: 5px;
 	}
 	blockquote {
-		font-family: "Libre Baskerville", serif;
-		font-style: italic;
-		color: #666666;
+	    font-family: 'Open Sans';
+	    font-style: italic;
+	    color: #666666;
 	}
 	.story blockquote {
 		width: 70%;
@@ -382,6 +390,7 @@
 		text-align: center;
     	font-size: 26px;
 		line-height: 32px;
+		color: #666;
     }
 	hr.divider {
 		width: 10%;

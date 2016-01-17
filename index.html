@@ -40,19 +40,107 @@
 </head>
 
 <body>
-	<div id="header">
-		<div id="logo">
-			 <a href="http://baynature.org" title="Bay Nature"><img src=https://baynature.org/wp-content/uploads/2012/05/BNLogo_0521_gold_536.png></a>
-		</div> 
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+	<div class="container-fluid">
+		
+		<div class="navbar-header navbar-left">
+	    	<a id="logo" class="navbar-brand navbar-left hide-small" href="http://baynature.org" >
+	        	<img alt="Bay Nature" src="css/bnlogo.png">
+	    	</a>
+	    	<div class="nav-head navbar-link navbar-left">
+	    		<a href="/bn-biodiversity">Weird, Ugly, Rare</a>
+	    	</div>
 
-	</div><!--header-->
+    	</div>
+
+    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<i class="fa fa-bars fa-lg"></i>
+    	</button>
+
+		<button type="button" onclick="tweetBtn()" class="navbar-toggle nav-share" data-toggle="collapse" data-target=".share-collapse">
+			<i class="fa fa-twitter fa-lg"></i>
+		</button>
+
+		<!-- <a href="http://www.facebook.com/sharer.php?u=https://seangreene.github.io/bn-biodiversity" target="_blank" > -->
+			<button onclick="fbBtn()" type="button" class="navbar-toggle nav-share" data-toggle="collapse" data-target=".share-collapse">
+				<i class="fa fa-facebook fa-lg"></i>
+			</button>
+		<!-- </a> -->
+
+		<a 	href="mailto:?Subject=The Weird, the Rare and the Ugly&amp;Body=Check%20out%20these%20Bay%20Nature%20stories http://seangreene.github.io/bn-biodiversity">
+			<button type="button" class="navbar-toggle nav-share hide-small" data-toggle="collapse" data-target=".share-collapse">
+				<i class="fa fa-envelope fa-lg"></i>
+			</button>
+		</a>
+
+    	<div class="collapse">
+    		<i class="fa fa-share"></i>
+    	</div>
+    	<div class="clear"></div>
+
+  		<div class="navbar-collapse collapse">
+      		<ul class="nav navbar-nav">
+
+				<div class="nav-item nav1 col-sm-2 col-xs-6">
+					<li>Livermore tarplant</li>
+					<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav5 col-sm-2 col-xs-6">
+					<li>Mission Blue butterfly</li>
+					<a href="/bn-biodiversity/stories/mission-blue" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav4 col-sm-2 col-xs-6">
+					<li>Greater sage grouse</li>
+					<a href="/bn-biodiversity/stories/sage-grouse" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav3 col-sm-2 col-xs-6">
+					<li>Clapper rail</li>
+					<a href="/bn-biodiversity/stories/clapper-rail" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav2 col-sm-2 col-xs-6">
+					<li>Galapagos damselfish</li>
+					<a href="/bn-biodiversity/stories/galapagos-damselfish" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav6 col-sm-2 col-xs-6">
+					<li>Plant tk</li>
+					<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav7 col-sm-2 col-xs-6">
+					<li>California sea blite</li>
+					<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav8 col-sm-2 col-xs-6">
+					<li>Ant tk</li>
+					<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav9 col-sm-2 col-xs-6">
+					<li>insect / herp / invertebrate</li>
+					<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav10 col-sm-2 col-xs-6">
+					<li>San Francisco garter snake</li>
+					<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+			</ul>
+		</div>
+	</div>
+</nav>
 
 <header>
 
 	<div class="row">
 		<div class="intro-text col-sm-10 col-sm-offset-1 col-xs-12">
 
-			<div class="bn-sharebuttons">
+<!-- 			<div class="bn-sharebuttons">
 				<a href="https://twitter.com/share?url=http://seangreene.github.io/bn-biodiversity&amp;text=The%20Weird,%20the%20Rare%20and%20the%20Ugly%20via@BayNature&amp;hashtags=biodiversity" target="_blank" class="btn btn-social-icon btn-twitter">
 					<i class="fa fa-twitter fa-lg"></i>
 				</a>
@@ -63,7 +151,7 @@
 				<a 	href="mailto:?Subject=The Weird, the Rare and the Ugly&amp;Body=Check%20out%20these%20Bay%20Nature%20stories http://seangreene.github.io/bn-biodiversity" target="_blank"class="btn btn-social-icon btn-envelope">
 					<i class="fa fa-envelope fa-lg"></i>
 				</a>
-			</div>
+			</div> -->
 
 
 			<div>
@@ -71,8 +159,9 @@
 			</div>
 
 			<div class="subhead col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
-				<p><em>We relate to nature, and learn to value its conservation, by the stories we tell and hear about it. That’s a perilous proposition for the world’s non-charismatic plants and animals. <br>This series showcases the stories of species it’s hard to tell stories about.</em></p>
-				<p><em>They’re weird. They’re ugly. They’re rare.</em></p>
+				<p><em>We relate to nature, and learn to value its conservation, by the stories we tell and hear about it. That’s a perilous proposition for the world’s non-charismatic plants and animals. </em></p>
+				<p><em>This series showcases the stories of species it’s hard to tell stories about.</em></p>
+				<p><em>They’re weird. They’re ugly. They’re rare. </em></p>
 			</div>
 
 		</div>
@@ -84,37 +173,6 @@
 <div class="row">
 
 	<div id="stories" class="species-boxes col-sm-10 col-sm-offset-1 col-xs-12">
-
-		<!-- <h2 class="epilogue" data-toggle="modal" data-target="#intromodal">Introduction</h2> -->
-
-		<!-- Modal -->
-		<div class="modal fade" id="intromodal" tabindex="-1" role="dialog" aria-labelledby="introduction">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-
-		      <div class="modal-body row">
-		   	
-				<div class="col-sm-12">
-				<p><strong>The weird, the rare and the ugly</strong></p>
-				<figure class="col-sm-6 right">
-					<img src="media/images/hamlet_eric.jpg" width="100%" />
-				</figure>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p><em>&mdash;Eric Simons</em></p>
-		   		</div>
-
-		      </div>
-
-		    </div>
-		  </div>
-		</div>
 
 		<!-- LIVERMORE TARWEED -->
 		<div class="story-container">
