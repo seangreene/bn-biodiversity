@@ -38,9 +38,9 @@ $('.nav-item img').each(function(i){
 var cw = $('img').width();
 
 //balancing lead box and museum card widths and heights
-var cw = $('.lead-box figure').width();
-$('.lead-box').css({'height':cw+'px'});
-$('.museum-card').css({'height':cw+'px'});
+// var cw = $('.lead-box figure').width();
+// $('.lead-box').css({'height':cw+'px'});
+// $('.museum-card').css({'height':cw+'px'});
 
 //opens more drawer and fades out the link
 $('.more').click(function(){

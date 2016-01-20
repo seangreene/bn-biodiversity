@@ -230,6 +230,7 @@
 		line-height: 28px;
 		padding-bottom: 5px;
 	}
+
 	/**************************
 	
 	   NAV CSS
@@ -313,39 +314,43 @@
 		text-align: left;
 	}
 
-	.lead-box {
-		width: 50%;
-		float: left;
+	.art-box {
+		/*width: 50%;*/
+		/*float: left;*/
 	    border: 1px #ccc outset;
 	    position:relative;
 	    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 	    overflow: hidden;
 	}
-	.museum-card {
-		border: 1px solid #d3d3d3;
-		padding-top: 15px;
-		background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/linedpaper.png);
-		width: calc(50% - 15px);
-		margin-left: 15px;
-		float: left;
+	.art-box img {
+		width: 100%;
+	}
+	.museum-card h1 {
+		font-size: 44px;
+		line-height: 48px;
 	}
 	.museum-card h2 {
 		font-family: "Open Sans", sans-serif;
 		color: black;
-		font-size: 42px;
+		font-size: 22px;
 		font-weight: 100;
 		text-transform: uppercase;
 		text-align: center;
 		position: relative;
+		max-width: 80%;
+    	margin-right: auto;
+    	margin-left: auto;	
 	}
-	.museum-card h2:after {
-		position:absolute;
-		left:0;
-		bottom:0;
-		width:100%;
-		height:1px;
-		border-bottom:1px solid #000;
-		content:"";
+	.museum-card hr {
+	    border-top: 1px solid #666;
+	    max-width: 60%;
+	    margin-top: 5px;
+	    margin-bottom: 10px;
+	}
+	.card-info {
+	    max-width: 60%;
+	    margin-right: auto;
+	    margin-left: auto;
 	}
 	.card-info p {
 		font-family: "Open Sans", sans-serif;
@@ -612,7 +617,7 @@
 		.species-box {
 			width: 100%;
 		}
-		.lead-box {
+		.art-box {
 			width: 100%;
 		}
 		.story-info {
@@ -663,7 +668,7 @@
 		.story-info {
 			width: 100%;
 		}
-		.lead-box {
+		.art-box {
 			width: 100%;
 		}
 		.museum-card {
