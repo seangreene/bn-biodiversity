@@ -474,6 +474,9 @@
 	    padding: 0 4px 5px;
 	    margin: 0;
 	}
+	.subscribe-story {
+		margin: 15px 25px 15px 15px;
+	}
 	.cartoon {
 		margin: 25px 0;
 	}
@@ -585,6 +588,8 @@
 	/**************************
 	MEDIA QUERIES
 	*************************/
+	.hide-desktop{ display:none;}
+
 	@media (min-width: 1200px){
 		.species-box {
 			/*min-height: 383.3px;*/
@@ -629,7 +634,6 @@
 			margin-left: 0;
 		}
 		.museum-card {
-			width: 50%;
 			padding-top: 0;
 		}
 		.spacer {
@@ -765,8 +769,20 @@
 		.right {
 			padding: 0;
 		}
-
-
+		.subscribe-story {
+			margin: 5px 0 15px 0;
+		}
+		p.continues-below {
+			font-size: 12px;
+			font-family: "Open Sans", sans-serif;
+			font-weight: 100;
+			color: #666;
+		    margin-bottom: -5px;
+		    text-transform: uppercase;
+		}
+		.hide-desktop {
+			display: block;
+		}
 		.hide-small {
 			display: none;
 		}		
