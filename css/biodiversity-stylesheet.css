@@ -399,6 +399,11 @@
 		line-height: 24px;
 		padding-bottom: 5px;		
 	}
+	form.newsletter {
+		border: 1px solid #ccc;
+		padding: 3px;
+		text-align: center;
+	}
 	.conversation {
 		margin: 35px auto 15px;
     	max-width: 600px;
