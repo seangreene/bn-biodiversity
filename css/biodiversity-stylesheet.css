@@ -25,8 +25,9 @@
 		text-align: left;
 	}
 	#logo img {
-		height: 50px;			
-	}
+		width: 150px;
+   		padding-top: 10px;	
+   	}
 	#logo {
 		padding-top: 0;
 	}
@@ -253,6 +254,13 @@
 	.nav-item {
 		margin-top: 10px;
 		overflow: hidden;
+		width: 22%;
+		margin-left: 5px;
+		display:inline-block;
+		vertical-align: top;
+	}
+	.nav-item .thumbnail {
+		margin-bottom: 5px;
 	}
 	.nav-item li {
 
@@ -401,8 +409,21 @@
 	}
 	form.newsletter {
 		border: 1px solid #ccc;
-		padding: 3px;
+		padding: 20px 5px 30px 5px;
 		text-align: center;
+	}
+	form.newsletter h2 {
+		max-width: 100%;
+		margin: 5px auto;
+	}
+	form.newsletter input, form.newsletter p {
+		font-family: "Libre Baskerville", serif;
+		font-size: 16px;
+		line-height: 28px;
+	}
+	form.newsletter p {	
+	    margin: 5px auto;
+	    max-width: 80%;
 	}
 	.conversation {
 		margin: 35px auto 15px;
@@ -535,14 +556,18 @@
 	}
 	#more-drawer i.fa-times {
 		float: right;
-		color: #d3d3d3;
-		padding: 10px;
-		display:none;
-		cursor: pointer;	
+	    color: #d3d3d3;
+	    padding: 10px;
+	    display: none;
+	    cursor: pointer;
+	    z-index: 100;
+	    position: relative;	
 	}
 	#more-drawer #more-stories {
 		background-color: black;
 		display:none;
+		padding-top: 15px;
+
 	}
 	#more-drawer a:hover {
 		opacity: 0.6;
@@ -550,15 +575,22 @@
 	#more-drawer a img:hover {
 		opacity: 0.6;
 	}
-	#more-stories h3 a {
-		color: white;
-		text-decoration: none;
+	#more-stories h3 {
 		font-weight: normal;
 		margin-bottom: 30px;
 		margin-top: 5px;
+		width: 90%;
+		clear:right;
+	}
+	#more-stories h3 a {
+		color: white;
+		text-decoration: none;
 	}
 	#more-stories div {
 		margin-right: 5px;
+	    display: inline-block;
+	    vertical-align: top;
+	    width: 22%;
 	}
 	#more-stories div h4 {
 	    color: black;
@@ -634,25 +666,34 @@
 			width: 100%;
 			padding-top: 10px;
 		}
-		.headline-info {
-	    	width: 83.33333333%;
-			margin-left: 0;
-		}
 		.museum-card {
 			padding-top: 0;
 		}
 		.spacer {
 			padding-top: 0;
 		}
-		.story p {
-			width: 600px;
+		.story h2 {
 			margin-left: 0;
+		}
+		.story p {
+			width: 100%;
+		}
+		figure.right, .right, figure.left, .left {
+			max-width: 100%;
+			padding: 0;
+			float: none;
+		}
+		figure p {
+			height:5px;
 		}
 		.big {
 			padding: 0;
 		}
 		.big img {
 			max-width: 100%;
+		}
+		form.newsletter {
+			padding: 20px 30px 30px 30px;
 		}
 
 	}
