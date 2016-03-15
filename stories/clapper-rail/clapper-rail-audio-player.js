@@ -1,60 +1,3 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script data-rocketsrc="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/bn-biodiversity/js/wavesurfer.js" type="text/rocketscript" data-rocketoptimized="true"></script>
-<script data-rocketsrc="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/bn-biodiversity/js/howler.min.js" type="text/rocketscript" data-rocketoptimized="true"></script><script src="http://seangreene.github.io/bn-biodiversity/js/clapper-rail-audio-player.js"></script>
-
-<style>
-	h3{
-		font-family: "Open Sans", sans-serif;
-	}
-	.sound {
-		position: relative;
-		margin: 15px auto;
-		padding-bottom: 15px;
-    	max-width: 600px;
-    	text-align: center;
-    	border-top: 2px #666666 solid;
-    	border-bottom: 2px #666666 solid;
-	}
-	.sound i {
-		color: #666666;
-		font-size: 100px;	
-	}
-	.sound i:hover {
-		opacity: 0.6;
-		cursor: pointer;
-	}
-	.audio-controller {
-		margin-top: 15px;
-		margin-bottom: 15px;
-	}
-	.sound figcaption {
-		text-align: center;
-		width: 60%;
-		margin-right: auto;
-   		margin-left: auto;
-	}
-
-</style>
-
-<div class="sound">
-	
-	<h3><strong>Listen:</strong> The Call of the Clapper Rail									
-	<div class="audio-controller">
-		<i class="fa fa-play"></i>
-	</div>
-
-	<div id="wave"></div>
-
-	<figcaption>The kek-burr call of the California clapper rail, recorded by Jules Evens in Napa County.</figcaption>
-</div>
-
-
-
-
-<script>
-
 	//sound player
 	$(document).ready(function(){
 		var wavesurfer = WaveSurfer.create({
@@ -114,5 +57,3 @@
 		});
 		
 	})
-
-</script>
