@@ -22,7 +22,7 @@ var imageURL = [
 	'media/illos/grouse.jpg',
 	'media/illos/clapper-rail.jpg',
 	'media/illos/azurina.jpg',
-	'media/images/filler.jpg',
+	'media/illos/seablite.jpg',
 	'media/images/filler.jpg',
 	'media/images/filler.jpg',
 	'media/images/filler.jpg',
@@ -31,6 +31,10 @@ var imageURL = [
 
 //loop to add illustrations
 $('.nav-item img').each(function(i){
+	$(this).attr("src", imageURL[i])
+})
+
+$('.ovl-item img').each(function(i){
 	$(this).attr("src", imageURL[i])
 })
 
@@ -43,19 +47,19 @@ var cw = $('img').width();
 // $('.museum-card').css({'height':cw+'px'});
 
 //opens more drawer and fades out the link
-$('.more').click(function(){
-	//opens drawer
-	$('#more-drawer').animate({'height':'500px'}, {duration: 300});
-	//fades out more hamburger
-	$('.more').fadeOut("slow", "swing");
-	//fades in close button
-	$('.fa-times').fadeIn("slow", "swing");
-	//makes the stories visible
-	$('#more-drawer #more-stories').css({'display':'block'});
-	//scrolls you to the bottom of the page as the drawer opens up
-	$("html, body").animate({ scrollTop: $(document).height() }, "slow", "swing");
-		return false;
-});
+// $('.more').click(function(){
+// 	//opens drawer
+// 	$('#more-drawer').animate({'height':'500px'}, {duration: 300});
+// 	//fades out more hamburger
+// 	$('.more').fadeOut("slow", "swing");
+// 	//fades in close button
+// 	$('.fa-times').fadeIn("slow", "swing");
+// 	//makes the stories visible
+// 	$('#more-drawer #more-stories').css({'display':'block'});
+// 	//scrolls you to the bottom of the page as the drawer opens up
+// 	$("html, body").animate({ scrollTop: $(document).height() }, "slow", "swing");
+// 		return false;
+// });
 
 //REMOVES THE NAV ITEMS WE'RE NOT USING FOR NOW, BECAUSE I AM BEING LAZY
 //DELETE THESE AS STORIES ARE PUBLISHED

@@ -68,6 +68,159 @@
 
 </head>
 <body>
+<style>
+	.navbar-header {
+		font-family: 'Open Sans', sans-serif;
+	}
+
+.modal-header {
+	border-bottom: 0px;
+}
+.modal-body {
+	padding: 0 15px 15px 15px;
+}
+.modal-dialog {   
+	width: 95%;
+	margin: 0 auto;
+}
+h4.modal-title {
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#overlay ul {
+	list-style: none;
+	padding: 0;
+}
+	#overlay .thumbnail {
+		width: calc(24% - 10px);
+		display: inline-block;
+		margin: 5px;
+	}
+	#overlay .ovl-item {
+		position: relative;
+	}
+	#overlay .ovl-item li { 
+	   position: absolute; 
+	   bottom: 5px; 
+	   left: 0; 
+	   width: 100%; 
+	}
+	#overlay a li {
+		font-family: "Open Sans", sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: black;
+		font-size: 1.5em;
+		line-height: 1.1em;
+		text-align: center;
+		background-color: rgba(255,255,255, .5);
+		padding-top: 5px;
+	}
+
+@media (max-width: 768px){
+	#overlay .thumbnail {
+		width: calc(24% - 10px);
+		display: inline-block;
+		margin: 5px;
+	}
+	#overlay a li {
+		font-size: 1.1em;
+	}
+}
+@media (max-width: 425px){
+	#overlay .thumbnail {
+		width: calc(49% - 10px);
+		display: inline-block;
+		margin: 5px;
+	}
+	#overlay a li {
+		font-size: 1.2em;
+	}
+}
+@media (max-width: 320px){
+	#overlay a li {
+		font-size: 1em;
+	}
+}
+
+</style>
+
+<div id="overlay" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        	<span aria-hidden="true">
+        		<i class="fa fa-times fa-1x"></i>
+        	</span>
+        </button>
+        <h4 class="modal-title">Weird, Ugly, Rare</h4>
+      </div>
+      <div class="modal-body">
+        	<ul>
+        		<a href="/stories/livermore-tarweed" class="thumbnail">
+					<div class="ovl-item ovl1">
+						<li>Livermore tarplant</li>
+						<img src="media/images/filler.jpg">
+					</div>
+				</a>
+				<a href="/bn-biodiversity/stories/mission-blue" class="thumbnail">
+					<div class="ovl-item ovl5">
+						<li>Mission Blue butterfly</li>
+						<img src="media/images/filler.jpg">
+					</div>
+				</a>
+				<a href="/bn-biodiversity/stories/sage-grouse" class="thumbnail">
+					<div class="ovl-item ovl4">
+						<li>Greater sage grouse</li>
+						<img src="media/images/filler.jpg">
+					</div>
+				</a>
+				<a href="/bn-biodiversity/stories/clapper-rail" class="thumbnail">
+					<div class="ovl-item ovl3">
+						<li>Clapper rail</li>
+						<img src="media/images/filler.jpg">
+					</div>
+				</a>
+				<a href="/bn-biodiversity/stories/galapagos-damselfish" class="thumbnail">
+					<div class="ovl-item ovl2">
+						<li>Galapagos damselfish</li>
+						<img src="media/images/filler.jpg">
+					</div>
+				</a>
+				<a href="" class="thumbnail">
+					<div class="ovl-item ovl6">
+						<li>California sea blite</li>
+						<img src="media/images/filler.jpg">
+					</div>
+				</a>
+<!-- 					<div class="ovl-item ovl7">
+						<li>California sea blite</li>
+						<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+					</div>
+
+					<div class="ovl-item ovl8">
+						<li>Ant tk</li>
+						<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+					</div>
+
+					<div class="ovl-item ovl9">
+						<li>insect / herp / invertebrate</li>
+						<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+					</div>
+
+					<div class="ovl-item ovl10">
+						<li>San Francisco garter snake</li>
+						<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+					</div> -->
+		</ul>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
 
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -84,7 +237,8 @@
 
     	</div>
 
-    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    	<!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> -->
+    	<button type="button" class="navbar-toggle"  data-toggle="modal" data-target="#overlay">
 			<i class="fa fa-bars fa-lg"></i>
     	</button>
 
@@ -280,12 +434,15 @@
 
 	</div>
 			
-	<div class="row" >
+			<button type="button" class="navbar-toggle more"  data-toggle="modal" data-target="#overlay">
+				<span>More    </span> <i class="fa fa-bars fa-3x"></i> 
+			</button>
+<!-- 	<div class="row" >
 		<div class="more">
 			<span>More    </span> <i class="fa fa-bars fa-3x"></i> 
 		</div>
 
-	</div>
+	</div> -->
 </div>
 </article>
 
