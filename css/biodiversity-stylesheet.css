@@ -299,6 +299,78 @@
 	}
 	.navbar-collapse.collapse.in {display: block !important; } 
 
+	.navbar-header {
+			font-family: 'Open Sans', sans-serif;
+		}
+		.nav-head {
+			float: left;
+		}
+		#fishFader {position:relative;}
+		#fishFader img{position:absolute;z-index:1; width:100%}
+		#second {display:none; z-index: -1;}
+		#fishFader figcaption {position: absolute; bottom: -5;}
+		#map-marsh {
+			height: 400px;
+		}
+
+		/*navigation modal css*/
+		.modal-header {
+		border-bottom: 0px;
+		}
+		.modal-body {
+			padding: 0 15px 15px 15px;
+		}
+		.modal-dialog {   
+			width: 95%;
+			margin: 0 auto;
+		}
+		h4.modal-title {
+			font-family: "Open Sans", sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		#overlay ul {
+			list-style: none;
+			padding: 0;
+		}
+		#overlay .thumbnail {
+			width: calc(24% - 10px);
+			display: inline-block;
+			margin: 5px;
+		}
+		#overlay .ovl-item {
+			position: relative;
+		}
+		#overlay .ovl-item li { 
+		   position: absolute; 
+		   bottom: 5px; 
+		   left: 0; 
+		   width: 100%; 
+		}
+		#overlay a li {
+			font-family: "Open Sans", sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: black;
+			font-size: 1.5em;
+			line-height: 1.1em;
+			text-align: center;
+			background-color: rgba(255,255,255, .5);
+			padding-top: 5px;
+		}
+
+		.more-text {
+			float: right;
+			position: static;
+			bottom: 0;
+			cursor: pointer;
+		}
+		.more-text span {
+			font-size: 3em;
+			color: #333;
+			text-transform: uppercase;
+		}
+
 	/**************************
 	
 	    ARTICLE PAGE CSS
@@ -656,6 +728,14 @@
 	}
 
 	@media (max-width: 768px){
+		#overlay .thumbnail {
+			width: calc(24% - 10px);
+			display: inline-block;
+			margin: 5px;
+		}
+		#overlay a li {
+			font-size: 1.1em;
+		}
 		.species-box {
 			width: 100%;
 		}
@@ -762,6 +842,16 @@
 			display: none;
 		}
 	}
+	@media (max-width: 425px){
+		#overlay .thumbnail {
+			width: calc(49% - 10px);
+			display: inline-block;
+			margin: 5px;
+		}
+		#overlay a li {
+			font-size: 1.2em;
+		}
+	}
 
 	@media (max-width: 400px){
 		body { overflow-x: hidden;}
@@ -831,7 +921,12 @@
 		}
 		.hide-small {
 			display: none;
-		}		
+		}
+		@media (max-width: 320px){
+			#overlay a li {
+				font-size: 1em;
+			}
+		}	
 	}
 
 </style>

@@ -19,16 +19,6 @@
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/jquery.c2selectbox.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	<!--
-	<link href="/bn-biodiversity/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/bn-biodiversity/js/jquery.min.js"></script>
-    <script src="/bn-biodiversity/js/bootstrap.min.js"></script>
-
-
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-	-->
 	<style>
 		#fishFader {position:relative;}
 		#fishFader img{position:absolute;z-index:1; width:100%}
@@ -38,8 +28,12 @@
 
 
     <!-- bootstrap css -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
 	<!--leaflet-->
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <!--open sans headline font -->
@@ -143,7 +137,6 @@ h4.modal-title {
 		font-size: 1em;
 	}
 }
-
 </style>
 
 <div id="overlay" class="modal fade" tabindex="-1" role="dialog">
@@ -151,7 +144,7 @@ h4.modal-title {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        	<span aria-hidden="true">
+        	<span aria-hidden="false">
         		<i class="fa fa-times fa-1x"></i>
         	</span>
         </button>
@@ -195,25 +188,6 @@ h4.modal-title {
 						<img src="media/images/filler.jpg">
 					</div>
 				</a>
-<!-- 					<div class="ovl-item ovl7">
-						<li>California sea blite</li>
-						<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
-					</div>
-
-					<div class="ovl-item ovl8">
-						<li>Ant tk</li>
-						<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
-					</div>
-
-					<div class="ovl-item ovl9">
-						<li>insect / herp / invertebrate</li>
-						<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
-					</div>
-
-					<div class="ovl-item ovl10">
-						<li>San Francisco garter snake</li>
-						<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
-					</div> -->
 		</ul>
       </div>
 
@@ -322,9 +296,16 @@ h4.modal-title {
 
 		<div class="col-sm-10 col-sm-offset-1 col-xs-12">
 
-			<div class="museum-card col-sm-6">
+			<div class="museum-card col-md-6 col-sm-12 col-xs-12">
 
 				<h1>The Fish We Never Knew</h1>
+
+				<div class="art-box visible-sm visible-xs">
+					<figure>
+						<img src="media/illos/azurina.jpg" />
+					</figure>
+
+				</div>
 
 				<h2>Galapagos damselfish</h2>
 
@@ -337,7 +318,7 @@ h4.modal-title {
 				</div>
 			</div>
 
-			<div class="art-box col-sm-6">
+			<div class="art-box col-md-6 col-sm-12 hidden-sm hidden-xs">
 				<figure>
 					<img src="media/illos/azurina.jpg" />
 				</figure>
