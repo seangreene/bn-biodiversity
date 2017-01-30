@@ -371,21 +371,7 @@
 			//note to self: can declare .ogg file here using comma
 			urls: ['https://dh1rvgpokacch.cloudfront.net/atavist/9410/audio/raw/kekburcut-1403296688-31.mp3'],
 			volume: 0.5,
-		 //    onend: function() {
-			//     $('i').replaceWith('<i class="fa fa-play"></i>');
-			//     $('.audio-controller').removeClass('playing');
-			//   },
-		 //    onplay: function() {
-			//     $('i').replaceWith('<i class="fa fa-pause"></i>');
-			//     $('.audio-controller').addClass('playing');
-			//   },
-			// onpause: function(){
-			//     $('i').replaceWith('<i class="fa fa-play"></i>');
-			//     $('.audio-controller').removeClass('playing');					 
-			// },
-			// onloaderror: function(){
-			//     $('i').replaceWith('<p style="font-family:Arial, sans-serif;">Sorry! This sound failed to load.</p>');
-			// }
+
 		});
 
 		wavesurfer.load(sound['_src']);

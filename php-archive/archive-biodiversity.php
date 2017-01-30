@@ -217,13 +217,11 @@
 			<i class="fa fa-twitter fa-lg"></i>
 		</button>
 
-		<!-- <a href="http://www.facebook.com/sharer.php?u=https://seangreene.github.io" target="_blank" > -->
-			<button onclick="fbbtn()" type="button" class="navbar-toggle nav-share" data-toggle="collapse" data-target=".share-collapse">
-				<i class="fa fa-facebook fa-lg"></i>
-			</button>
-		<!-- </a> -->
+		<button onclick="fbbtn()" type="button" class="navbar-toggle nav-share" data-toggle="collapse" data-target=".share-collapse">
+			<i class="fa fa-facebook fa-lg"></i>
+		</button>
 
-		<a 	href="mailto:?Subject=The Weird, the Rare and the Ugly&amp;Body=Check%20out%20these%20Bay%20Nature%20stories http://seangreene.github.io">
+		<a 	href="mailto:?Subject=The Weird, the Rare and the Ugly&amp;Body=Check%20out%20these%20Bay%20Nature%20stories http://www.baynature.org/biodiversity">
 			<button type="button" class="navbar-toggle nav-share hide-small" data-toggle="collapse" data-target=".share-collapse">
 				<i class="fa fa-envelope fa-lg"></i>
 			</button>
@@ -238,20 +236,6 @@
 
 	<div class="row">
 		<div class="intro-text col-sm-10 col-sm-offset-1 col-xs-12">
-
-<!-- 			<div class="bn-sharebuttons">
-				<a href="https://twitter.com/share?url=http://seangreene.github.io<?php echo get_template_directory_uri(); ?>/bn-biodiversity&amp;text=The%20Weird,%20the%20Rare%20and%20the%20Ugly%20via@BayNature&amp;hashtags=biodiversity" target="_blank" class="btn btn-social-icon btn-twitter">
-					<i class="fa fa-twitter fa-lg"></i>
-				</a>
-				<a href="http://www.facebook.com/sharer.php?u=https://seangreene.github.io<?php echo get_template_directory_uri(); ?>/bn-biodiversity" target="_blank" class="btn btn-social-icon btn-facebook">
-					<i class="fa fa-facebook fa-lg"></i>
-				</a>
-        
-				<a 	href="mailto:?Subject=The Weird, the Rare and the Ugly&amp;Body=Check%20out%20these%20Bay%20Nature%20stories http://seangreene.github.io<?php echo get_template_directory_uri(); ?>/bn-biodiversity" target="_blank"class="btn btn-social-icon btn-envelope">
-					<i class="fa fa-envelope fa-lg"></i>
-				</a>
-			</div> -->
-
 
 			<div>
 				<h1>Weird, Ugly, Rare</h1>
@@ -331,11 +315,6 @@
 		 <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/weirduglyrare" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weirduglyrare', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
 		 	<h2 class="credits">Sign up<h2>
 		 	<p>Receive an email when we publish the next story in 'Weird, Ugly, Rare.'</p>
-<!-- 		 	<p>
-		 		<input type="text" style="width:140px" name="email" id="tlemail" placeholder="Email address" />
-		 		<input type="hidden" value="1" name="embed"/>
-		 		<button class="btn btn-default" type="submit">Subscribe</button>
-		 	</p> -->
 
 		 	<div class="input-group col-sm-8 col-sm-offset-2">
 		 		<p><input type="text" class="form-control" name="email" id="tlemail" placeholder="Email address" /></p>
