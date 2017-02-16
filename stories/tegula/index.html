@@ -19,14 +19,6 @@
 	<link rel="stylesheet" href="http://3vswoj22h2l7nt08f1ye9o4r.wpengine.netdna-cdn.com/wp-content/themes/bay-nature-responsive/jquery.c2selectbox.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	<style>
-		#fishFader {position:relative;}
-		#fishFader img{position:absolute;z-index:1; width:100%}
-		#second {display:none; z-index: -1;}
-		#fishFader figcaption {position: absolute; bottom: -5;}
-	</style>
-
-
     <!-- bootstrap css -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -55,9 +47,18 @@
 </head>
 <body>
 <style>
+.story .snail-section {
+	margin: 60px 0;
+}
+.story .snail-section h2, .story .snail-section p {
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: 0;
+}
 .fade-scroller {
     height: 700px;
     position: relative;
+    margin-left: 15px;
 }
 
 img.fade-img {
@@ -90,6 +91,114 @@ img.fade-img {
   }
 }
 </style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+	<div class="container-fluid">
+		
+		<div class="navbar-header navbar-left">
+	    	<a id="logo" class="navbar-brand navbar-left hide-small" href="http://baynature.org" >
+	        	<img alt="Bay Nature" src="/bn-biodiversity/css/bnlogo.png">
+	    	</a>
+
+	    	<div class="nav-head navbar-link navbar-left">
+	    		<a href="/bn-biodiversity">Weird, Ugly, Rare</a>
+	    	</div>
+
+    	</div>
+
+    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<i class="fa fa-bars fa-lg"></i>
+    	</button>
+
+		<button type="button" onclick="tweetBtn()" class="navbar-toggle nav-share" data-toggle="collapse" data-target=".share-collapse">
+			<i class="fa fa-twitter fa-lg"></i>
+		</button>
+
+		<!-- <a href="http://www.facebook.com/sharer.php?u=https://seangreene.github.io/bn-biodiversity" target="_blank" > -->
+			<button onclick="fbBtn()" type="button" class="navbar-toggle nav-share" data-toggle="collapse" data-target=".share-collapse">
+				<i class="fa fa-facebook fa-lg"></i>
+			</button>
+		<!-- </a> -->
+
+		<a 	href="mailto:?Subject=The Weird, the Rare and the Ugly&amp;Body=Check%20out%20these%20Bay%20Nature%20stories http://seangreene.github.io/bn-biodiversity">
+			<button type="button" class="navbar-toggle nav-share hide-small" data-toggle="collapse" data-target=".share-collapse">
+				<i class="fa fa-envelope fa-lg"></i>
+			</button>
+		</a>
+
+    	<div class="clear"></div>
+
+  		<div class="navbar-collapse collapse">
+      		<ul class="nav navbar-nav">
+
+				<div class="nav-item nav1">
+					<li>Livermore tarplant</li>
+					<a href="/bn-biodiversity/stories/livermore-tarweed" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav5">
+					<li>Mission Blue butterfly</li>
+					<a href="/bn-biodiversity/stories/mission-blue" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav4">
+					<li>Greater sage grouse</li>
+					<a href="/bn-biodiversity/stories/sage-grouse" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav3">
+					<li>Clapper rail</li>
+					<a href="/bn-biodiversity/stories/clapper-rail" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav2">
+					<li>Galapagos damselfish</li>
+					<a href="/bn-biodiversity/stories/galapagos-damselfish" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav7">
+					<li>California sea blite</li>
+					<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+
+				<div class="nav-item nav8">
+					<li>Tegula</li>
+					<a href="" class="thumbnail"><img src="media/images/filler.jpg"></a>
+				</div>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<header>
+	<div class="row">
+
+		<div class="col-sm-10 col-sm-offset-1 col-xs-12">
+
+			<div class="museum-card col-sm-6">
+
+				<h1>Snail pun headline here</h1>
+
+				<h2>Tegula sea snail</h2>
+
+				<hr></hr>
+
+				<div class="card-info">
+					<p>Habitat: <span>tk</span></p>
+					<p>Population: <span>tk</span></p>
+					<p>Protection status: <span>tk</span></p>
+				</div>
+			</div>
+
+			<div class="art-box col-sm-6">
+				<figure>
+					<img src="media/images/sea-snails.jpg" />
+				</figure>
+			</div>
+		</div>
+	</div>
+</header>
 
 
 <article>
@@ -97,17 +206,26 @@ img.fade-img {
 	<div class="row">
 
 		<div class="story">
+			<h2>Snail dek tk tk tk.</h2>
+			<p class="byline">by <a href="http://baynature.org/author/ericsimons/">Eric Simons</a></p>
 
+			<p>It is easy to find a Tegula sea snail. Tegula snails cobble the tidepools of the Pacific coast. In some places there are literally millions of them in a few hundred feet of rock. You might not have noticed this before; I certainly hadn&rsquo;t until a few months ago.</p>
 
-			<!-- <figure id="fishFader" class="col-md-10 col-md-offset-1 col-sm-12 col-sm-12 col-xs-12">
- 				<img id="first" src="media/images/azurina_eupalama_original_web.jpg" />
-				<img id="second" src="media/images/azurina_eupalema_googeley_eyes_2.jpg" />
-				<figcaption>Azurina eupalama, from the original species description.</figcaption>
-			</figure> -->
+			<p>Recently I took my four-year-old daughter tidepooling at Fitzgerald Marine Reserve, on the San Mateo coast. I wondered what would catch her interest, since like most preschoolers Eleanor has no particular awareness that there is such a thing as nature separate from anything else. Grandeur and greenery do not inevitably impress her. She is capable of awe, but not predictably so. (I remember hauling her in a baby carrier for her first visit to the swirling cloud of technicolor butterflies and birds in the tropical rainforest exhibit at the California Academy of Sciences, which she ignored entirely so as to drool in wide-eyed wonder over a spiraling metal handrail.) Her worldview is determined by stories, by what she can imagine about the world she sees and by what she can tell me about what she imagines.</p>
 
-			<p>Pelican gulper, houndshark, kingfish vimba gombessa Death Valley pupfish! Gudgeon stargazer snake eel hussar Moses sole amur pike scabbard fish. Cookie-cutter shark largemouth bass whale catfish--central mudminnow. Trumpetfish grouper: Redfish, false cat shark elephantnose fish squeaker. Sailbearer smooth dogfish drum duckbill eel grayling basking shark snubnose parasitic eel, burrowing goby Redfin perch cownose ray orangestriped triggerfish. Pearleye, nurseryfish slimehead white shark harelip sucker paradise fish grass carp torrent fish, pelican gulper; black dragonfish Blind shark, Atlantic cod Asiatic glassfish eel. Whiff, horn shark trout-perch demoiselle ribbon eel, sea snail warty angler loach catfish African lungfish. Common tunny southern smelt bass zebra tilapia whiting sand goby!</p>
+			<p>She called the first Tegula she found a &ldquo;rainbow shell.&rdquo; Viewed top-down it was about the diameter of a quarter. Its widest spiral was a rusty orange, which faded into more caramel brown middle spiral, and then a top spiral that you would call purple if you were four years old and really loved purple. The shell rested on a smooth stone, crusted over with red coralline algae. A small white cap seemed to be dripping down from its top spiral. Eleanor made me take a picture with my phone, and show it to her to make sure it matched her narrative vision.</p>
 
+			<p>It had been my intention to walk over the snails to reach the interesting tide pools, as grownups do. Now we paused to consider. I knew the snail we had found was a Tegula brunnea, or &ldquo;brown tegula,&rdquo; and that it was surrounded by what looked like a gravel roadbed of Tegula funebralis, or &ldquo;black tegula.&rdquo; I realized I did not know where else the snails lived, or for how long, or what they ate, or what ate them, or even who would answer any of these questions. An uncomfortable memory from long ago stirred in the depths of my brain. As an undergraduate, I&rsquo;d left a marine lab internship and an impacted marine biology major to follow my increasing interest in journalism. I remember telling people at the time that it seemed like every marine biologist&rsquo;s destiny was to spend six years as a graduate student looking at snails in the tidepool, the kind of righteous tedium I knew curriculum committees designed to weed out people with an interest in charisma.</p>
 
+			<p>Belatedly by 20 years, I found myself ankle-deep in the intertidal wondering about sea snails. Tegula snails are perhaps the most ignorable animals in the West Coast&rsquo;s intertidal life riot. But once you start to pluck at that seemingly pedestrian thread it leads you up and out and away until suddenly you&rsquo;ve unraveled a whole damned sweater. &ldquo;Go down to the shore and poke around,&rdquo; urges the preface to the 704-page Encyclopedia of Tidepools &amp; Rocky Shores. &ldquo;Undoubtedly, questions will rapidly spring to mind. At first they may be specific and small-scale. What species is that snail? &#8230; But small questions lead to larger ones.&rdquo;</p>
+
+			<p>Part of being four years old is that you can invent and confidently assert your own answers to life&rsquo;s mysteries. (And conveniently just about everything is a mystery.) Then the question troubles you no more. As Eleanor and I walked back along the beach on our way to the car, we passed a vacationing family from Minnesota. Eleanor called cheerfully after them, &ldquo;I hope you find a rainbow shell!&rdquo; By the time I dropped her at preschool later that morning, her attention had wandered back to the park, her friends, and the waffles awaiting her at snacktime.</p>
+
+			<p>To wonder might be childlike but to follow the threads to bigger questions, to fit the parts together and construct a universe, is a game for grownups. It is a game that I played for several months after that tidepool trip. &ldquo;When you collect marine animals,&rdquo; John Steinbeck wrote in the first chapter of Cannery Row, &ldquo;there are certain flat worms so delicate that they are almost impossible to capture whole, for they break and tatter under the touch. You must let them ooze and crawl of their own will onto a knife blade and then lift them gently into your bottle of sea water. And perhaps that might be the way to write this book -- to open the page and let the stories crawl in by themselves.&rdquo;</p>
+
+			<p>Sea snails don&rsquo;t scream a story at you. But you can piece one together. Here then is a spiraling story about Tegula snails, which crawled into my imagination, and lodged there.</p>
+		
+		<div class="snail-section">
         <div class="right col-sm-6">
             <div class="fade-scroller">
                 <div class="trigger" id="trigger1"></div>
@@ -126,68 +244,169 @@ img.fade-img {
         </figure>
 
            	
-        	<h2>1. Here's the thing about snails</h2>
-			<p>Coolie loach mouthbrooder flat loach seamoth flounder dwarf loach bullhead shark threadsail, piranha." Australasian salmon Lost River sucker round herring. Burma danio monkfish, sardine huchen lizardfish bonytongue freshwater hatchetfish ronquil slipmouth basking shark porbeagle shark. Dragonet bass spearfish barramundi bristlemouth southern smelt--angler straptail American sole needlefish capelin; sheatfish. Staghorn sculpin inconnu tilapia sandperch anemonefish, walking catfish cookie-cutter shark sailfin silverside Bengal danio sablefish. Lake chub longnose sucker channel bass oilfish, sleeper shark streamer fish golden dojo straptail loosejaw pelican eel.</p>
+			<h2>1. ***</h2>
 
-			<p>Tripletail fire bar danio Razorback sucker Atlantic trout bluefish ribbon eel threadsail. Bombay duck cownose ray atka mackerel, temperate perch Atlantic trout lake whitefish silver carp sheepshead lightfish sabertooth. Whiting, central mudminnow; sind danio red velvetfish, "pencil catfish, dory spinefoot; capelin arrowtooth eel rice eel marlin temperate ocean-bass." California flyingfish Bitterling, slimehead, lake whitefish scabbard fish spiny basslet?" Northern anchovy humuhumunukunukuapua'a sailback scorpionfish redtooth triggerfish pike eel scythe butterfish neon tetra. Queen danio clownfish, flying characin houndshark popeye catafula albacore grass carp sleeper slender barracudina anemonefish. Gurnard armored searobin squawfish mudminnow banjo catfish mojarra angler velvet catfish.</p>
+			<p>Our story starts in a tidepool. Next time you&rsquo;re at the coast look closely into one and ask yourself a question: how is this tidepool organized? Why is the stuff in there where it is? As it turns out, there is a method to the arrangement, and the pattern in many ways resembles the terrestrial world. The bottom -- the ground -- is made of rock. On the rock grows a meadow, in this case of carpet-like encrusting algae. There is a shrubland of branching coralline algae, and a forest of swaying, leafy brown algae. There are herbivores, like snails, grazing. There are predators that stalk, ambush, chase, and prey on the grazers.</p>
+
+			<p>Since it is easier to sit and stare at all the little life forms in a tidepool than it is to sit and stare at all the much larger life forms on a mountain range, tidepools have long been a way for scientists to observe the ways everything in the universe is hitched to everything else. &ldquo;There&rsquo;s organization,&rdquo; says UC Santa Cruz intertidal ecologist Pete Raimondi. &ldquo;That&rsquo;s one reason people are drawn to the intertidal, you can see it. Not what the rules are, but that they are there.&rdquo;</p>
+
+			<p>In the tidepools and nearshore water of the Pacific Coast live four common varieties of Tegula snail: black, brown, dusky, and Monterey. They look a lot alike, they&rsquo;re built nearly the same, they behave a lot alike, they eat the same sort of stuff, but our observation of the tidepool&rsquo;s arrangement leaves us with a mystery: they don&rsquo;t live in the same places. Black tegula live in the shallows, then as you wade deeper they&rsquo;re replaced by brown tegula, then as you don SCUBA gear those are replaced by dusky tegula and Monterey tegula. This is perhaps more remarkable than it sounds. Some invisible force somehow prevents each of these types of snails from living in places perfectly suitable for them to live.</p>
+
+			<p>It&rsquo;s like an intertidal version of dark energy, the theoretical negative force pushing the universe apart that physicists know must exist but can&rsquo;t find. It turns out that the question a child might ask, why is this thing here?, is actually a really great scientific question when it comes to Tegula sea snails. There&rsquo;s definitely a rule here. You can see it. But can you define it?</p>
+
+			<p>&ldquo;A lot of us have sort of waved our hands and said, &lsquo;Maybe it&rsquo;s a little of this and a little of that,&rsquo; and nobody&rsquo;s nailed it down,&rdquo; says Jim Watanabe, a lecturer at the Stanford Hopkins Marine Station who studied Tegula patterns for his dissertation at UC Berkeley in the 1980s. &ldquo;That&rsquo;s one of the things about working with these organisms in this habitat. Some things you can get pretty nice answers to. But then others, it&rsquo;s just like, why the hell does that happen? And you just have no idea.&rdquo;</p>
 
         <figure class="col-sm-12 visible-phone">
         	<img src="media/images/tegula2.png" />
         </figure>
 
 			<div class="trigger" id="trigger2"></div>
-			<h2>2. Snails are super weird</h2>
-			<p>Ratfish bleak, sandbar shark Black angelfish spotted dogfish New World rivuline porbeagle shark: deepwater stingray. Dorab fangtooth spotted danio yellowtail clownfish spikefish, longneck eel cavefish boxfish swordtail slender snipe eel. Brook trout daggertooth pike conger orbicular batfish tripletail demoiselle warty angler, walleye pollock batfish longfin dragonfish zander. Pacific cod luderick. Trumpetfish damselfish Pacific saury Port Jackson shark; flathead catfish inconnu chimaera, velvet catfish prowfish, jackfish. Cuskfish; longfin escolar harelip sucker atka mackerel, vimba northern pike Celebes rainbowfish snailfish ghost flathead featherfin knifefish American sole tigerperch cornetfish. Dolly Varden trout, spotted dogfish, buffalofish footballfish fire bar danio. Bonytongue tenuis silver carp Atlantic trout, Black tetra golden dojo.</p>
 
-			<p>Ribbon eel, houndshark sea raven, "sprat garpike halibut Long-finned sand diver: New World rivuline stoneroller minnow." Porcupinefish, Pacific albacore sixgill ray. Climbing catfish sarcastic fringehead, Pacific albacore Mexican blind cavefish anchovy paradise fish hatchetfish cusk-eel. Spinefoot darter golden shiner broadband dogfish mora longnose chimaera alfonsino European perch; molly blue danio. Popeye catafula climbing gourami; midshipman gunnel airbreathing catfish spiny dogfish shark dogteeth tetra greeneye pike eel tadpole fish velvetfish gurnard Atlantic silverside. Redfin perch; weever New Zealand smelt ribbon eel, mudminnow, upside-down catfish, tenuis golden loach California smoothtongue. Death Valley pupfish loosejaw redmouth whalefish rough pomfret lyretail warty angler cookie-cutter shark, pearleye, orangestriped triggerfish grunt sculpin.</p>
+			<h2>2.***</h2>
+
+			<p>The idea that animals and plants lived in decipherable patterns, rather than scattered randomly as a deity or deities had placed them, exhilarated Victorian-era naturalists. Alexander von Humboldt&rsquo;s 1807 book Essay on the Geography of Plants was an international bestseller that cemented its author as the world&rsquo;s most famous scientist. Humboldt traveled freely around a Europe gripped for nearly an entire century by war, unrest, and revolution. From Napoleon&rsquo;s France to colonial South America, from Jefferson&rsquo;s White House to Tsarist Russia, Humboldt drew on observations of global zonation to preach the interconnectedness of life.</p>
+
+			<p>In doing so he inspired the modern Western concept of nature, historian Andrea Wulf contends in the 2016 book The Invention of Nature. His observations fired the imagination of a generation of scientists: Charles Darwin, John Muir, Henry David Thoreau, and Ernst Haeckel, who in 1866 coined the term &ldquo;ecology&rdquo; for this new study of why things live where they live. &ldquo;I thought,&rdquo; Humboldt wrote in the preface to Essay on the Geography of Plants, &ldquo;that before talking about myself and the obstacles that I had to overcome during my work, I should draw the physicists&rsquo; attention to the broader phenomena exhibited by nature in the regions through which I have traveled.&rdquo;</p>
+
+			<p>Broader phenomena, zones, patterns: following Humboldt&rsquo;s observations, scientists began to look for patterns based on geography. Obviously, they realized, things lived where they lived not just because of global climate zones but because of the local environment -- in the case of the tidepool, for example, waves and tides.</p>
+
+			<p>In the early 1900s an English university lecturer named Sarah Martha Baker set out from her family home on the Isle of Wight to try and run an experiment on seaweed. Like many tidepoolers, Baker had noticed that different kinds of seaweed lived in different places. Unlike anyone before her, she had the creativity to find a way to experiment on it. In &ldquo;On the Causes of the Zoning of Brown Seaweeds on the Seashore,&rdquo; published in the journal New Phytologist in 1909, she wrote, &ldquo;The conditions which determine the zonal growth of algae between the tidal limits appear likely to be very simple, thus afford a very promising field for experimental study.&rdquo;</p>
+
+			<p>The paper sets down the physical conditions that determine where brown algae can live and reproduce, and is one of the first experiments to attempt to predict and then test a cause for the pattern of nature that we observe. It&rsquo;s a first step in what would become a century of field experiments aimed at illuminating the pattern of life on Earth.</p>
+
+			<p>If you were just visiting the coast for the first time and wanted to guess at why the sea snails live where they live, you might conclude, like Humboldt and like Baker, that they live where physical climate and environment allow them to live. Sea snails breathe through gills so they do not live, obviously, where there is no water. That seems to be an adequate explanation why you don&rsquo;t find them climbing mountains. They are herbivores, and so they live where there is algae to eat. We know that algae need light, so that means you wouldn&rsquo;t expect to find sea snails down in the abyss, and we don&rsquo;t.</p>
+
+			<p>But this is where our mystery deepens. If climate and environment were the only rules, you&rsquo;d expect to find all the different kinds of Tegula snails everywhere that they could possibly be. We know that&rsquo;s not the case. We know, in fact, that they live in segregated bands and seem to replace each other at different depths.</p>
+
+			<p>Baker feels to me in some ways like the person who laid the first stone on of one of those old European cathedrals. Architects and laborers, kings and queens and bishops come and go, and yet over a century or more they share a pattern, an image that continues to rise and become real. In our story ecologists construct, observation by observation, proof by proof, an idea. The question of why things live where they live has persisted through generations, cultures, and geographies. It has outlived politics, fashion, and technology. My daughter and I found only a commonplace sea snail, but we stumbled into a transcendent investigation.</p>
+
+			<p>&ldquo;Ecologists are often accused of having physics envy, because physicists model things and come out with simple models that have strong explanatory power,&rdquo; says Karina Nielsen, director of the Romberg Tiburon Center at San Francisco State University. &ldquo;Biology is more challenging than physical systems. But that doesn&rsquo;t mean there aren&rsquo;t underlying principles that drive the patterns that we see, and that they can&rsquo;t be understood.&rdquo;</p>
+
+			<p>Today Sarah Baker is almost entirely forgotten. She died in 1917 at age 29, and her obituary in The Times mourns the loss of an &ldquo;energetic, imaginative, and thoughtful&rdquo; scientist. She had a gift for science communication and lectured both for the public and at University College London, where her obituary says a lectureship was to be established specifically for her. Her scientific work was celebrated for its range and rigor; &ldquo;The investigations which she completed in a relatively short period of activity tend to emphasise the loss which science has sustained,&rdquo; the obituary states. Yet there is almost nothing about her on the web, and even her death is mysterious. Wikipedia ascribes it to &ldquo;overwork,&rdquo; with a reference to her obituary -- which doesn&rsquo;t give a cause of death.</p>
+
 
         <figure class="col-sm-12 visible-phone">
         	<img src="media/images/tegula3.png" />
         </figure>
 
 			<div class="trigger" id="trigger3"></div>
-			<h2>3. Snails have little shells</h2>
-			<p>Black bass warbonnet gulf menhaden triplefin blenny roughy pirarucu electric stargazer firefish luderick coolie loach ribbonbearer Moses sole sturgeon pirate perch bangus. Mosquitofish bullhead yellow moray, hoki lumpsucker bottlenose plunderfish white shark. Slender barracudina footballfish lake trout sand goby; mojarra antenna codlet false brotula. Tarwhine blue eye damselfish, "Dolly Varden trout anchovy tripletail summer flounder European perch crestfish." Giant danio luderick tarwhine straptail ghost knifefish madtom tommy ruff stonefish pollyfish temperate perch dogfish; Blenny zingel mola mola sunfish bangus skilfish. Cherry salmon mako shark medusafish ribbon sawtail fish Molly Miller. Skate noodlefish, pirarucu zebra shark slender mola, ponyfish treefish prowfish trahira. Blue triggerfish x-ray tetra halibut yellowtail clownfish southern flounder sailfish long-finned pike sailfin silverside oceanic flyingfish.</p>
 
-			<p>Black bass peamouth smooth dogfish codling parasitic catfish Rattail, "devil ray great white shark southern grayling." Sandperch summer flounder luminous hake deepwater flathead. Priapumfish anglerfish starry flounder popeye catafula snake mudhead, longfin dragonfish mustache triggerfish labyrinth fish grunt queen triggerfish. Horsefish, "sea raven pompano crocodile icefish." Loach catfish blackfish, trumpeter anchovy, cisco merluccid hake soapfish gouramie bigscale, ling cod pearl danio lampfish electric catfish. Footballfish finback cat shark, sea devil neon tetra. Tubeshoulder shell-ear gunnel northern pearleye Old World rivuline squeaker bichir zebrafish, crappie sand dab handfish white croaker Gila trout pencilfish. Javelin kingfish monkfish king of herring pencilfish, albacore.</p>
+			<h2>3. ***</h2>
+
+			<p>If you snorkeled over the reef at Fitzgerald at a particularly high tide, it would look completely different than it did on the minus tide when my daughter and I went tidepooling there. All those snails bunched up and huddled together, cobbling the rock, would be out &ldquo;walking around,&rdquo; Jim Watanabe says, as if you&rsquo;d suddenly unfrozen a city. But if the unfreezing allows movement within the city limits, it doesn&rsquo;t un-segregate the neighborhoods. Freed as they are by the tide, the black Tegula stay in the shallows, the brown Tegula in the middle area, and the dusky Tegula in the subtidal.</p>
+
+			<p>This is another way of thinking about our story, Watanabe says, because when a black Tegula closes up into its shell to wait out a low tide it can&rsquo;t do any of the other stuff that a snail likes to do. It can&rsquo;t eat, it can&rsquo;t reproduce -- it just has to sit there and wait. &ldquo;It seems like a hard place to make a living as a snail,&rdquo; Watanabe says. &ldquo;Why would you want to live there as your habitat if something wasn&rsquo;t keeping you from moving lower on the shore? But it&rsquo;s a fairly distinct boundary.&rdquo;</p>
+
+			<p>In the late 1950s a UC Santa Barbara ecologist named Joseph Connell ran a series of rigorous ecological field experiments on Scottish barnacles. (&ldquo;Having worked with difficult-to-trap wild rabbits for his master&rsquo;s thesis at the University of California at Berkeley, Connell was impressed with the immense potential of the barnacles he encountered on Scottish shores,&rdquo; reads one textbook.)</p>
+
+			<p>Connell saw that there were two species of barnacles living along the rocky shore, Poli&rsquo;s stellate barnacle, Chthamalus stellatus, and the common rock barnacle, Balanus balanoides. Theoretically both barnacles could overlap, but in reality they didn&rsquo;t. Chthamalus lived almost exclusively in the shallows, Balanus lived in the deeper water. And Connell noticed, too, that it wasn&rsquo;t for lack of trying -- free-swimming Chthamalus babies swam into the deeper water and tried to settle there, and for some reason they didn&rsquo;t survive. So he asked a simple variation of our question about why things live where they live: what was killing the Chthamalus in deeper water?</p>
+
+			<p>Connell would go out with a glass plate, lay it over a tidepool, and then mark the position of each barnacle on the glass. Since barnacles don&rsquo;t move much once they&rsquo;re fixed to a rock, the next time he went to the tidepool he was able to match his plate marks to the life that remained. After observing carefully for a year, it was quite clear to him what was killing the Chthamalus -- it was murderous other barnacles. Fast-spreading Balanus grew over the Chthamalus, crushing or suffocating them, or wedged underneath the Chthamalus, upending them. After one year, the mortality rate for young Chthamalus in deeper water plots where Connell hadn&rsquo;t removed the Balanus was 100 percent. In a paper published in 1961 in the journal Ecology he identified competition between the two species as &ldquo;the principal factor determining the local distribution of Chthamalus.&rdquo;</p>
+
+			<p>Competition would seem a natural explanation for the segregation of Tegula snails, too. There are millions of them, after all, and they all eat the same stuff. In some tidepools, researchers have reported densities of Tegula snails up to 1,400 per square meter. There are dozens of other grazers in the tidepool. And maybe you see some signs of competition in one particular pattern within black Tegula: smaller young black Tegula stay in the shallows while bigger black Tegula move deeper, presumably to look for food where it&rsquo;s less crowded. But the line between species -- between black and brown Tegula, and the next line between brown and dusky Tegula, seems not to have anything to do with competition. Brown Tegula do not grow over, or crush, or suffocate black Tegula. In his dissertation, excerpted in Ecology in 1984, Watanabe found that &ldquo;competition is weak and contributes little to the maintenance of the distributions.&rdquo;</p>
+
+			<p>In other words: competition is often an answer. But in the case of why Tegula snails live where they live it isn&rsquo;t. Something is killing the black Tegula that wander into the subtidal realm of the brown Tegula, for example. If not other sea snails, then what?</p>
+
+			<p>A few years after Connell&rsquo;s barnacle experiment, University of Washington ecologist Robert Paine published his answer in what is now the most-cited paper in the history of the journal American Naturalist, about his experiments on sea stars in the tidepools of the Pacific Northwest. The predatory sea stars ate mussels and reduced competition between mussels and other grazers, allowing more diversity, Paine declared; when he removed the predators (by prying them off rocks and throwing them as far as he could into the ocean) the mussels rapidly monopolized the rock surface. Paine coined the term &ldquo;keystone predator&rdquo; in a subsequent paper to describe the ochre sea star Pisaster ochraceus, whose appetite seemed to be the rule determining the organization of any tidepool where it lived.</p>
+
+			<p>Following the publication of his &ldquo;keystone&rdquo; paper, Paine turned his attention to Tegula distribution. Instead of looking at the four species, though, he wanted to try and explain the pattern in just black Tegula. If ochre sea stars determine the arrangement of the tidepool, it should mean they determine where we find snails, right?</p>
+
+			<p>Paine noticed the pattern within the Tegula funebralis population: young, small snails lived in the shallows, old, larger snails moved deeper down. At some point not too far into the zone of overlap with ochre sea stars black Tegula all but ceases to exist, and it was Paine&rsquo;s idea that this was because the sea stars were eating them. Predation by Pisaster ochraceus must explain not just for the line separating young and old black Tegula, but the lower limit of where any such snails might be found.</p>
+
+			<p>Ochre sea stars, Paine wanted to make it clear, do not enjoy eating Tegula snails. Given their druthers the sea stars would eat mussels all day long, and in the absence of those, they seem to prefer to switch to barnacles. Sometimes, he reported, he had even seen Pisaster spitting out sea snails. And yet according to some reports Pisaster ate a quarter of the entire black Tegula population in the area where they overlapped. In Paine&rsquo;s estimation Tegula snails are something like the Doritos of the intertidal: not particularly appealing, not particularly filling, and yet somehow when there&rsquo;s nothing better on the shelf you accidentally just eat a whole population of them anyway.</p>
+
+			<p>Paine watched with his own eyes for five years as Pisaster mowed through subtidal Tegula populations. The sea stars were consuming about 100 snails per square meter in his study plot, Paine wrote in a subsequent paper in the American Naturalist, &ldquo;typical,&rdquo; he wrote, of the interaction between &ldquo;a major predator and one of its less preferred prey.&rdquo; He concluded that predation was determining not just where the Tegula snails were found but what size and even sex of snails were to be found where. </p>
+
+			<p>Paine, who died in 2016, had an outsized influence on the world. He is celebrated for drawing attention to the critical importance of predators in all kinds of ecosystems, which has led to more effective conservation efforts for wolves in Yellowstone, sharks in coral reefs, and otters in kelp forests. Graduate students he mentored have gone on to their own influence, and include the former NOAA administrator Jane Lubchenco. Our story might have ended here, in other words, with the dean of West Coast intertidal ecology finally placing the keystone on the cathedral.</p>
+
+			<p>But &#8230; when it came to the pattern of Tegula snails, Paine missed quite a bit.</p>
+
+			<p>&ldquo;Predation and competition are intuitive and they&rsquo;re easier to document,&rdquo; Watanabe told me. &ldquo;And they are important. But there&rsquo;s been this building appreciation for the complexity of the interaction. As you grab one of those little threads and follow it back it gets more and more complicated and more and more connected.&rdquo;</p>
 
         <figure class="col-sm-12 visible-phone">
         	<img src="media/images/tegula4.png" />
         </figure>
 
 			<div class="trigger" id="trigger4"></div>
-			<h2>4. Snails are the key to understanding the universe</h2>
-			<p>Deepwater cardinalfish wels catfish black dragonfish; rock bass mustard eel mud cat wels catfish starry flounder southern grayling ropefish. Gunnel sawtooth eel lighthousefish seamoth eulachon alligatorfish.</p>
+			
+						<h2>4. ***</h2>
 
-			<p>Peamouth, gopher rockfish zebra turkeyfish slimy mackerel, batfish handfish, scorpionfish ide yellowtail canary rockfish spiny dogfish mako shark Pacific albacore kahawai masu salmon. Snake eel grenadier panga, Lost River sucker tilapia Blind shark kelpfish scabbard fish. Trout blue shark bluefish, Raccoon butterfly fish Old World rivuline. Sundaland noodlefish tubeshoulder Pacific albacore lamprey, "elver Owens pupfish," deep sea anglerfish glass catfish white shark. Worm eel scup wallago bluegill orangestriped triggerfish. Killifish river loach yellowtail amberjack.</p>
+			<p>The next chapter in our story starts in the summer of 1994, on the rocky ledge of Boiler Bay, Oregon. A graduate student named Karina Nielsen is standing there, looking out at the ocean, getting ready to do marine science. For a tool she has lugged along a gas-powered jackhammer. Her mission: make new tidepools. Lots of them.</p>
 
-			<p>Trout-perch longnose lancetfish goby, marlin weeverfish discus pencilfish. Ground shark yellow-eye mullet mola, lookdown catfish bichir capelin atka mackerel vendace beaked salmon, pike eel, grunt; glowlight danio chubsucker.</p>
+			<p>Nielsen had studied salt marshes as an undergraduate at Brooklyn College in New York. She liked the marine environment but, she says, &ldquo;I didn&rsquo;t like getting stuck in the mud.&rdquo; As she considered graduate school, she happened across a biography of Jane Lubchenco. At the urging of an advisor, Nielsen applied to the Oregon State ecology program run by Lubchenco and Bruce Menge -- who had met in Paine&rsquo;s lab at Washington. Nielsen remembers flying out for a visit, and touring the lab, and then because she&rsquo;d never really seen much of the West Coast heading down to the nearby shoreline. &ldquo;I looked in the tidepools at low tide and I was so taken with the cacophony of life,&rdquo; she says. &ldquo;I was like, &lsquo;There&rsquo;s no way I&rsquo;m not coming back here. This is where I want to work. What creates this amazing diversity of life? The patterns on the shore?&rsquo;&rdquo;</p>
+
+			<p>Nielsen needed a project to work on, and one day a few years into her graduate study she and Menge were talking about something he&rsquo;d observed. At the time the ideas of Connell and Paine were widely influential as an explanation for the patterns of life, and yet competition and predation didn&rsquo;t fully explain the patterns Menge was seeing in his own West Coast tidepool exploration. Paine, after all, had mainly studied a single tidepool area in a single spot off the coast of Washington. Menge&rsquo;s idea was that it was probably different from place to place, and that the shape of things wasn&rsquo;t all coming from the top of the food chain down. Basic oceanography meant that some tidepools had more food available than others, for example. What if the variability of food was also affecting where things were found in the tidepool, perhaps even more than predators or competitors? </p>
+
+			<p>Nielsen thought about it, then wondered how you&rsquo;d go about testing something like that. Researchers liked testing the influence of predators because it was easy to find and remove them. To really be scientific about the bottom of the food chain you&rsquo;d have to vary the nutrients, and how do you vary nutrients in the ocean? Maybe, she remembers Menge saying, you could make your own tidepools. Control the flow of nutrients yourself. Nielsen knew of one other researcher who had chiseled tidepools by hand in order to test an idea. She called him, and he confirmed that it was a lot of work to chisel a tidepool to order. Her experimental design called for 84 of them. Menge suggested a jackhammer.</p>
+
+			<p>A friend in construction explained to Nielsen how to operate a gas-powered jackhammer. Over a week of hard labor Nielsen constructed her tidepools. Then for the next two years she meddled with the distribution of nutrients -- in this case, fertilizer granules -- in each of the pools to see what would happen. She expected that adding fertilizer would increase the amount of algae, and then you&rsquo;d find a forked path -- if you removed the Tegula and other grazers you&rsquo;d expect algae numbers to increase, if you allowed the snails to stay you&rsquo;d expect the snail numbers to increase.</p>
+
+			<p>By now, you can probably guess the answer: it was more complicated than it appeared. Increasing the nutrients in the tidepool did lead the algae to bloom, and leaving the snails around did then limit the extent of that bloom. The effect was particularly pronounced in wave-protected pools where the grazers could eat more freely. But in protected and unprotected pools, more algae didn&rsquo;t lead to more snails! Perhaps, Nielsen wrote in the journal Ecological Monographs in 2000, algae is better than it appears at defending against being eaten by snails. Or perhaps the snails wandered in and out of the experimental tidepools so that their population was never limited by the amount of food available in the first place.</p>
+
+			<p>The way Nielsen puts it, the history of field ecology has been a search for ways to control just one part of the environment so you can test its influence. Sarah Baker figured out a way to do it with the physical environment, then Joseph Connell and Robert Paine pioneered new ways of manipulating relationships between life forms, and then here she was building new tidepools to control something previously uncontrollable, adding one more layer to the story, one more brick to the cathedral. &ldquo;This has been the maturation of ecology in general,&rdquo; Nielsen says. &ldquo;To take these different approaches, use them as different lines of evidence, and put them all together. If you kind of start getting the same answer from different approaches, you start to have strong confidence that you understand what&rsquo;s going on.&rdquo;</p>
 
         <figure class="col-sm-12 visible-phone">
         	<img src="media/images/tegula5.png" />
         </figure>
 
 			<div class="trigger" id="trigger5"></div>
-			<h2>5. Snails.</h2>
-			<p>Pelican eel river stingray bonytongue nurse shark. Kafue pike barbeled dragonfish redmouth whalefish yellow perch louvar giant wels wolf-herring, hawkfish snook flathead catfish threadfin bream. Seahorse; nibbler louvar blue triggerfish, molly yellowtail amberjack peacock flounder parasitic catfish, bristlenose catfish platyfish. Moonfish coolie loach cutthroat trout tenpounder New Zealand smelt halibut longneck eel cutlassfish." Mojarra Antarctic cod powen olive flounder river shark píntano Atlantic salmon algae eater Oriental loach knifefish southern Dolly Varden." Taimen four-eyed fish oilfish jack, slickhead requiem shark trout shortnose sucker dragon goby marlin tilapia swordfish."</p>
+						<h2>5. ***</h2>
 
-			<p>Airbreathing catfish Black prickleback bighead carp thorny catfish porcupinefish loach minnow golden trout steelhead wrymouth grouper, longnose dace mudfish, Australian grayling bigeye squaretail, Old World knifefish. Bamboo shark Raccoon butterfly fish, yellowtail kingfish, "surfperch mora firefish jewfish?" Tubeblenny bighead carp bigscale fish spotted danio stingray ghost knifefish garden eel scissor-tail rasbora combtooth blenny. Ghost carp spiny eel: electric stargazer crevice kelpfish ling sauger oarfish firefish rough scad, trumpetfish shell-ear cutthroat eel. Whiting stargazer, "silver hake airsac catfish mackerel shark, sweeper zebra oto, banded killifish." Eucla cod tripod fish bream gray eel-catfish sea bass yellow-eye mullet rocket danio barreleye Sacramento blackfish temperate bass. Hardhead catfish mustard eel; butterflyfish pencil catfish yellowtail kingfish, tapetail. California flyingfish: eulachon orange roughy barracudina Atlantic trout sixgill ray angler tenpounder, "northern sea robin Antarctic icefish." Green swordtail flat loach thornfish: grass carp goosefish cavefish elasmobranch loweye catfish. Mora, Alaska blackfish lemon shark, convict blenny beachsalmon carp.</p>
+			<p>Why do we even bother with ecology in the first place? What&rsquo;s the point of knowing why things live where they live? One way to answer is simply to say that we are a curious species and like to know about the world. Tidepools run deep in our psychology; we have been drawn to them since our first ancestors walked out of the Olduvai Gorge and encountered the shores of the Indian Ocean. There, in a Garden of Eden, the tide rolled in with food and rolled out to let people collect it. There early humans survived global food shortages caused by climate change. Some of our first art, our first symbolism, can be found in cave walls on the coast. To be near the ocean, to love it and want to describe it, might be foundational in our species&rsquo; understanding of ourselves.</p>
 
-			<p>Beaked salmon lionfish rock beauty cuckoo wrasse. Ballan wrasse requiem shark bigscale fish combtooth blenny. Weatherfish, quillback drum yellowtail barracuda Kafue pike electric eel surgeonfish. Wrasse false trevally daggertooth pike conger electric catfish, Chinook salmon Pacific hake pleco. Gar squawfish Black sea bass, squarehead catfish steelhead nibbler arowana trench roosterfish Black triggerfish. Grenadier, gudgeon, flyingfish, javelin Atlantic eel; handfish pike eel yellow jack; arowana, sturgeon wolf-eel. Leatherjacket bocaccio spadefish jack icefish atka mackerel, ricefish Oregon chub pikehead fathead sculpin three-toothed puffer.</p>
+			<p>A less romantic way to answer the question is to say that it is useful to us to know where things are. For a demonstration, we can start a few years ago with a then-graduate student at the UC Davis Bodega Marine Lab named Sarah Gravem, who became interested in sea snail free will. More specifically Gravem, now a postdoctoral researcher in Menge&rsquo;s lab at Oregon State, wanted to know about fearful snails choosing to run away from predators, or hungry snails choosing to keep eating in the face of danger, and how their individual decisions might further complicate the pattern we&rsquo;ve built so far. Snails, it turns out, have personality. They make choices. And their personalities, and their choices, matter in where they&rsquo;re found. &ldquo;We kind of try to treat all individuals within a species as equal,&rdquo; Gravem told me. &ldquo;But in reality the species is made up of individuals, all with different states and needs, and they all make different decisions at different times.&rdquo;</p>
 
-			<p>Lamprey, "hairtail sandperch European chub trumpetfish sea raven, coffinfish pikeperch stonefish northern sea robin yellowfin pike." Carpetshark whiting alfonsino noodlefish, oceanic whitetip shark yellowtail kingfish: Oriental loach jack wasp fish amago mudfish shark Kafue pike! Turbot slimy sculpin blackfish man-of-war fish, hawkfish gulper hagfish: splitfin sea toad bleak bluefin tuna ribbon eel straptail filefish elephantnose fish. Rough scad squeaker dorab stingray smelt: driftwood catfish halfbeak golden trout, devil ray whalefish seatrout? Clingfish wobbegong, escolar. Vendace gulper Cornish Spaktailed Bream sand diver loach goby ronquil bluefish springfish bass walleye, peacock flounder channel catfish Australian grayling driftfish algae eater ghoul, mrigal, ruffe.</p>
+			<p>How does a snail make a choice? The same way we do, really: it weighs what it knows about the world with what it wants from the world, and then chooses to act or not act on its desires. Naturally, much of the decision comes down to what a snail perceives. To navigate its limited world a Tegula snail has near-useless eyes suitable only for indicating day or night. Its senses instead fire with a barrage of smells: predators, competitors, food, friends. &ldquo;We have to put our smell-vision on, and that&rsquo;s the way you understand the snails,&rdquo; Gravem says.</p>
 
-			<p>Chinook salmon shortnose chimaera North Pacific daggertooth, "wobbegong anemonefish," tui chub flier dragonfish taimen. Barbeled dragonfish killifish spiny dwarf catfish giant danio gombessa coolie loach murray cod batfish redlip blenny? Dab climbing catfish man-of-war fish European minnow bluefish beluga sturgeon largenose fish canary rockfish, Ganges shark lighthousefish Lost River sucker steelhead capelin quillback pikehead rough pomfret pickerel plunderfish pirarucu tonguefish. Swordtail; lumpsucker white shark false trevally flounder; false trevally prowfish midshipman, southern hake; Russian sturgeon Celebes rainbowfish arrowtooth eel. Tarwhine Rainbowfish: forehead brooder yellow moray sandfish sea toad bowfin Atlantic trout cownose ray pike conger tetra gombessa dogfish shark. Mackerel Australasian salmon squeaker Blenny Razorback sucker scat, wormfish broadband dogfish ropefish. Dottyback ladyfish yellowfin pike, thorny catfish wallago, slimehead paradise fish Black prickleback southern smelt limia scorpionfish: bottlenose kokopu. Lionfish temperate bass.</p>
+			<p>A snail can smell the chemical signature of everything out there that wants to eat them, for example, and act on that smell by running away. Because they sit still for so long it&rsquo;s tempting to think of snails as the cows in our terrestrial analogy, but really they are more like antelope or deer: grazers whose instinct is to flee at a whiff of danger. A Tegula snail can as much as double its rate of speed in pursuit of shallower areas where predators won&rsquo;t go. If it finds itself on a slope, it will just unclamp its foot and roll to the bottom. Escape strategies even help explain the pattern we see: one reason the dusky Tegula survives in deeper water while the brown and black Tegula do not, Jim Watanabe says, is that only the dusky snails can climb and hide in kelp leaves where sea stars won&rsquo;t go.</p>
 
-			<p>Ocean perch, marlin bichir carpetshark gulf menhaden king-of-the-salmon hawkfish suckermouth armored catfish. Longfin escolar deep sea smelt white croaker bluntnose minnow wormfish, trout, Dolly Varden trout.</p>
+			<p>Gravem wanted to try and parse tidepool smells and what the snails would do in response to them, and how cumulative individual decisions might alter the composition of the community. She set up a study plot in Horseshoe Cove, within sight of the Bodega Marine Lab on the rocky outer coast of Bodega Head. She hunkered down to watch Tegula funebralis make choices. Right away she found something pretty interesting: predators definitely didn&rsquo;t need to eat the snails to change the structure of the tidepool. Just scaring them away was enough. In pools where snails had been scared but not eaten, Gravem saw algae growth increase.</p>
 
-			<p>Razorback sucker central mudminnow Rio Grande perch ponyfish Atlantic trout pink salmon; Japanese eel poacher rudderfish deep sea anglerfish! Beaked sandfish, lake trout golden trout merluccid hake tidewater goby danio bango halibut flabby whalefish. Cow shark seatrout sandfish pencil catfish, pilot fish cod icefish. Speckled trout: oldwife, firefish; slender barracudina longnose dace, neon tetra kuhli loach porgy crucian carp. Barb ribbon eel spaghetti eel longfin escolar false moray morid cod rockweed gunnel, grass carp. Whiff Asiatic glassfish; sucker stargazer drum torpedo, darter northern pearleye blue danio.</p>
+			<p>It seemed like it was all going quite well, and then nature knocked down the scaffolding.</p>
 
-			<p>Yellowfin pike eelpout round stingray paperbone; largenose fish morid cod bullhead shark scat firefish. Pikeperch, elephantnose fish sand stargazer denticle herring, luminous hake, skate tommy ruff. Flagblenny dogfish, codlet South American darter turkeyfish needlefish Canthigaster rostrata whiting Hammerjaw. Perch, "croaker featherback southern smelt, sea snail; hawkfish, slipmouth anchovy." Black dragonfish grunt lionfish pike characid milkfish. Combtail gourami tiger shark bluefin tuna, loach minnow pleco; gizzard shad. Warty angler herring devil ray Devario powen john dory Australian lungfish, ocean sunfish whiptail gulper. Snapper monkfish Gila trout hog sucker sandburrower pompano dolphinfish crucian carp long-finned char amur pike. Zebra tilapia loweye catfish, Black triggerfish grenadier wahoo round stingray swordtail. Bonytail chub. Pearl perch yellow-eye mullet parrotfish crappie, flying gurnard mrigal pencilfish; North American darter sergeant major Death Valley pupfish.</p>
+			<p>Remember that famous Robert Paine experiment about black Tegula and, as Paine put it, its &ldquo;primary predator&rdquo; the ochre sea star Pisaster ochraceus? No one had ever really questioned that assertion before, or if they had, no one had cared enough to test out an alternative.</p>
 
-			<p>Whitetip reef shark, snake eel sixgill shark, trahira pencilsmelt. False trevally dogfish shark yellowbelly tail catfish, zebra trout sweeper. Cookie-cutter shark, longfin escolar temperate bass common carp waryfish yellowfin croaker oceanic flyingfish, tarwhine; ribbon eel kaluga. Zebra loach duckbill eel handfish Pacific saury livebearer rough sculpin Black swallower banded killifish. Denticle herring streamer fish elver collared carpetshark Raccoon butterfly fish ballan wrasse, Black prickleback Long-finned sand diver giant gourami. Giant danio deep sea bonefish ghoul; common carp killifish smooth dogfish batfish plaice scabbard fish Atlantic salmon chub. Pikeperch saber-toothed blenny pearleye pickerel.</p>
+			<p>But while Pisaster is the most charismatic star in the tidepool, there are many other kinds of sea stars running around out there. One in particular, a small, shy, nocturnal star called Leptasterias, the six-armed starfish, now enters our tale. In the classic tidepool guidebook Between Pacific Tides, Monterey marine scientist Edward Ricketts described Leptasterias pusilla as &ldquo;very numerous&rdquo; in the middle intertidal zone, &ldquo;crawling about in the sea lettuce or dotting the tide pools,&rdquo; emerging at night to explore the surface of rocks that had sheltered them by day. These are the predators, in fact, that Sarah Gravem was using to scare away her Tegula snails, in part because there are often so many more of them in the tidepool that she thought they must have some influence in the screaming chemical world the snails smell.</p>
 
-			<p>Whiting, yellowfin croaker cisco jellynose fish Reef triggerfish electric eel loach minnow tilapia. Boarfish saw shark, bigscale fish Canthigaster rostrata, skipjack tuna cisco zebra pleco blue shark midshipman danio lancetfish roughy queen triggerfish denticle herring sheatfish. Duckbilled barracudina wrymouth snailfish kelp perch Owens pupfish megamouth shark airsac catfish. Cherry salmon lined sole yellowfin tuna gibberfish swordfish pygmy sunfish pike eel? Garden eel mustard eel sandburrower barb pirarucu longnose whiptail catfish sprat slender snipe eel. Longjaw mudsucker wasp fish false cat shark, rockweed gunnel half-gill. Yellowfin tuna ghost fish pirarucu scaleless black dragonfish. Panga Pacific saury mullet, zingel butterfly ray; armored gurnard African lungfish.</p>
+			<p>So what happened is that Sarah Gravem was sitting and watching her snails making choices and all the Leptasterias suddenly vanished.</p>
+
+			<p>Even when they were common, Gravem says, it wasn&rsquo;t easy to find Leptasterias. She learned to find them by feel, she told me -- &ldquo;I knew where they liked in the tidepools and where they liked to hide, and I just felt for them in the cracks.&rdquo; She calls this her &ldquo;snail braille,&rdquo; since part of the thought process involved thinking like the near-blind Tegula. Within a few months her magic touch no longer worked. &ldquo;They just died,&rdquo; she said.</p>
+
+			<p>And while it wasn&rsquo;t meant to be part of her research on snail decisions, she couldn&rsquo;t help but notice that shortly thereafter the Tegula populations in her study area boomed. The snails were spreading welcome mats for each other, multiplying, and moving into formerly dangerous waters once policed by Leptasterias. It looked to her as if Leptasterias mattered quite a bit to this universe. &ldquo;Everyone considers Pisaster this keystone predator, and we&rsquo;ve got this pipsqueaky little species that no one studies that&rsquo;s the one seemingly controlling the Tegula behavior and population,&rdquo; Gravem told me.</p>
+
+			<p>Could Paine have been wrong about Pisaster controlling Tegula populations? There&rsquo;s really only one way to test that idea, and it&rsquo;s not something anyone could ever plan for but &#8230; well, it went like this. Just as Gravem was illuminating the ways that Leptasterias mattered to the snails, all the &ldquo;keystone&rdquo; Pisaster died. This time it was an event: a marine epidemic the likes of which humans have never seen before, caused by a virus and likely exacerbated by some of the warmest ocean conditions ever recorded. In the span of three years wasting disease knocked out 90 percent of the sea stars of all types between Alaska and Baja.</p>
+
+			<p>In Bodega Bay, the Tegula that boomed following the Leptasterias die-off didn&rsquo;t respond to the Pisaster die-off. Gravem says it felt like a revelation. Smaller Tegula move higher into the shallows because they&rsquo;re fleeing Leptasterias. Leptasterias are too small to eat bigger snails, so the bigger snails are emboldened to move deeper in search of food. Eureka: an unexpected predatory influence on the distribution of young and old black Tegula, from a predator too small to eat brown Tegula. &ldquo;The more I read,&rdquo; Gravem said, &ldquo;the more I was convinced that&rsquo;s what was going on.&rdquo;</p>
+
+			<p>Some scientists have labeled the loss of the sea stars an extinction-level event. Although a handful of Pisaster have returned in many places, Leptasterias and Pycnopodia stars remain absent in 2017. There&rsquo;s perhaps a terrestrial analog in the mass die-off of hundreds of millions of mountain trees in California&rsquo;s ruthless recent drought: we&rsquo;re watching a landscape-level ecological shift. It seems unlikely in either case that whatever emerges will be a replacement for what was once there. And scientists recognize that underneath the calamity is an opportunity. With a dominant species removed at a coast-wide scale, ecologists can test ideas about why life lives where it lives that they have been building now for a century.</p>
+
+			<p>In an article last year in PLOS One, Menge, Gravem and several collaborators compared the sea star die-off to other marine epidemics, and to humans&rsquo; near-eradication of sea otters. &ldquo;Based on prior research,&rdquo; they wrote, &ldquo;the longer-term ecological consequences of this sea star wasting disease event could include wholesale elimination of many low zone species and a complete change in the zonation patterns of rocky intertidal communities along the west coast of North America.&rdquo;</p>
+
+			<p>A new pattern could persist, they concluded, for decades.</p>
+
+			<p>Why do we build these ideas about the world in the first place? So that we can predict what&rsquo;s coming, make better decisions, be better people. Policymakers developing marine protected areas can set the boundaries where science tells them they&rsquo;ll get the healthiest community structure. Matching what we know about where things live with what we know about how the ocean is changing may allow us to conserve life for longer. Citizen scientists can be deployed to generate tens of thousands of new observations, to turn into patterns, to generate questions.</p>
+
+			<p>Why were my daughter and I visiting the tidepools on a school day to begin with? We&rsquo;d joined a citizen science bioblitz to look for wasting sea stars. We&rsquo;d volunteered our eyes as part of an urgent modern endeavor to find out where things lived.</p>
+
+			<p>Before we left the tidepool that day, I watched Eleanor walk up to another tidepooler and ask, &ldquo;Did you know that all the starfish died?&rdquo; It didn&rsquo;t bother her to say it, but her casual curiosity about extinction really weirded me out. I started to think about the continuity of nature from generation to generation, and the way our children inherit a vastly diminished natural world, yet grow up finding it normal. As scientists say, the baseline shifts. And maybe this is the moral of the snails: baselines shift, but questions persevere. &ldquo;The pervasiveness of these questions over time is not because they are unanswerable,&rdquo; Gravem wrote to me in an email, &ldquo;but because they have so many good answers.&rdquo;</p>
+
+			</div>
+
+			<h2>***</h2>
+
+			<p>How does an idea take shape? It&rsquo;s not in a straight line. It spirals. It builds its shell over centuries, or maybe even millennia.</p>
+
+			<p>Meanwhile the world changes, and we change, too. Our idea of who a scientist is and what they ask about changes, and will change. But as long as there is life on Earth, as long as there are unwritten rules that govern that life, the questions are there for anyone to ask, and the cathedral keeps rising.</p>
+
+			<p>Why do these things live where they live? Why are there so many of these things here and not there? Why is there life at all? Questions like these are why we have religion, Sarah Gravem says, or why we have creation stories. For the last 200 years we&rsquo;ve had scientists asking in their own way. Alexander von Humboldt asked it of plants as armies marched and political revolutions gripped the world. Sarah Martha Baker asked it of brown algae near her family home two decades before women could vote in the UK, as all of Europe geared up for war, at a time when her voice as a scientist would have been dismissed outright by most of the scientific world. Doc Ricketts and John Steinbeck asked it of invertebrates in the Sea of Cortez in 1941, even as, they wrote in Log from the Sea of Cortez, &ldquo;thousands of miles away the great bombs are falling.&rdquo; Robert Paine asked it of the starfish and mussels and snails in the tidepools of a small Indian reservation off the coast of Washington, while the United States waged war in Vietnam. Graduate students in marine science ask it now of the tidepool even as the ocean boils with human-caused change, even as they march in rallies to try and preserve science-based political decisions. My four-year-old, happily ignorant of tradition, asked it of a &ldquo;rainbow shell&rdquo; because she spotted it and wanted a story to tell.</p>
+
+			<p>There is material privilege in our ability to ask questions of nature. But there is also power: we humans, no matter our circumstances, ages, political systems, and backgrounds, have found common purpose in the tidepool. We move the world forward because each new person who asks the question adds a little bit to the answer we have built over the centuries. And each person who asks the question reminds themselves a tiny bit to find joy and wonder in nature. We can&rsquo;t preserve the world itself, but as much as we can it is our mission -- as parents or conservationists -- to try to protect a future in which the same questions occur to anyone who wants to ask them.</p>
+
+			<p>There is this famous paragraph of Steinbeck&rsquo;s from the Log from the Sea of Cortez:</p>
+
+			<p>And it is a strange thing that most of the feeling we call religious, most of the mystical outcrying which is one of the most prized and used and desired reactions of our species, is really the understanding and the attempt to say that man is related to the whole thing, related inextricably to all reality, known and unknowable. This is a simple thing to say, but the profound feeling of it made a Jesus, a St. Augustine, a St. Francis, a Roger Bacon, a Charles Darwin, and an Einstein. Each of them in his own tempo and with his own voice discovered and reaffirmed with astonishment the knowledge that all things are one thing and that one thing is all things -- plankton, a shimmering phosphorescence on the sea and the spinning planets and an expanding universe, all bound together by the elastic string of time. It is advisable to look from the tide pool to the stars and then back to the tide pool again.</p>
+
+			<p>Our brains want us to see important things and filter out the rest, and so the commonplace Tegula snails generally get filtered. But if you stop to ask one a question the sea snail tells the story of the tidepool, and the tidepool tells the story of the universe.</p>
 
 		</div>
 
@@ -214,7 +433,7 @@ img.fade-img {
 
     $(function () { // wait for document ready
         // build scene
-        var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 6400, offset: -50})
+        var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 14168, offset: -50})
                         .setPin("#pin1")
                         .triggerHook(0) //sets triggerhook a little higher
                         //.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
@@ -266,7 +485,7 @@ img.fade-img {
                 $(".fade-img").css({"position":"absolute","padding-top":"0","width":"100%"});
                 $(".fade-scroller").each(function() {
                     var imgHeight = $(this).find(".fade-img").first().height(); //bases height on first image (crop all images to same spec)
-                    $(this).height(imgHeight+6400);
+                    $(this).height(imgHeight+14168);
                 });
             //}
         //}
@@ -280,4 +499,5 @@ img.fade-img {
 
 </script>
 
+</body>
 </html>
