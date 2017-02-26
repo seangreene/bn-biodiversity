@@ -71,6 +71,8 @@
 	width: 100%;
 	position: absolute;
 }
+img.bwshell { opacity: 0.1; }
+
 span.kicker { text-transform: uppercase;}
 
 </style>
@@ -217,12 +219,12 @@ span.kicker { text-transform: uppercase;}
 
 				<div id="trigger1"></div>
 		        <figure class="shell">
-		        	<img id="animate1" style="opacity: 0;" src="media/illos/tegula1.png" />
+		        	<img class="bwshell" id="animate1" style="opacity: 1;" src="media/illos/snail1.png" />
 		        </figure>
 		        <script>
-		        	var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 200
+		        	var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 250, ease: Circ.easeIn
 		    			})
-		                .setTween("#animate1", {opacity: "1"})
+		                .setTween("#animate1", {opacity: "0.1"})
 		                .addTo(controller);
 		        </script>
 	           	<!-- 1 -->
@@ -252,19 +254,20 @@ span.kicker { text-transform: uppercase;}
 				<!-- 2 -->
 			
 				<div id="trigger2">
-		        <figure class="shell">
-					<img id="animate1" style="opacity: 1;" src="media/illos/tegula1.png" />	        	
-		        	<img id="animate2" style="opacity: 0;" src="media/illos/tegula2.png" />
+		        <figure class="shell">	        	
+					<img id="animate1" style="opacity: 0.1;" src="media/illos/snail1.png" />	        	
+		        	<img id="animate2" style="opacity: 0;" src="media/illos/snail2.png" />
 		        </figure>
 		        <script>
-        			var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 200
+        			var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 250, ease: Circ.easeIn
     					})
-                        .setTween("#animate1", {opacity: "0"})
+                        .setTween("#animate1", {opacity: "0.1"})
                         .setTween("#animate2", {opacity: "1"})
-                        .addIndicators({name: "2 (duration: 200)"}) // add indicators (requires plugin)
+                        //.addIndicators({name: "2 (duration: 200)"}) // add indicators (requires plugin)
                         .addTo(controller);
 		        </script>
-				<h2>***</h2>
+				
+				<!-- <h2>***</h2> -->
 
 				<p>The idea that animals and plants lived in decipherable patterns, rather than scattered randomly as a deity or deities had placed them, exhilarated Victorian-era naturalists. Alexander von Humboldt&rsquo;s 1807 book <em>Essay on the Geography</em> <em>of Plants</em> was an international bestseller that cemented its author as the world&rsquo;s most famous scientist. Humboldt&rsquo;s observations about global zonation and the interconnectedness of life inspired the modern Western concept of nature, historian Andrea Wulf contends in the 2016 book <em>The Invention of Nature</em>. His insights fired the imagination of a generation of scientists: Charles Darwin, John Muir, Henry David Thoreau, and Ernst Haeckel, who in 1866 coined the term &ldquo;ecology&rdquo; for this new study of why things live where they live. &ldquo;I thought,&rdquo; Humboldt wrote in the preface to <em>Essay on the Geography of Plants</em>, &ldquo;that before talking about myself and the obstacles that I had to overcome during my work, I should draw the physicists&rsquo; attention to the broader phenomena exhibited by nature in the regions through which I have traveled.&rdquo;</p>
 
@@ -290,19 +293,20 @@ span.kicker { text-transform: uppercase;}
 
 				<div id="trigger3"></div>
 		        <figure class="shell">
-		        	<img id="animate3" style="opacity: 1;" src="media/illos/tegula2.png" />		        	
-		        	<img id="animate4" style="opacity: 0;" src="media/illos/tegula3.png" />
+		        	<img class="bwshell" src="media/illos/snail1.png" />		        	
+		        	<img id="animate3" style="opacity: 1;" src="media/illos/snail2.png" />		        	
+		        	<img id="animate4" style="opacity: 0;" src="media/illos/snail3.png" />
 		        </figure>
 		        <script>
-        			var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 200
+        			var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 250, ease: Circ.easeIn
     					})
                         .setTween("#animate3", {opacity: "0"})
                         .setTween("#animate4", {opacity: "1"})
-                        .addIndicators({name: "3 (duration: 200)"}) // add indicators (requires plugin)
+                        //.addIndicators({name: "3 (duration: 200)"}) // add indicators (requires plugin)
                         .addTo(controller);
 		        </script>
 
-				<h2>***</h2>
+				<!-- <h2>***</h2> -->
 
 				<p>If you snorkeled over the reef at Fitzgerald at a particularly high tide, it would look completely different than it did on the minus tide when my daughter and I went tidepooling there. All those snails bunched up and huddled together, cobbling the rock, would be out &ldquo;walking around,&rdquo; Jim Watanabe says, as if you&rsquo;d suddenly unfrozen a city. But if the unfreezing allows movement within the city limits, it doesn&rsquo;t un-segregate the neighborhoods. Freed as they are by the tide, the black Tegula stay in the shallows, the brown Tegula in the middle area, and the dusky Tegula in the subtidal.</p>
 
@@ -344,19 +348,21 @@ span.kicker { text-transform: uppercase;}
 
 				<div id="trigger4"></div>
 		        <figure class="shell">
-		        	<img id="animate5" style="opacity: 1;" src="media/illos/tegula3.png" />		        	
-		        	<img id="animate6" style="opacity: 0;" src="media/illos/tegula4.png" />
+		        	<img class="bwshell" src="media/illos/snail1.png" />
+		        	<img src="media/illos/snail2.png" />
+		        	<img id="animate5" style="opacity: 1;" src="media/illos/snail3.png" />		        	
+		        	<img id="animate6" style="opacity: 0;" src="media/illos/snail4.png" />
 		        </figure>
 		        <script>
-        			var scene4 = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 200
+        			var scene4 = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 250, ease: Circ.easeIn
     					})
                         .setTween("#animate5", {opacity: "0"})
                         .setTween("#animate6", {opacity: "1"})
-                        .addIndicators({name: "4 (duration: 200)"}) // add indicators (requires plugin)
+                        //.addIndicators({name: "4 (duration: 200)"}) // add indicators (requires plugin)
                         .addTo(controller);
 		        </script>
 
-				<h2>***</h2>
+				<!-- <h2>***</h2> -->
 
 				<p>The next chapter in our story starts in the summer of 1994, on the rocky ledge of Boiler Bay, Oregon. A graduate student named Karina Nielsen is standing there, looking out at the ocean, getting ready to do marine science. For a tool she has lugged along a gas-powered jackhammer. Her mission: make new tidepools. Lots of them.</p>
 
@@ -378,19 +384,22 @@ span.kicker { text-transform: uppercase;}
 
 				<div id="trigger5"></div>				
 		        <figure class="shell">
-		        	<img id="animate6" style="opacity: 1;" src="media/illos/tegula4.png" />		        	
-		        	<img id="animate7" style="opacity: 0;" src="media/illos/tegula5.png" />
+		        	<img class="bwshell" src="media/illos/snail1.png" />
+		        	<img src="media/illos/snail2.png" />
+		        	<img src="media/illos/snail3.png" />	        	
+		        	<img id="animate6" style="opacity: 1;" src="media/illos/snail4.png" />		        	
+		        	<img id="animate7" style="opacity: 0;" src="media/illos/snail5.png" />
 		        </figure>
 		        <script>
-        			var scene5 = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 200
+        			var scene5 = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 250, ease: Circ.easeIn
     					})
                         .setTween("#animate6", {opacity: "0"})
                         .setTween("#animate7", {opacity: "1"})
-                        .addIndicators({name: "5 (duration: 200)"}) // add indicators (requires plugin)
+                        //.addIndicators({name: "5 (duration: 200)"}) // add indicators (requires plugin)
                         .addTo(controller);
 		        </script>
 
-				<h2>***</h2>
+				<!-- <h2>***</h2> -->
 
 				<p>Why do we even bother with ecology in the first place? What&rsquo;s the point of knowing why things live where they live? One way to answer is simply to say that we are a curious species and like to know about the world. Tidepools run deep in our psychology; we have been drawn to them since our first ancestors walked out of the Olduvai Gorge and encountered the shores of the Indian Ocean. There, in a Garden of Eden, the tide rolled in with food and rolled out to let people collect it. There early humans survived global food shortages caused by climate change. Some of our first art, our first symbolism, can be found in cave walls on the coast. To be near the ocean, to love it and want to describe it, might be foundational in our species&rsquo; understanding of ourselves.</p>
 
@@ -425,7 +434,28 @@ span.kicker { text-transform: uppercase;}
 
 			</section>
 
-			<h2>***</h2>
+			<section class="snail-section">
+				<!-- 5 -->
+
+				<div id="trigger6"></div>				
+		        <figure class="shell">
+		        	<img class="bwshell" src="media/illos/snail1.png" />
+		        	<img src="media/illos/snail2.png" />
+		        	<img src="media/illos/snail3.png" />
+		        	<img src="media/illos/snail4.png" />
+		        	<img id="animate8" style="opacity: 1;" src="media/illos/snail5.png" />		        	
+		        	<img id="animate9" style="opacity: 0;" src="media/illos/snail6.png" />
+		        </figure>
+		        <script>
+        			var scene6 = new ScrollMagic.Scene({triggerElement: "#trigger6", duration: 250, ease: Circ.easeIn
+    					})
+                        .setTween("#animate8", {opacity: "0"})
+                        .setTween("#animate9", {opacity: "1"})
+                        //.addIndicators({name: "5 (duration: 200)"}) // add indicators (requires plugin)
+                        .addTo(controller);
+		        </script>
+
+			<!-- <h2>***</h2> -->
 
 			<p>How does an idea take shape? It&rsquo;s not in a straight line. It spirals. It builds its shell over centuries, or maybe even millennia.</p>
 
